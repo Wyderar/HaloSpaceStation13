@@ -3,18 +3,15 @@
 	//gamemode
 	#include "../_gamemodes/firefight/_all_includes.dm"
 
-	//lobby music
-	#include "../../code/modules/halo/lobby_music/halo_music.dm"
-
-	//subtype
-	#include "../_gamemodes/firefight/subtypes/jobs_colonist.dm"
-	#include "../_gamemodes/firefight/subtypes/jobs_unsc.dm"
-
 	//map def
 	#include "map.dm"
 
 	//map turfs
 	#include "../desert_outpost/turfs_areas.dm"
+
+	//jobs
+	#include "unsc_marine.dm"
+	#include "colonist.dm"
 
 	//map
 	#include "../desert_outpost/desert_outpost.dmm"

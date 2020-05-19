@@ -10,8 +10,6 @@
 	var/fleshcolor //Used for gibbed humans.
 	var/bloodcolor //Used for gibbed humans.
 	var/datum/dna/MobDNA
-	icon = 'icons/mob/screen1.dmi'
-	icon_state = "x"
 
 	New(location, var/datum/dna/MobDNA, var/fleshcolor, var/bloodcolor)
 		..()

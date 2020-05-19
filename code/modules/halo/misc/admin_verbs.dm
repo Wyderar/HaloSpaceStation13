@@ -14,8 +14,4 @@
 
 	admin_verbs_fun.Add(/client/proc/flood_announcement)
 	admin_verbs_hideable.Add(/client/proc/flood_announcement)
-
-	admin_verbs_fun.Add(/client/proc/npc_difficulty)
-	admin_verbs_hideable.Add(/client/proc/npc_difficulty)
-
 	return 1

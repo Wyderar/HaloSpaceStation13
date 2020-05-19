@@ -186,7 +186,7 @@
 	r_pocket = /obj/item/weapon/grenade/smokebomb
 
 /decl/hierarchy/outfit/job/mobilespawn_janitor
-	name = "Mobilespawn UNSC Janitor"
+	name = "UNSC Janitor"
 
 	l_ear = /obj/item/device/radio/headset/unsc/marine
 	r_ear = /obj/item/weapon/reagent_containers/syringe/biofoam

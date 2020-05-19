@@ -68,6 +68,7 @@ also using astar would have a performance impact due to eg hordes
 	walk(src, 0)
 
 /mob/living/simple_animal/hostile
+	var/path_recheck_time
 	var/turf/previous_turf
 	var/timeout_check = 0
 
@@ -88,7 +89,7 @@ also using astar would have a performance impact due to eg hordes
 	if(assault_turf && assault_turf.z == src.z)
 
 		//are we already there?
-		if(get_dist(assault_turf, src) < src.see_in_dark)
+		if(get_dist(assault_turf, src) < 7)
 			//hang around here for a minute before moving
 			stop_pathing(1 MINUTE)
 		else
@@ -97,6 +98,7 @@ also using astar would have a performance impact due to eg hordes
 			stop_automated_movement = 1
 
 			var/turf/target_turf = src.loc
+			path_recheck_time = world.time + move_to_delay
 
 			//if we are close, use dumb SS13 pathfinding
 			//get_step_to() has a distance limit of 2 * world.view, greater than that returns null

@@ -1,9 +1,4 @@
-GLOBAL_LIST_INIT(impact_crater_images, list(\
-	image('code/modules/halo/structures/crater.dmi',"crater_s"),\
-	image('code/modules/halo/structures/crater.dmi',"crater_l"),\
-	image('code/modules/halo/structures/crater.dmi',"small"),\
-	image('code/modules/halo/structures/crater.dmi',"big")\
-	))
+GLOBAL_LIST_INIT(impact_crater_images, list(image('code/modules/halo/icons/scrap/base.dmi',"crater_s"), image('code/modules/halo/icons/scrap/base.dmi',"crater_l")))
 
 /turf/unsimulated
 	name = "command"

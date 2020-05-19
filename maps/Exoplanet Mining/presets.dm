@@ -1,5 +1,5 @@
 
-/obj/machinery/door/airlock/mining_asteroid
+/ob/machinery/door/airlock/mining_asteroid
 
 /obj/machinery/door/airlock/mining_asteroid/public
 	req_access = list()

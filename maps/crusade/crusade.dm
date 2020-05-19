@@ -3,21 +3,11 @@
 	//gamemode
 	#include "../_gamemodes/firefight/_all_includes.dm"
 
-	//lobby music
-	#include "../../code/modules/halo/lobby_music/covenant_music.dm"
-
-	//subtype
-	#include "../_gamemodes/firefight/subtypes/crusade.dm"
-	#include "../_gamemodes/firefight/subtypes/crusade_resupply.dm"
-	#include "../_gamemodes/firefight/subtypes/crusade_resupply_crates.dm"
-	#include "../_gamemodes/firefight/subtypes/crusade_evac.dm"
-	#include "../_gamemodes/firefight/subtypes/jobs_covenant.dm"
-
 	//map def
 	#include "map.dm"
 
 	//map turfs
-	#include "../octanus_landing/turfs_areas.dm"
+	#include "../crashsite_zeta/turfs_areas.dm"
 
 	//jobs
 	#include "../../code/modules/halo/covenant/jobs/jiralhanae.dm"
@@ -28,12 +18,12 @@
 	#include "../../code/modules/halo/covenant/jobs/yanmee.dm"
 
 	//map
-	#include "../octanus_landing/octanus_landing.dmm"
+	#include "../crashsite_zeta/crashsite-zeta.dmm"
 
-	#define using_map_DATUM /datum/map/crusade_octanus_landing
+	#define using_map_DATUM /datum/map/crusade_crashsite_zeta
 
 #elif !defined(MAP_OVERRIDE)
 
-	#warn A map has already been included, ignoring Crusade: Octanus Landing
+	#warn A map has already been included, ignoring Crusade: Crashsite Zeta
 
 #endif

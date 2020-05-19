@@ -25,6 +25,8 @@
 		slot_s_belt_str = 'code/modules/halo/weapons/icons/Belt_Weapons.dmi',
 		)
 
+	slowdown_general = 0.25
+
 /obj/item/weapon/gun/energy/plasmapistol/New()
 	. = ..()
 	overcharge_cost = initial(charge_cost)*4
@@ -110,7 +112,7 @@
 	slot_flags = SLOT_BELT||SLOT_HOLSTER
 	fire_sound = 'code/modules/halo/sounds/needlerfire.ogg'
 	magazine_type = /obj/item/ammo_magazine/needles
-	handle_casings = CASELESS
+	handle_casings = CLEAR_CASINGS
 	caliber = "needler"
 	load_method = MAGAZINE
 	burst = 3
