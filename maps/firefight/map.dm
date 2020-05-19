@@ -9,4 +9,8 @@
 
 	allowed_gamemodes = list("firefight")
 	allowed_jobs = list(/datum/job/firefight_unsc_marine,
-		/datum/job/firefight_colonist)
+		/datum/job/firefight_colonist,
+		/datum/job/firefight_unsc_marine_engi,
+		/datum/job/firefight_unsc_marine_medic,
+		/datum/job/firefight_ship_crew
+		)

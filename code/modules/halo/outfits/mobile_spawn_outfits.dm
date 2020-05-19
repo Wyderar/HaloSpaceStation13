@@ -113,10 +113,7 @@
 	startswith = list(\
 	/obj/item/stack/material/steel/fifty,
 	/obj/item/stack/material/steel/fifty,
-	/obj/item/stack/material/glass/reinforced/fifty,
-	/obj/item/ammo_magazine/m762_ap/MA5B,
-	/obj/item/ammo_magazine/m762_ap/MA5B,
-	/obj/item/ammo_magazine/m762_ap/MA5B
+	/obj/item/stack/material/glass/reinforced/fifty
 	)
 
 /obj/item/weapon/mop/mobilespawn_janitor
