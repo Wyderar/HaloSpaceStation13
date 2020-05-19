@@ -10,11 +10,15 @@
 	allowed_gamemodes = list("firefight")
 	allowed_jobs = list(/datum/job/firefight_unsc_marine,
 <<<<<<< HEAD
+<<<<<<< HEAD
 		/datum/job/firefight_colonist,
 		/datum/job/firefight_unsc_marine_engi,
 		/datum/job/firefight_unsc_marine_medic,
 		/datum/job/firefight_ship_crew
 		)
+=======
+		/datum/job/firefight_colonist)
+>>>>>>> parent of 75c9137662... Merge pull request #1 from HaloSpaceStation/alpha
 =======
 		/datum/job/firefight_colonist)
 >>>>>>> parent of 75c9137662... Merge pull request #1 from HaloSpaceStation/alpha

@@ -8,9 +8,15 @@
 "ah" = (/obj/structure/destructible/sandbag{dir = 1},/obj/structure/destructible/sandbag{dir = 4},/turf/unsimulated/floor/rock,/area/planet/stranded_outpost)
 "ai" = (/obj/structure/destructible/sandbag{dir = 8},/turf/unsimulated/floor/rock,/area/planet/stranded_outpost)
 <<<<<<< HEAD
+<<<<<<< HEAD
 "aj" = (/turf/unsimulated/mineral,/area/planets/daynight)
 "ak" = (/obj/structure/destructible/sandbag{dir = 4},/turf/unsimulated/floor/rock,/area/planet/stranded_outpost)
 "al" = (/turf/unsimulated/mineral,/area/planet/stranded_outpost)
+=======
+"aj" = (/obj/structure/destructible/marine_barricade{icon_state = "marine barricade"; dir = 1},/turf/unsimulated/floor/desert,/area/planets/daynight)
+"ak" = (/obj/structure/destructible/sandbag{dir = 4},/turf/unsimulated/floor/rock,/area/planet/stranded_outpost)
+"al" = (/obj/structure/turret/chaingun{dir = 1},/turf/unsimulated/floor/desert,/area/planets/daynight)
+>>>>>>> parent of 75c9137662... Merge pull request #1 from HaloSpaceStation/alpha
 =======
 "aj" = (/obj/structure/destructible/marine_barricade{icon_state = "marine barricade"; dir = 1},/turf/unsimulated/floor/desert,/area/planets/daynight)
 "ak" = (/obj/structure/destructible/sandbag{dir = 4},/turf/unsimulated/floor/rock,/area/planet/stranded_outpost)
@@ -23,6 +29,7 @@
 "aq" = (/obj/structure/bed,/obj/item/weapon/storage/backpack,/turf/unsimulated/floor/rock,/area/planet/stranded_outpost)
 "ar" = (/obj/effect/landmark/start/joinlate,/turf/unsimulated/floor/rock,/area/planet/stranded_outpost)
 <<<<<<< HEAD
+<<<<<<< HEAD
 "as" = (/obj/machinery/floodlight/active/hi_cap,/turf/unsimulated/floor/desert,/area/planet/stranded_outpost)
 "at" = (/obj/structure/table/rack,/obj/item/weapon/gun/projectile/m7_smg,/obj/item/weapon/gun/projectile/m7_smg,/obj/item/weapon/gun/projectile/m7_smg,/obj/item/weapon/storage/box/m5,/obj/item/weapon/storage/box/m5,/obj/item/weapon/storage/box/m5,/turf/unsimulated/floor/rock,/area/planet/stranded_outpost)
 "au" = (/obj/structure/table/rack,/obj/item/weapon/gun/projectile/ma5b_ar,/obj/item/weapon/gun/projectile/ma5b_ar,/obj/item/weapon/gun/projectile/ma5b_ar,/obj/item/weapon/storage/box/m762_ap,/obj/item/weapon/storage/box/m762_ap,/obj/item/weapon/storage/box/m762_ap,/turf/unsimulated/floor/rock,/area/planet/stranded_outpost)
@@ -32,6 +39,8 @@
 "ay" = (/obj/item/weapon/storage/firstaid/unsc,/obj/item/weapon/storage/firstaid/unsc,/obj/item/weapon/storage/firstaid/unsc,/obj/structure/table/standard,/obj/item/weapon/storage/firstaid/unsc,/obj/item/weapon/storage/firstaid/unsc,/obj/item/weapon/storage/firstaid/unsc,/obj/item/weapon/storage/firstaid/surgery,/obj/item/weapon/storage/firstaid/surgery,/turf/unsimulated/floor/rock,/area/planet/stranded_outpost)
 "az" = (/obj/structure/foamedmetal,/turf/unsimulated/floor/desert,/area/planet/stranded_outpost)
 =======
+=======
+>>>>>>> parent of 75c9137662... Merge pull request #1 from HaloSpaceStation/alpha
 "as" = (/obj/machinery/floodlight,/turf/unsimulated/floor/rock,/area/planet/stranded_outpost)
 "at" = (/obj/structure/table/rack,/obj/item/weapon/gun/projectile/m7_smg,/obj/item/weapon/gun/projectile/m7_smg,/obj/item/weapon/gun/projectile/m7_smg,/obj/item/weapon/storage/box/m5,/obj/item/weapon/storage/box/m5,/obj/item/weapon/storage/box/m5,/turf/unsimulated/floor/rock,/area/planet/stranded_outpost)
 "au" = (/obj/structure/table/rack,/obj/item/weapon/gun/projectile/ma5b_ar,/obj/item/weapon/gun/projectile/ma5b_ar,/obj/item/weapon/gun/projectile/ma5b_ar,/obj/item/weapon/storage/box/m762_ap,/obj/item/weapon/storage/box/m762_ap,/obj/item/weapon/storage/box/m762_ap,/turf/unsimulated/floor/rock,/area/planet/stranded_outpost)
@@ -40,6 +49,9 @@
 "ax" = (/obj/structure/table/rack,/obj/item/weapon/gun/projectile/shotgun/pump/m90_ts,/obj/item/weapon/gun/projectile/shotgun/pump/m90_ts,/obj/item/weapon/gun/projectile/shotgun/pump/m90_ts,/obj/item/ammo_box/shotgun,/obj/item/ammo_box/shotgun,/obj/item/ammo_box/shotgun,/obj/item/ammo_box/shotgun,/obj/item/ammo_box/shotgun,/turf/unsimulated/floor/rock,/area/planet/stranded_outpost)
 "ay" = (/obj/item/weapon/storage/firstaid/unsc,/obj/item/weapon/storage/firstaid/unsc,/obj/item/weapon/storage/firstaid/unsc,/obj/structure/table/standard,/obj/item/weapon/storage/firstaid/unsc,/obj/item/weapon/storage/firstaid/unsc,/obj/item/weapon/storage/firstaid/unsc,/obj/item/weapon/storage/firstaid/surgery,/obj/item/weapon/storage/firstaid/surgery,/turf/unsimulated/floor/rock,/area/planet/stranded_outpost)
 "az" = (/obj/machinery/floodlight{anchored = 1},/turf/unsimulated/floor/rock,/area/planet/stranded_outpost)
+<<<<<<< HEAD
+>>>>>>> parent of 75c9137662... Merge pull request #1 from HaloSpaceStation/alpha
+=======
 >>>>>>> parent of 75c9137662... Merge pull request #1 from HaloSpaceStation/alpha
 "aA" = (/obj/machinery/door/unpowered/simple/wood,/turf/unsimulated/floor/rock,/area/planet/stranded_outpost)
 "aB" = (/obj/effect/landmark/assault_target_firefight,/turf/unsimulated/floor/rock,/area/planet/stranded_outpost)
@@ -50,7 +62,11 @@
 "aG" = (/obj/item/weapon/gun/projectile/m41,/obj/structure/table/rack,/obj/item/ammo_casing/rocket,/obj/item/ammo_casing/rocket,/obj/item/ammo_casing/rocket,/obj/item/ammo_casing/rocket,/turf/unsimulated/floor/rock,/area/planet/stranded_outpost)
 "aH" = (/obj/structure/table/rack,/obj/item/weapon/gun/projectile/m392_dmr,/obj/item/weapon/gun/projectile/m392_dmr,/obj/item/weapon/storage/box/m762_ap,/obj/item/weapon/storage/box/m762_ap,/turf/unsimulated/floor/rock,/area/planet/stranded_outpost)
 <<<<<<< HEAD
+<<<<<<< HEAD
 "aI" = (/obj/machinery/door/blast/shutters/open{icon_state = "shutter1"; dir = 4},/turf/simulated/floor/tiled/dark,/area/planet/stranded_outpost)
+=======
+"aI" = (/obj/structure/table/rack,/obj/item/weapon/storage/belt/marine_ammo,/obj/item/weapon/storage/belt/marine_ammo,/obj/item/weapon/storage/belt/marine_ammo,/obj/item/weapon/storage/belt/marine_ammo,/obj/item/weapon/storage/belt/marine_ammo,/obj/item/weapon/storage/belt/marine_ammo,/obj/item/weapon/storage/belt/marine_ammo,/obj/item/weapon/storage/belt/marine_ammo,/obj/item/weapon/storage/belt/marine_ammo,/obj/item/weapon/storage/belt/marine_ammo,/turf/unsimulated/floor/rock,/area/planet/stranded_outpost)
+>>>>>>> parent of 75c9137662... Merge pull request #1 from HaloSpaceStation/alpha
 =======
 "aI" = (/obj/structure/table/rack,/obj/item/weapon/storage/belt/marine_ammo,/obj/item/weapon/storage/belt/marine_ammo,/obj/item/weapon/storage/belt/marine_ammo,/obj/item/weapon/storage/belt/marine_ammo,/obj/item/weapon/storage/belt/marine_ammo,/obj/item/weapon/storage/belt/marine_ammo,/obj/item/weapon/storage/belt/marine_ammo,/obj/item/weapon/storage/belt/marine_ammo,/obj/item/weapon/storage/belt/marine_ammo,/obj/item/weapon/storage/belt/marine_ammo,/turf/unsimulated/floor/rock,/area/planet/stranded_outpost)
 >>>>>>> parent of 75c9137662... Merge pull request #1 from HaloSpaceStation/alpha
@@ -61,6 +77,7 @@
 "aN" = (/obj/structure/table/rack,/obj/item/stack/material/cloth{amount = 50},/obj/item/stack/material/cloth{amount = 50},/obj/item/stack/material/cloth{amount = 50},/turf/unsimulated/floor/rock,/area/planet/stranded_outpost)
 "aO" = (/obj/structure/table/rack,/obj/item/weapon/gun/projectile/m739_lmg,/obj/item/weapon/gun/projectile/m739_lmg,/obj/item/ammo_magazine/a762_box_ap,/obj/item/ammo_magazine/a762_box_ap,/obj/item/ammo_magazine/a762_box_ap,/obj/item/ammo_magazine/a762_box_ap,/turf/unsimulated/floor/rock,/area/planet/stranded_outpost)
 <<<<<<< HEAD
+<<<<<<< HEAD
 "aP" = (/obj/machinery/door/blast/shutters{icon_state = "shutter1"; dir = 4},/turf/simulated/floor/tiled/dark,/area/planet/stranded_outpost)
 "aQ" = (/obj/structure/table/rack,/obj/item/stack/material/steel{amount = 50},/obj/item/stack/material/steel{amount = 50},/obj/item/stack/material/steel{amount = 50},/turf/unsimulated/floor/rock,/area/planet/stranded_outpost)
 "aR" = (/obj/structure/table/rack,/obj/item/weapon/gun/projectile/m6c_magnum_s,/obj/item/weapon/gun/projectile/m6c_magnum_s,/obj/item/weapon/gun/projectile/m6c_magnum_s,/obj/item/weapon/gun/projectile/m6c_magnum_s,/obj/item/weapon/storage/box/m127_saphp,/obj/item/weapon/storage/box/m127_saphp,/obj/item/weapon/storage/box/m127_saphp,/obj/item/weapon/storage/box/m127_saphp,/turf/unsimulated/floor/rock,/area/planet/stranded_outpost)
@@ -69,6 +86,8 @@
 "aU" = (/obj/structure/table/rack,/obj/item/weapon/gun/projectile/m6d_magnum,/obj/item/weapon/gun/projectile/m6d_magnum,/obj/item/weapon/gun/projectile/m6d_magnum,/obj/item/weapon/gun/projectile/m6d_magnum,/obj/item/weapon/storage/box/m127_saphe,/obj/item/weapon/storage/box/m127_saphe,/obj/item/weapon/storage/box/m127_saphe,/obj/item/weapon/storage/box/m127_saphe,/turf/unsimulated/floor/rock,/area/planet/stranded_outpost)
 "aV" = (/turf/simulated/wall,/area/planet/stranded_outpost)
 =======
+=======
+>>>>>>> parent of 75c9137662... Merge pull request #1 from HaloSpaceStation/alpha
 "aP" = (/obj/structure/table/rack,/obj/item/weapon/gun/projectile/br85,/obj/item/weapon/gun/projectile/br85,/obj/item/weapon/gun/projectile/br85,/obj/item/weapon/storage/box/m95_sap,/obj/item/weapon/storage/box/m95_sap,/obj/item/weapon/storage/box/m95_sap,/turf/unsimulated/floor/rock,/area/planet/stranded_outpost)
 "aQ" = (/obj/structure/table/rack,/obj/item/stack/material/steel{amount = 50},/obj/item/stack/material/steel{amount = 50},/obj/item/stack/material/steel{amount = 50},/turf/unsimulated/floor/rock,/area/planet/stranded_outpost)
 "aR" = (/obj/structure/table/rack,/obj/item/weapon/gun/projectile/m6c_magnum_s,/obj/item/weapon/gun/projectile/m6c_magnum_s,/obj/item/weapon/gun/projectile/m6c_magnum_s,/obj/item/weapon/gun/projectile/m6c_magnum_s,/obj/item/weapon/storage/box/m127_saphp,/obj/item/weapon/storage/box/m127_saphp,/obj/item/weapon/storage/box/m127_saphp,/obj/item/weapon/storage/box/m127_saphp,/turf/unsimulated/floor/rock,/area/planet/stranded_outpost)
@@ -76,6 +95,9 @@
 "aT" = (/obj/structure/table/rack,/obj/item/stack/material/wood{amount = 50},/obj/item/stack/material/wood{amount = 50},/obj/item/stack/material/wood{amount = 50},/turf/unsimulated/floor/rock,/area/planet/stranded_outpost)
 "aU" = (/obj/structure/table/rack,/obj/item/weapon/gun/projectile/m6d_magnum,/obj/item/weapon/gun/projectile/m6d_magnum,/obj/item/weapon/gun/projectile/m6d_magnum,/obj/item/weapon/gun/projectile/m6d_magnum,/obj/item/weapon/storage/box/m127_saphe,/obj/item/weapon/storage/box/m127_saphe,/obj/item/weapon/storage/box/m127_saphe,/obj/item/weapon/storage/box/m127_saphe,/turf/unsimulated/floor/rock,/area/planet/stranded_outpost)
 "aV" = (/obj/structure/turret/chaingun{dir = 2},/turf/unsimulated/floor/desert,/area/planets/daynight)
+<<<<<<< HEAD
+>>>>>>> parent of 75c9137662... Merge pull request #1 from HaloSpaceStation/alpha
+=======
 >>>>>>> parent of 75c9137662... Merge pull request #1 from HaloSpaceStation/alpha
 "aW" = (/obj/structure/barricade,/turf/simulated/floor/tiled,/area/planet)
 "aX" = (/turf/simulated/floor/tiled,/area/planet)
@@ -84,6 +106,7 @@
 "ba" = (/obj/effect/landmark/test/space_turf,/turf/space,/area/planet)
 "bb" = (/obj/effect/landmark/resupply_skip,/turf/unsimulated/floor/rock,/area/planet/stranded_outpost)
 "bc" = (/turf/unsimulated/floor/rock,/area/planet/stranded_outpost)
+<<<<<<< HEAD
 <<<<<<< HEAD
 "bd" = (/turf/simulated/floor/plating,/area/planet/stranded_outpost)
 "be" = (/turf/unsimulated/floor/rock,/area/planets/daynight)
@@ -281,6 +304,11 @@
 "be" = (/obj/structure/destructible/marine_barricade{icon_state = "marine barricade"; dir = 4},/turf/unsimulated/floor/desert,/area/planets/daynight)
 "bf" = (/obj/structure/destructible/marine_barricade,/turf/unsimulated/floor/desert,/area/planets/daynight)
 >>>>>>> parent of 75c9137662... Merge pull request #1 from HaloSpaceStation/alpha
+=======
+"bd" = (/obj/structure/destructible/marine_barricade{icon_state = "marine barricade"; dir = 8},/turf/unsimulated/floor/desert,/area/planets/daynight)
+"be" = (/obj/structure/destructible/marine_barricade{icon_state = "marine barricade"; dir = 4},/turf/unsimulated/floor/desert,/area/planets/daynight)
+"bf" = (/obj/structure/destructible/marine_barricade,/turf/unsimulated/floor/desert,/area/planets/daynight)
+>>>>>>> parent of 75c9137662... Merge pull request #1 from HaloSpaceStation/alpha
 
 (1,1,1) = {"
 aCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaCaC
@@ -303,6 +331,7 @@ acababababababababababababababababababababababababababababababababababababababab
 acabababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaC
 acabababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaC
 acabababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaC
+<<<<<<< HEAD
 <<<<<<< HEAD
 acababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababcYcYcYcYcYcYcYcYabababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaC
 acababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababcYcYcYcYcYcYcYcYabababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaC
@@ -524,6 +553,8 @@ acabababababababababababababababababababababababababababcYcYcYcYcYcYcYcYcYcYcYcY
 acababababababababababababababababababababababababababababcYcYcYcYcYcYcYcYabcYcYcYcYcYcYcYcYababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaC
 acabababababababababababababababababababababababababababababababababababababcYcYcYcYcYcYcYcYababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaC
 =======
+=======
+>>>>>>> parent of 75c9137662... Merge pull request #1 from HaloSpaceStation/alpha
 acabababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaC
 acabababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaC
 acabababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaC
@@ -743,6 +774,9 @@ acababababababababababababababababababababababababababababababababababababababab
 acabababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaC
 acabababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaC
 acabababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaC
+<<<<<<< HEAD
+>>>>>>> parent of 75c9137662... Merge pull request #1 from HaloSpaceStation/alpha
+=======
 >>>>>>> parent of 75c9137662... Merge pull request #1 from HaloSpaceStation/alpha
 acabababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaC
 acabababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaC
