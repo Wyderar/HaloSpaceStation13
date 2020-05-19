@@ -10,15 +10,14 @@
 	whitelisted_species = list(/datum/species/human)
 	loadout_allowed = TRUE
 
-<<<<<<< HEAD
 	alt_titles = list("Machine Gunner Marine","Assault Recon Marine",\
 	"Designated Marksman Marine","Scout Sniper Marine","Anti-Tank Missile Gunner Marine",\
 	"EVA Combat Marine")
-=======
+
 	alt_titles = list("Machine Gunner Marine","Marine Combat Medic","Assault Recon Marine",\
 	"Designated Marksman Marine","Scout Sniper Marine","Anti-Tank Missile Gunner Marine",\
 	"EVA Combat Marine","Marine Combat Technician")
->>>>>>> parent of 75c9137662... Merge pull request #1 from HaloSpaceStation/alpha
+
 
 /decl/hierarchy/outfit/job/firefight_unsc_marine
 	name = "Firefight UNSC Marine"
@@ -38,7 +37,6 @@
 	l_pocket = /obj/item/ammo_magazine/m762_ap/MA5B
 
 	flags = 0
-<<<<<<< HEAD
 
 /datum/job/firefight_unsc_marine_engi
 	title = "UNSC Combat Technician"
@@ -125,5 +123,4 @@
 	l_pocket = /obj/item/device/flashlight/maglight
 
 	flags = 0
-=======
->>>>>>> parent of 75c9137662... Merge pull request #1 from HaloSpaceStation/alpha
+
