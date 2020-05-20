@@ -2,7 +2,7 @@
 /datum/game_mode/firefight/crusade
 	resupply_procs = list(/datum/game_mode/firefight/crusade/spawn_resupply)
 
-	supply_crate_procs = list(\
+	var/list/supply_crate_procs = list(\
 		/datum/game_mode/firefight/crusade/proc/cov_wep_crate = 4,\
 		/datum/game_mode/firefight/crusade/proc/brute_wep_crate = 3,\
 		/datum/game_mode/firefight/crusade/proc/energy_barricades_crate = 3,\

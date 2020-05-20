@@ -1,5 +1,5 @@
 
-/obj/effect/evac_ship/
+/obj/effect/evac_ship
 	name = "Evac Pelican Spawn"
 	desc = "You shouldn't see this."
 	invisibility = 101
@@ -7,14 +7,12 @@
 	density = 0
 	icon = 'icons/mob/screen1.dmi'
 	icon_state = "x3"
+	var/ship_type = /obj/structure/evac_ship
 	var/spawned = 0
 
-/obj/effect/evac_ship/proc/spawn_pelican()
-
-	if(!spawned)
-		spawned = 1
-		. = new /obj/structure/evac_ship(src.loc)
-		qdel(src)
+/obj/effect/evac_ship/proc/spawn_dropship()
+	. = new ship_type(src.loc)
+	qdel(src)
 
 /obj/structure/evac_ship
 	name = "D77-TC Pelican"
@@ -23,12 +21,21 @@
 	density = 1
 	icon = 'evac_pelican.dmi'
 	icon_state = "base"
+	bound_width = 96
+	bound_height = 192
 	var/health = 600
 	var/healthmax = 600
 	var/is_thrusting = 0
 	var/pilot_name = "D77-TC Pelican Pilot"
-	bound_width = 96
-	bound_height = 192
+
+/obj/structure/evac_ship/proc/arrival_message(var/time_left)
+	world_say_pilot_message("Get ready to fall back! I'm out of here in [time_left / 10] seconds.")
+
+/obj/structure/evac_ship/proc/halfway_message(var/time_left)
+	world_say_pilot_message("Halfway there, only [time_left / 10] seconds to go.")
+
+/obj/structure/evac_ship/proc/leaving_message(var/time_left)
+	world_say_pilot_message("[time_left / 10] seconds! Go go go go go!")
 
 /obj/structure/evac_ship/New()
 	..()
@@ -60,7 +67,6 @@
 		//destroy
 		explosion(src.loc,20,30,40,50)
 		qdel(src)
-
 	else if(health / healthmax < 0.2)
 		icon_state = "dam5"
 		pilot_message = "Any more hits and we won't be getting out of here!"
@@ -75,7 +81,6 @@
 		pilot_message = "I'm taking damage, you've got to protect me while we evacuate the survivors!"
 	else
 		icon_state = "base"
-
 	if((icon_state != old_icon_state))
 		world_say_pilot_message(pilot_message)
 	/*
@@ -90,7 +95,7 @@
 	//var/image/I = image(icon = 'pilot_head.dmi', icon_state = "head")
 	to_world("\
 		<span class='radio'>\
-			<span class='name'>D77-TC Pelican Pilot</span> \
+			<span class='name'>[pilot_name]</span> \
 			\icon[src] \
 			<b>\[Emergency Freq\]</b> \
 			<span class='message'>\"[pilot_message]\"</span>\
@@ -122,9 +127,3 @@
 	set category = "IC"
 
 	attempt_enter(usr)
-
-/obj/structure/evac_ship/spirit
-	name = "Spirit Dropship"
-	pilot_name = "Spirit Dropship Pilot"
-	icon = 'code/modules/halo/vehicles/types/spirit.dmi'
-	icon_state = "base"

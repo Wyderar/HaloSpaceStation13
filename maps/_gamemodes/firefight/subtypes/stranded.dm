@@ -16,6 +16,35 @@
 		/datum/game_mode/firefight/proc/spawn_resupply,\
 		/datum/game_mode/firefight/proc/spawn_ship_debris)
 
+	wave_spawns = list(\
+		list(\
+			/mob/living/simple_animal/hostile/flood/combat_form/human = 4,\
+			/mob/living/simple_animal/hostile/flood/infestor = 2\
+			),\
+		list(\
+			/mob/living/simple_animal/hostile/flood/combat_form/human = 6,\
+			/mob/living/simple_animal/hostile/flood/infestor = 3,\
+			/mob/living/simple_animal/hostile/flood/combat_form/ODST = 4,\
+			/mob/living/simple_animal/hostile/flood/combat_form/ultra = 2\
+			),\
+		list(\
+			/mob/living/simple_animal/hostile/flood/combat_form/human = 10,\
+			/mob/living/simple_animal/hostile/flood/infestor = 6,\
+			/mob/living/simple_animal/hostile/flood/combat_form/ODST = 6,\
+			/mob/living/simple_animal/hostile/flood/combat_form/ultra = 4,\
+			/mob/living/simple_animal/hostile/flood/combat_form/zealot = 2\
+			),\
+		list(\
+			/mob/living/simple_animal/hostile/flood/combat_form/juggernaut = 1,\
+			/mob/living/simple_animal/hostile/flood/combat_form/human = 14,\
+			/mob/living/simple_animal/hostile/flood/infestor = 8,\
+			/mob/living/simple_animal/hostile/flood/combat_form/ODST = 8,\
+			/mob/living/simple_animal/hostile/flood/combat_form/ultra = 6,\
+			/mob/living/simple_animal/hostile/flood/combat_form/zealot = 4,\
+			/mob/living/simple_animal/hostile/flood/combat_form/prisoner/abomination = 2,\
+			)\
+		)
+
 /datum/game_mode/firefight/stranded/pre_setup()
 	. = ..()
 	allowed_ghost_roles += list(/datum/ghost_role/flood_combat_form)
