@@ -18,30 +18,33 @@
 
 	wave_spawns = list(\
 		list(\
-			/mob/living/simple_animal/hostile/flood/combat_form/human = 4,\
-			/mob/living/simple_animal/hostile/flood/infestor = 2\
+			/mob/living/simple_animal/hostile/flood/combat_form/human = 3,\
+			/mob/living/simple_animal/hostile/flood/combat_form/ODST = 2,\
+			/mob/living/simple_animal/hostile/flood/infestor = 3\
 			),\
 		list(\
-			/mob/living/simple_animal/hostile/flood/combat_form/human = 6,\
+			/mob/living/simple_animal/hostile/flood/combat_form/human = 3,\
+			/mob/living/simple_animal/hostile/flood/combat_form/ODST = 2,\
 			/mob/living/simple_animal/hostile/flood/infestor = 3,\
-			/mob/living/simple_animal/hostile/flood/combat_form/ODST = 4,\
-			/mob/living/simple_animal/hostile/flood/combat_form/ultra = 2\
-			),\
-		list(\
-			/mob/living/simple_animal/hostile/flood/combat_form/human = 10,\
-			/mob/living/simple_animal/hostile/flood/infestor = 6,\
-			/mob/living/simple_animal/hostile/flood/combat_form/ODST = 6,\
-			/mob/living/simple_animal/hostile/flood/combat_form/ultra = 4,\
-			/mob/living/simple_animal/hostile/flood/combat_form/zealot = 2\
-			),\
-		list(\
-			/mob/living/simple_animal/hostile/flood/combat_form/juggernaut = 1,\
-			/mob/living/simple_animal/hostile/flood/combat_form/human = 14,\
-			/mob/living/simple_animal/hostile/flood/infestor = 8,\
-			/mob/living/simple_animal/hostile/flood/combat_form/ODST = 8,\
-			/mob/living/simple_animal/hostile/flood/combat_form/ultra = 6,\
-			/mob/living/simple_animal/hostile/flood/combat_form/zealot = 4,\
 			/mob/living/simple_animal/hostile/flood/combat_form/prisoner/abomination = 2,\
+			/mob/living/simple_animal/hostile/flood/combat_form/ultra = 3\
+			),\
+		list(\
+			/mob/living/simple_animal/hostile/flood/combat_form/human = 3,\
+			/mob/living/simple_animal/hostile/flood/combat_form/ODST = 3,\
+			/mob/living/simple_animal/hostile/flood/infestor = 3,\
+			/mob/living/simple_animal/hostile/flood/combat_form/prisoner/abomination = 2,\
+			/mob/living/simple_animal/hostile/flood/combat_form/ultra = 3,\
+			/mob/living/simple_animal/hostile/flood/combat_form/juggernaut = 2\
+			),\
+		list(\
+			/mob/living/simple_animal/hostile/flood/combat_form/human = 2,\
+			/mob/living/simple_animal/hostile/flood/combat_form/ODST = 2,\
+			/mob/living/simple_animal/hostile/flood/infestor = 2,\
+			/mob/living/simple_animal/hostile/flood/combat_form/prisoner/abomination = 2,\
+			/mob/living/simple_animal/hostile/flood/combat_form/ultra = 2,\
+			/mob/living/simple_animal/hostile/flood/combat_form/zealot = 2,\
+			/mob/living/simple_animal/hostile/flood/combat_form/juggernaut = 1\
 			)\
 		)
 

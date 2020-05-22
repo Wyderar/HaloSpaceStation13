@@ -20,6 +20,4 @@
 
 #elif !defined(MAP_OVERRIDE)
 
-#warn A map has already been included, ignoring Stranded: Desert Outpost
-
 #endif

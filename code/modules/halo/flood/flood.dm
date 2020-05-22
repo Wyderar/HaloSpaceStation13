@@ -132,8 +132,8 @@ GLOBAL_LIST_EMPTY(live_flood_simplemobs)
 	pass_flags = PASSTABLE
 	mob_size = MOB_MINISCULE
 	move_to_delay = 15
-	health = 1
-	maxHealth = 1
+	health = 10
+	maxHealth = 10
 	melee_damage_lower = 1
 	melee_damage_upper = 5
 	attacktext = "leapt at"

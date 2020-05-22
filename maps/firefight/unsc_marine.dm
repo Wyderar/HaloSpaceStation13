@@ -2,8 +2,8 @@
 /datum/job/firefight_unsc_marine
 	title = "UNSC Marine"
 	spawn_faction = "UNSC"
-	total_positions = -1
-	spawn_positions = -1
+	total_positions = 15
+	spawn_positions = 15
 	outfit_type = /decl/hierarchy/outfit/job/firefight_unsc_marine
 	selection_color = "#008000"
 	access = list(access_unsc)
@@ -24,7 +24,6 @@
 
 	l_ear = /obj/item/device/radio/headset/unsc/marine
 	mask = /obj/item/clothing/mask/marine
-	glasses = /obj/item/clothing/glasses/hud/tactical
 	uniform = /obj/item/clothing/under/unsc/marine_fatigues
 	shoes = /obj/item/clothing/shoes/marine
 	head = /obj/item/clothing/head/helmet/marine
@@ -41,8 +40,8 @@
 /datum/job/firefight_unsc_marine_engi
 	title = "UNSC Combat Technician"
 	spawn_faction = "UNSC"
-	total_positions = -1
-	spawn_positions = -1
+	total_positions = 6
+	spawn_positions = 6
 	outfit_type = /decl/hierarchy/outfit/job/firefight_unsc_marine_engi
 	selection_color = "#008000"
 	access = list(access_unsc)
@@ -54,7 +53,6 @@
 
 	l_ear = /obj/item/device/radio/headset/unsc/marine
 	mask = /obj/item/clothing/mask/smokable/cigarette/luckystars
-	glasses = /obj/item/clothing/glasses/thermal
 	uniform = /obj/item/clothing/under/unsc/marine_fatigues
 	shoes = /obj/item/clothing/shoes/marine
 	head = /obj/item/clothing/head/welding
@@ -72,8 +70,8 @@
 /datum/job/firefight_unsc_marine_medic
 	title = "UNSC Combat Medic"
 	spawn_faction = "UNSC"
-	total_positions = -1
-	spawn_positions = -1
+	total_positions = 6
+	spawn_positions = 6
 	outfit_type = /decl/hierarchy/outfit/job/firefight_unsc_marine_medic
 	selection_color = "#008000"
 	access = list(access_unsc)
@@ -103,8 +101,8 @@
 	title = "UNSC Ship Crew"
 	spawn_faction = "UNSC"
 	outfit_type = /decl/hierarchy/outfit/job/firefight/crew
-	total_positions = 4
-	spawn_positions = 4
+	total_positions = 10
+	spawn_positions = 10
 	selection_color = "#0A0A95"
 	access = list(access_unsc)
 	whitelisted_species = list(/datum/species/human)

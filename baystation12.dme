@@ -2997,7 +2997,6 @@
 #include "interface\skin.dmf"
 #include "maps\_map_include.dm"
 #include "maps\_gamemodes\firefight\_all_includes.dm"
-#include "maps\_gamemodes\firefight\admin_verbs.dm"
 #include "maps\desert_outpost\turfs_areas.dm"
 #include "maps\firefight\firefight.dm"
 #include "maps\firefight\map.dm"
