@@ -266,7 +266,7 @@ var/list/gamemode_cache = list()
 		t = trim(t)
 		if (length(t) == 0)
 			continue
-		else if (copytext(t, 1, 2) == "#")
+		else if (copytext_char(t, 1, 2) == "#")
 			continue
 
 		var/pos = findtext(t, " ")
@@ -274,8 +274,8 @@ var/list/gamemode_cache = list()
 		var/value = null
 
 		if (pos)
-			name = lowertext(copytext(t, 1, pos))
-			value = copytext(t, pos + 1)
+			name = lowertext(copytext_char(t, 1, pos))
+			value = copytext_char(t, pos + 1)
 		else
 			name = lowertext(t)
 
@@ -285,10 +285,10 @@ var/list/gamemode_cache = list()
 		if(type == "config")
 			switch (name)
 				if ("resource_urls")
-					config.resource_urls = splittext(value, " ")
+					config.resource_urls = splittext_char(value, " ")
 
 				if ("do_sql_connection")
-					config.do_sql_connection = splittext(value, " ")
+					config.do_sql_connection = splittext_char(value, " ")
 
 				if ("admin_legacy_system")
 					config.admin_legacy_system = 1
@@ -536,8 +536,8 @@ var/list/gamemode_cache = list()
 					var/prob_value = null
 
 					if (prob_pos)
-						prob_name = lowertext(copytext(value, 1, prob_pos))
-						prob_value = copytext(value, prob_pos + 1)
+						prob_name = lowertext(copytext_char(value, 1, prob_pos))
+						prob_value = copytext_char(value, prob_pos + 1)
 						if (prob_name in config.modes)
 							config.probabilities[prob_name] = text2num(prob_value)
 						else
@@ -752,7 +752,7 @@ var/list/gamemode_cache = list()
 					config.starlight = value >= 0 ? value : 0
 
 				if("ert_species")
-					config.ert_species = splittext(value, ";")
+					config.ert_species = splittext_char(value, ";")
 					if(!config.ert_species.len)
 						config.ert_species += SPECIES_HUMAN
 
@@ -763,7 +763,7 @@ var/list/gamemode_cache = list()
 					config.aggressive_changelog = 1
 
 				if("default_language_prefixes")
-					var/list/values = splittext(value, " ")
+					var/list/values = splittext_char(value, " ")
 					if(values.len > 0)
 						language_prefixes = values
 
@@ -864,7 +864,7 @@ var/list/gamemode_cache = list()
 		t = trim(t)
 		if (length(t) == 0)
 			continue
-		else if (copytext(t, 1, 2) == "#")
+		else if (copytext_char(t, 1, 2) == "#")
 			continue
 
 		var/pos = findtext(t, " ")
@@ -872,8 +872,8 @@ var/list/gamemode_cache = list()
 		var/value = null
 
 		if (pos)
-			name = lowertext(copytext(t, 1, pos))
-			value = copytext(t, pos + 1)
+			name = lowertext(copytext_char(t, 1, pos))
+			value = copytext_char(t, pos + 1)
 		else
 			name = lowertext(t)
 
