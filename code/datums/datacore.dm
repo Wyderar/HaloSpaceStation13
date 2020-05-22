@@ -181,8 +181,8 @@
 
 
 	dat += "</table>"
-	dat = replacetext(dat, "\n", "") // so it can be placed on paper correctly
-	dat = replacetext(dat, "\t", "")
+	dat = replacetext_char(dat, "\n", "") // so it can be placed on paper correctly
+	dat = replacetext_char(dat, "\t", "")
 	return dat
 
 /datum/datacore/proc/manifest()
