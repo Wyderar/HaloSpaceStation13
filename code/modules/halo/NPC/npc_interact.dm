@@ -12,9 +12,9 @@
 			interacting_mob = null
 
 		if(last_afraid)
-			to_chat(user, "<span class='notice'>[src] is too panicked right now!</span>")
+			to_chat(user, "<span class='notice'>[src] слишком напуган чтобы говорить!</span>")
 		else if(interacting_mob && interacting_mob != user)
-			to_chat(user, "<span class='notice'>[src] is already dealing with [interacting_mob]!</span>")
+			to_chat(user, "<span class='notice'>[src] уже разговаривает с [interacting_mob]!</span>")
 		else
 			current_greeting_index = rand(1, greetings.len)
 			say(greetings[current_greeting_index])
@@ -119,9 +119,9 @@
 	if(href_list["ask_question"])
 		var/mob/living/carbon/M = locate(href_list["user"])
 		if(say_next)
-			to_chat(M,"<span class='warning'>[src] is already responding to something...</span>")
+			to_chat(M,"<span class='warning'>[src] уже кому-то отвечает...</span>")
 		else
-			var/ask_question = input("What do you want to ask [src] about?","Ask about...")
+			var/ask_question = input("О чём ты хочешь [src] спросить?","Спросить про...")
 			if(ask_question)
 				handle_question(M, ask_question)
 

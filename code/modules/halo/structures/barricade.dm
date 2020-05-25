@@ -5,6 +5,7 @@
 	icon_state = "barricade2"
 	flags = ON_BORDER
 	cover_rating = 50
+	maxHealth = 600
 
 /obj/structure/destructible/plasteel_barricade
 	name = "plasteel barricade"
@@ -12,6 +13,7 @@
 	icon_state = "barricade"
 	flags = ON_BORDER
 	cover_rating = 50
+	maxHealth = 800
 	loot_types = list(/obj/item/stack/material/plasteel)
 
 /obj/structure/destructible/plasteel_barricade/update_icon()

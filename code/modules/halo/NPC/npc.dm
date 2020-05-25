@@ -56,33 +56,33 @@
 	//
 	var/interact_screen = 1
 	var/list/greetings = list(\
-		"Hello.",\
-		"How are you going?",\
-		"How can I help?",\
-		"Good day.",\
-		"What can I do for you?")
+		"Привет.",\
+		"Как дела?",\
+		"Чем Я могу помочь?",\
+		"Доброго днЯ.",\
+		"Что Я могу сделать длЯ тебЯ?")
 	var/list/goodbyes = list(\
-		"See you.",\
-		"See you later.",\
-		"Have a good one.",\
-		"Take it easy.",\
-		"Later.",\
-		"Bye.",\
-		"Goodbye.",\
-		"Bye for now.")
+		"УвидимсЯ.",\
+		"УвидимсЯ позже.",\
+		"Удачного днЯ.",\
+		"Удачи.",\
+		"ВстретимсЯ позже.",\
+		"Покеда.",\
+		"Пока.",\
+		"До скорой встречи.")
 	var/current_greeting_index = 1
 	var/list/confused_responses = list(\
-		"I don't know anything about that.",\
-		"Not sure.",\
-		"No idea.",\
-		"Can't help.",\
-		"Never heard of it.")
+		"Прости, Я ничего не знаю об этом.",\
+		"Не уверен.",\
+		"Без понЯтия.",\
+		"Не могу помочь.",\
+		"Никогда не слышал об этом.")
 	var/list/afraid_responses = list(\
-		"Ahhh!",\
-		"Oh no!",\
-		"Save me!",\
-		"I'm a cowardly foe!",\
-		"Help!")
+		"А-А-А-А-А!",\
+		"О нет!",\
+		"Спаси менЯ!",\
+		"Не трогай менЯ! Я маленький, бесполезный и трусливый!",\
+		"Помогите!")
 	var/say_time = 0
 	var/say_next = 0
 
