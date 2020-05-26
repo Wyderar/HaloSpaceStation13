@@ -20,10 +20,6 @@
 
 	var/next_repair_at = 0
 
-/obj/effect/overmap/ship/npc_ship/shipyard/New()
-	. = ..()
-	GLOB.overmap_tiles_uncontrolled -= range(14,src)
-
 /obj/effect/overmap/ship/npc_ship/shipyard/pick_target_loc()
 	target_loc = loc
 

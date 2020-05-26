@@ -8,7 +8,7 @@
 	explanation_text = "The human weapons are crude but occasionally effective. Eliminate any warships in the area."
 	target_faction_name = "UNSC"
 	objective_type = 0
-	win_points = 50
+	win_points = 150
 /*
 /datum/objective/overmap/covenant_odp
 	short_text = "Destroy the human defence platform"
@@ -23,13 +23,14 @@
 	explanation_text = "Your ship is your only route back to Covenant space. Do not allow it to be destroyed."
 	slipspace_affected = 1
 	target_faction_name = "Covenant"
-	lose_points = 150
+	win_points = 50
+	lose_points = 100
 
 /datum/objective/retrieve/steal_ai
 	short_text = "Capture human construct"
 	explanation_text = "These humans store tactical and navigational data in their intelligent constructs. What a prize!"
-	points_per_item = 150
-	win_points = 150
+	points_per_item = 100
+	win_points = 100
 	slipspace_affected = 1
 
 /datum/objective/retrieve/steal_ai/update_points()
@@ -46,6 +47,7 @@
 	slipspace_affected = 1
 	points_per_item = 150
 	win_points = 150
+	lose_points = 200
 
 /datum/objective/retrieve/artifact/update_points()
 	items_retrieved = 0
@@ -58,8 +60,8 @@
 /datum/objective/retrieve/nav_data
 	short_text = "Steal navigation datachips from the humans"
 	explanation_text = "We must locate the hideout of these humans! Retrieve as many nav data chips you can for examination."
-	points_per_item = 100
-	win_points = 100
+	points_per_item = 50
+	win_points = 50
 	slipspace_affected = 1
 
 /datum/objective/retrieve/nav_data/update_points()
@@ -85,7 +87,7 @@
 /datum/objective/glass_colony
 	short_text = "Glass the human colony"
 	explanation_text = "These humans cannot be allowed to live. The surface of their worlds must burn until they are glass!"
-	win_points = 10
+	win_points = 100
 	slipspace_affected = 1
 
 /datum/objective/glass_colony/check_completion()
@@ -99,5 +101,6 @@
 	explanation_text = "Holding the human colony will give us time to search it for artifacts."
 	radio_language = "Sangheili"
 	radio_name = "Ministry of Fervent Intercession"
+	win_points = 50
 
 #undef COLONY_GLASSED_AMOUNT_REQUIRED
