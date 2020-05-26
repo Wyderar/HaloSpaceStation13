@@ -111,8 +111,8 @@
 /obj/item/projectile/auto_defense_proj
 	name = "SMAC Round"
 	desc = "A massive ferromagnetic slug propelled to ludicrious speeds."
-	damage = 1000
-	penetrating = 500
+	damage = 800
+	penetrating = 50
 	kill_count = 999
 
 /obj/item/projectile/auto_defense_proj/check_penetrate(var/atom/A)
