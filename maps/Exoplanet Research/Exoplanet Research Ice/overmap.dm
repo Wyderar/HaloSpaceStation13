@@ -16,5 +16,5 @@
 	. = ..()
 
 /obj/effect/overmap/sector/exo_research_ice/New()
-    loot_distributor.loot_list["artifactRandom"] = list(/obj/machinery/artifact/forerunner_artifact,null,null,null,null)
+    loot_distributor.loot_list["artifactRandom"] = list(/obj/machinery/artifact/forerunner_artifact)
     .= ..()

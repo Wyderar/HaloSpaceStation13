@@ -2,7 +2,7 @@
 	name = "UNSC Light Brigade"
 	desc = "Halberd Class Destroyer."
 
-	icon = 'halberdclass_new.dmi'
+	icon = 'Halberdclass.dmi'
 	icon_state = "ship"
 	fore_dir = WEST
 	vessel_mass = 4
@@ -10,6 +10,8 @@
 	flagship = 1
 
 	map_bounds = list(24,98,115,52)// Format: "location" = list(TOP_LEFT_X,TOP_LEFT_Y,BOTTOM_RIGHT_X,BOTTOM_RIGHT_Y)
+
+	overmap_spawn_near_me = list(/obj/effect/overmap/ship/unsc_odp_cassius)
 
 	parent_area_type = /area/destroyer/unsclightbrigade
 

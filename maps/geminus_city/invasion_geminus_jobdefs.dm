@@ -1,12 +1,10 @@
 
 /datum/map/geminus_city
 	allowed_jobs = list(\
-		/datum/job/insurrectionist_ai,\
 		/datum/job/geminus_innie,\
 		/datum/job/geminus_innie/officer,\
 		/datum/job/geminus_innie/commander,\
 		/datum/job/geminus_innie/orion_defector,\
-		/datum/job/insurrectionist_ai,\
 		/datum/job/soe_commando,\
 		/datum/job/soe_commando_officer,\
 		/datum/job/soe_commando_captain,\
@@ -17,7 +15,6 @@
 		/datum/job/unsc_job/unsc_squad_lead,
 		/datum/job/unsc_job/unsc_co,
 		/datum/job/unsc_job/odst,
-		/datum/job/unsc_job/oni_researcher,
 		/datum/job/colonist,\
 		/datum/job/colonist_mayor,\
 		/datum/job/police,\

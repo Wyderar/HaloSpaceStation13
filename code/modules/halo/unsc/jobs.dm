@@ -26,23 +26,15 @@
 	back = /obj/item/weapon/material/machete/officersword
 	starting_accessories = list(/obj/item/clothing/accessory/rank/fleet/officer/o6,/obj/item/clothing/accessory/badge/tags)
 
-/decl/hierarchy/outfit/job/unsc_job/odst
-	name = "ODST Rifleman"
-	l_ear = /obj/item/device/radio/headset/unsc/odst
-	uniform = /obj/item/clothing/under/unsc/odst_jumpsuit
-	gloves = /obj/item/clothing/gloves/tactical
-	shoes = /obj/item/clothing/shoes/jungleboots
-	gloves = /obj/item/clothing/gloves/thick/combat
-	id_type = /obj/item/weapon/card/id/odst
-	starting_accessories = list (/obj/item/clothing/accessory/rank/marine/enlisted/e4, /obj/item/clothing/accessory/badge/tags)
-	hierarchy_type = /decl/hierarchy/outfit/job
-
 /decl/hierarchy/outfit/job/unsc_job/oni_researcher
 	name = "ONI Researcher"
 
 	l_ear = /obj/item/device/radio/headset/unsc/oni
+
 	uniform = /obj/item/clothing/under/color/black
+
 	suit = /obj/item/clothing/suit/storage/toggle/labcoat
+
 	l_pocket = /obj/item/clothing/accessory/badge/onib
 	hierarchy_type = /decl/hierarchy/outfit/job
 
@@ -95,11 +87,12 @@
 	total_positions = 8
 	spawn_positions = 8
 	access = list(access_unsc,access_unsc_armoury,access_unsc_odst,access_unsc_specialist)
-	outfit_type = /decl/hierarchy/outfit/job/unsc_job/odst
+	outfit_type = /decl/hierarchy/outfit/job/facil_ODST
 
 /datum/job/unsc_job/oni_researcher
 	title = "ONI Researcher"
 	total_positions = 2
+
 	spawn_positions = 2
 	outfit_type = /decl/hierarchy/outfit/job/unsc_job/oni_researcher
 	alt_titles = list("Doctor","Physicist","Botanist","Chemist","Weapons Researcher","Surgeon","Geneticist")
