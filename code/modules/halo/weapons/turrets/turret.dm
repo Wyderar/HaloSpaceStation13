@@ -198,11 +198,15 @@
 	caliber = "a762"
 	auto_eject = 1
 	magazine_type = /obj/item/ammo_magazine/a762_box_ap
-
-	burst = 10
-	burst_delay = 1
-	burst_accuracy = list(2,1,1,0,-1,-2,-3,-4,-5,-6)
-	dispersion = list(0,1,1,2,3,3,4,4,5,5)
+	firemodes = list(
+		list(mode_name="4-round bursts", burst=4, fire_delay=null, move_delay=6,    burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.6, 0.6)),
+		list(mode_name="short bursts", 	burst=6, fire_delay=null, move_delay=6,    burst_accuracy=list(-1,-1,-2,-2,-3), dispersion=list(0.6, 1.0, 1.5, 1.5, 1.9)),
+		list(mode_name="semi-auto", 	burst=1, fire_delay=null, move_delay=6,    burst_accuracy=list(0.4), dispersion=list(0.0)),
+		)
+	//burst = 10
+	//burst_delay = 1
+	//burst_accuracy = list(2,1,1,0,-1,-2,-3,-4,-5,-6)
+	//dispersion = list(0,1,1,2,3,3,4,4,5,5)
 
 	var/load_time = 2 //The time it takes to load the weapon, in seconds.
 	var/removed_from_turret = 0 //If the gun has been removed from the turret base.

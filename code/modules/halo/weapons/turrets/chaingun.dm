@@ -15,17 +15,22 @@
 
 	caliber = "a762"
 	magazine_type = /obj/item/ammo_magazine/chaingun_boxmag
+	firemodes = list(
+		list(mode_name="4-round bursts", burst=4, fire_delay=null, move_delay=6,    burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.6, 0.6)),
+		list(mode_name="short bursts", 	burst=6, fire_delay=null, move_delay=6,    burst_accuracy=list(-1,-1,-2,-2,-3), dispersion=list(0.6, 1.0, 1.5, 1.5, 1.9)),
+		list(mode_name="semi-auto", 	burst=1, fire_delay=null, move_delay=6,    burst_accuracy=list(0.4), dispersion=list(0.0)),
+		)
 
 	//Burst Settings irrelevant in the face of sustain fire settings//
 	//burst = 15
 	//burst_delay = 1
-	burst_accuracy = list(2,1,1,0,-1,-2,-3,-4,-4,-3,-3,-2,-2,-3)
-	dispersion = list(0,0,0,0.5,0.5,0.5,1,1,1,2,2,2,2,2.5,2.5)
+	//burst_accuracy = list(2,1,1,0,-1,-2,-3,-4,-4,-3,-3,-2,-2,-3)
+	//dispersion = list(0,0,0,0.5,0.5,0.5,1,1,1,2,2,2,2,2.5,2.5)
 
 	load_time = 5
 
-	sustain_time = 5 SECONDS
-	sustain_delay = 1
+	//sustain_time = 5 SECONDS
+	//sustain_delay = 1
 
 /obj/item/weapon/gun/projectile/turret/chaingun/detached
 	removed_from_turret = 1
@@ -33,7 +38,7 @@
 		slot_l_hand_str = 'code/modules/halo/weapons/turrets/mob_turret.dmi',
 		slot_r_hand_str = 'code/modules/halo/weapons/turrets/mob_turret.dmi',
 		)
-	burst_accuracy = list(0,-1,-1,-1,-2,-3,-3,-5,-5,-6)
-	dispersion = list(0.5,0.5,0.5,1,1,1,1.5,1.5,1.5,2.5,2.5,2.5,2.5,3,3)
+	//burst_accuracy = list(0,-1,-1,-1,-2,-3,-3,-5,-5,-6)
+	//dispersion = list(0.5,0.5,0.5,1,1,1,1.5,1.5,1.5,2.5,2.5,2.5,2.5,3,3)
 
-	sustain_time = 2.5 SECONDS
+	//sustain_time = 2.5 SECONDS

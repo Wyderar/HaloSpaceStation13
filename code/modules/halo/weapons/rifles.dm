@@ -36,6 +36,7 @@
 	firemodes = list(
 		list(mode_name="3-round bursts", burst=3, fire_delay=null, move_delay=6,    burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.6, 0.6)),
 		list(mode_name="short bursts", 	burst=5, fire_delay=null, move_delay=6,    burst_accuracy=list(-1,-1,-2,-2,-3), dispersion=list(0.6, 1.0, 1.5, 1.5, 1.9)),
+		list(mode_name="semi-auto", 	burst=1, fire_delay=null, move_delay=6,    burst_accuracy=list(0.4), dispersion=list(0.0)),
 		)
 
 	attachment_slots = list("barrel","underbarrel rail","upper rail","upper stock", "stock")
@@ -73,6 +74,11 @@
 	allowed_magazines = list(/obj/item/ammo_magazine/m762_ap/MA37)
 	attachment_slots = null
 	attachments_on_spawn = null
+	firemodes = list(
+		list(mode_name="3-round bursts", burst=3, fire_delay=null, move_delay=6,    burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.6, 0.6)),
+		list(mode_name="short bursts", 	burst=5, fire_delay=null, move_delay=6,    burst_accuracy=list(-1,-1,-2,-2,-3), dispersion=list(0.6, 1.0, 1.5, 1.5, 1.9)),
+		list(mode_name="semi-auto", 	burst=1, fire_delay=null, move_delay=6,    burst_accuracy=list(0.4), dispersion=list(0.0)),
+		)
 
 /obj/item/weapon/gun/projectile/ma5b_ar/MA37/update_icon()
 	. = ..()
@@ -105,8 +111,9 @@
 	fire_sound = 'code/modules/halo/sounds/MA3firefix.ogg'
 	reload_sound = 'code/modules/halo/sounds/MA3reload.ogg'
 	firemodes = list(
-		list(mode_name="4-round bursts", burst=4, fire_delay=1, move_delay=6,    burst_accuracy=list(0,0,-1,-1),       dispersion=list(0.3, 0.9, 1.3, 1.6)),
-		list(mode_name="short bursts", 	burst=6, fire_delay=1, move_delay=6,    burst_accuracy=list(0,0,-1,-1,-2,-2), dispersion=list(0.3, 0.7, 1.2, 1.2, 1.6, 1.6)),
+		list(mode_name="3-round bursts", burst=3, fire_delay=null, move_delay=6,    burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.6, 0.6)),
+		list(mode_name="short bursts", 	burst=5, fire_delay=null, move_delay=6,    burst_accuracy=list(-1,-1,-2,-2,-3), dispersion=list(0.6, 1.0, 1.5, 1.5, 1.9)),
+		list(mode_name="semi-auto", 	burst=1, fire_delay=null, move_delay=6,    burst_accuracy=list(0.4), dispersion=list(0.0)),
 		)
 
 	attachment_slots = list("underbarrel rail","sight","barrel")
@@ -136,12 +143,18 @@
 	magazine_type = /obj/item/ammo_magazine/m95_sap
 	allowed_magazines = list(/obj/item/ammo_magazine/m95_sap)
 	one_hand_penalty = -1
-	burst = 3
-	burst_delay = 1.5
-	fire_delay = 7
+	//burst = 3
+	//burst_delay = 1.5
+	//fire_delay = 7
 	accuracy = 1
 	w_class = ITEM_SIZE_LARGE
-	dispersion=list(0.1, 0.3, 0.5)
+	firemodes = list(
+		list(mode_name="3-round bursts", burst=3, fire_delay=7, move_delay=6,    burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.6, 0.6)),
+		list(mode_name="short bursts", 	burst=5, fire_delay=null, move_delay=6,    burst_accuracy=list(-1,-1,-2,-2,-3), dispersion=list(0.6, 1.0, 1.5, 1.5, 1.9)),
+		list(mode_name="semi-auto", 	burst=1, fire_delay=3, move_delay=6,    burst_accuracy=list(0.4), dispersion=list(0.0)),
+		)
+
+	//dispersion=list(0.1, 0.3, 0.5)
 	item_icons = list(
 		slot_l_hand_str = 'code/modules/halo/weapons/icons/Weapon_Inhands_left.dmi',
 		slot_r_hand_str = 'code/modules/halo/weapons/icons/Weapon_Inhands_right.dmi',
@@ -175,12 +188,18 @@
 	reload_sound = 'code/modules/halo/sounds/Battle_Rifle_Reload_New.wav'
 	load_method = MAGAZINE
 	one_hand_penalty = -1
-	burst = 3
-	burst_delay = 1.5
-	fire_delay = 8
+	//burst = 3
+	//burst_delay = 1.5
+	//fire_delay = 8
 	accuracy = 2
 	w_class = ITEM_SIZE_LARGE
-	dispersion=list(0.1, 0.3, 0.5)
+	firemodes = list(
+		list(mode_name="3-round bursts", burst=3, fire_delay=7, move_delay=6,    burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.6, 0.6)),
+		list(mode_name="short bursts", 	burst=5, fire_delay=null, move_delay=6,    burst_accuracy=list(-1,-1,-2,-2,-3), dispersion=list(0.6, 1.0, 1.5, 1.5, 1.9)),
+		list(mode_name="semi-auto", 	burst=1, fire_delay=3, move_delay=6,    burst_accuracy=list(0.4), dispersion=list(0.0)),
+		)
+
+	//dispersion=list(0.1, 0.3, 0.5)
 	wielded_item_state = "br55-wielded"
 	item_icons = list(
 		slot_l_hand_str = 'code/modules/halo/weapons/icons/Weapon_Inhands_left.dmi',

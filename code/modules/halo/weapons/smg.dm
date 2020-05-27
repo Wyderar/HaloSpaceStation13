@@ -18,10 +18,10 @@
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/m5
 	handle_casings = CASELESS
-	burst = 4
-	burst_delay = 1.4
-	burst_accuracy = list(0,0,0,-1)
-	dispersion = list(0.0, 0.4, 0.8, 1.0)
+	//burst = 4
+	//burst_delay = 1.4
+	//burst_accuracy = list(0,0,0,-1)
+	//dispersion = list(0.0, 0.4, 0.8, 1.0)
 	allowed_magazines = list(/obj/item/ammo_magazine/m5, /obj/item/ammo_magazine/m5/rubber)
 	w_class = ITEM_SIZE_NORMAL
 	wielded_item_state = "m7-wielded"
@@ -34,8 +34,9 @@
 		)
 
 	firemodes = list(
-		list(mode_name="4-round bursts", burst=4, fire_delay=null, move_delay=4,    burst_accuracy=list(0,-1,-1,-2),       dispersion=list(0.0, 0.4, 0.8, 1.0)),
-		list(mode_name="short bursts",   burst=6, fire_delay=null, move_delay=4,    burst_accuracy=list(0,-1,-1,-2,-2,-2), dispersion=list(0.6, 1.0, 1.0, 1.0, 1.2, 1.2)),
+		list(mode_name="3-round bursts", burst=3, fire_delay=null, move_delay=6,    burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.6, 0.6)),
+		list(mode_name="short bursts", 	burst=5, fire_delay=null, move_delay=6,    burst_accuracy=list(-1,-1,-2,-2,-3), dispersion=list(0.6, 1.0, 1.5, 1.5, 1.9)),
+		list(mode_name="semi-auto", 	burst=1, fire_delay=null, move_delay=6,    burst_accuracy=list(0.4), dispersion=list(0.0)),
 		)
 
 /obj/item/weapon/gun/projectile/m7_smg/update_icon()
