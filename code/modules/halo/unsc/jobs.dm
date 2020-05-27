@@ -10,7 +10,7 @@
 	l_ear = /obj/item/device/radio/headset/unsc/marine
 	mask = /obj/item/clothing/mask/marine
 	uniform = /obj/item/clothing/under/unsc/marine_fatigues
-	shoes = /obj/item/clothing/shoes/marine
+	shoes = /obj/item/clothing/shoes/marine/crewman
 	head = /obj/item/clothing/head/helmet/marine
 	suit = /obj/item/clothing/suit/storage/marine
 	belt = /obj/item/weapon/storage/belt/marine_ammo

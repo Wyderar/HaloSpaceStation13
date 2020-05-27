@@ -42,55 +42,12 @@
 	icon_state = "helmet novisor medic_obj"
 	body_parts_covered = HEAD|EYES
 
-/obj/item/clothing/head/helmet/marine/medic/visor
-	name = "Olive Camo CH251-V Helmet Medic"
-	desc = "A medic variant of the standard issue combat helmet worn by the members of the UNSC Marine Corps, UNSC Army, and UNSC Air Force."
-	item_state = "CH252 Visor Helmet Medic"
-	icon_state = "helmet medic_obj"
-	body_parts_covered = HEAD|EYES
-
-/obj/item/clothing/head/helmet/marine/visor
-	name = "Olive Camo CH251-V Helmet"
-	desc = "The standard issue combat helmet worn by the members of the UNSC Marine Corps, UNSC Army, and UNSC Air Force. Has an inbuilt VISOR for eye protection."
-	icon = ITEM_INHAND
-	icon_override = MARINE_OVERRIDE
-	item_state = "CH252 Visor Helmet"
-	icon_state = "helmet"
-	body_parts_covered = HEAD|EYES
-
 /obj/item/clothing/head/helmet/marine/brown
-	name = "Brown Camo CH251 Helmet"
+	name = "Olive Camo CH251 Helmet Engineer"
 	desc = "The standard issue combat helmet worn by the members of the UNSC Marine Corps, UNSC Army, and UNSC Air Force. Has an inbuilt VISOR for eye protection."
 	icon = ITEM_INHAND
 	icon_override = MARINE_OVERRIDE
 	item_state = "CH252 Helmet B"
-	icon_state = "helmet_b"
-	body_parts_covered = HEAD|EYES
-
-/obj/item/clothing/head/helmet/marine/medic/brown
-	name = "Brown Camo CH251 Helmet"
-	desc = "The standard issue combat helmet worn by the members of the UNSC Marine Corps, UNSC Army, and UNSC Air Force. Has an inbuilt VISOR for eye protection."
-	icon = ITEM_INHAND
-	icon_override = MARINE_OVERRIDE
-	item_state = "CH252 Helmet Medic B"
-	icon_state = "helmet medic-b_obj"
-	body_parts_covered = HEAD|EYES
-
-/obj/item/clothing/head/helmet/marine/medic/brownvisor
-	name = "Brown Camo CH251 Helmet"
-	desc = "The standard issue combat helmet worn by the members of the UNSC Marine Corps, UNSC Army, and UNSC Air Force. Has an inbuilt VISOR for eye protection."
-	icon = ITEM_INHAND
-	icon_override = MARINE_OVERRIDE
-	item_state = "CH252 Visor Helmet Medic B"
-	icon_state = "helmet medic-b_obj"
-	body_parts_covered = HEAD|EYES
-
-/obj/item/clothing/head/helmet/marine/brownvisor
-	name = "Brown Camo CH251-V Helmet"
-	desc = "The standard issue combat helmet worn by the members of the UNSC Marine Corps, UNSC Army, and UNSC Air Force. Has an inbuilt VISOR for eye protection."
-	icon = ITEM_INHAND
-	icon_override = MARINE_OVERRIDE
-	item_state = "CH252 Visor Helmet B"
 	icon_state = "helmet_b"
 	body_parts_covered = HEAD|EYES
 
@@ -103,7 +60,7 @@
 	icon_state = "M52B Body Armor regular_obj"
 	blood_overlay_type = "armor"
 	item_state_slots = list(slot_l_hand_str = "armor", slot_r_hand_str = "armor")
-	body_parts_covered = ARMS|UPPER_TORSO|LOWER_TORSO
+	body_parts_covered = ARMS|UPPER_TORSO|LOWER_TORSO|LEGS
 	armor = list(melee = 55, bullet = 50, laser = 55, energy = 45, bomb = 40, bio = 25, rad = 25) //ODST tier but covers less of their body.
 	armor_thickness = 20
 	allowed = list(/obj/item/device/flashlight,/obj/item/weapon/gun/projectile,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/weapon/storage/fancy/cigarettes,/obj/item/weapon/flame/lighter)
@@ -115,7 +72,7 @@
 	item_state = "unsc_pilot_armor-worn"
 	item_flags = THICKMATERIAL
 	w_class = ITEM_SIZE_LARGE
-	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+	body_parts_covered = ARMS|UPPER_TORSO|LOWER_TORSO|LEGS
 	armor = list(melee = 30, bullet = 30, laser = 10, energy = 10, bomb = 45, bio = 0, rad = 0)
 	armor_thickness = 20
 
@@ -132,23 +89,12 @@
 	icon_override = MARINE_OVERRIDE
 	item_state = "M52B Body Armor Medic"
 	icon_state = "M52B Body Armor Medic_obj"
-	body_parts_covered = ARMS|UPPER_TORSO|LOWER_TORSO
-	allowed = list(/obj/item/device/flashlight,/obj/item/weapon/gun/projectile,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/weapon/storage/fancy/cigarettes,/obj/item/weapon/flame/lighter)
-	starting_accessories = /obj/item/clothing/accessory/holster/hip
-
-/obj/item/clothing/suit/storage/marine/medic/brown
-	name = "Brown Camo M52A Body Armor Medic"
-	desc = "An armored protective vest worn by the members of the UNSC Marine Corps."
-	icon = ITEM_INHAND
-	icon_override = MARINE_OVERRIDE
-	item_state = "M52B Body Armor Medic B"
-	icon_state = "M52B Body Armor Medic B_obj"
-	body_parts_covered = ARMS|UPPER_TORSO|LOWER_TORSO
+	body_parts_covered = ARMS|UPPER_TORSO|LOWER_TORSO|LEGS
 	allowed = list(/obj/item/device/flashlight,/obj/item/weapon/gun/projectile,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/weapon/storage/fancy/cigarettes,/obj/item/weapon/flame/lighter)
 	starting_accessories = /obj/item/clothing/accessory/holster/hip
 
 /obj/item/clothing/suit/storage/marine/brown
-	name = "Brown Camo M52A Body Armor"
+	name = "Olive Camo M52A Body Armor Engineer"
 	desc = "An armored protective vest worn by the members of the UNSC Marine Corps."
 	icon = ITEM_INHAND
 	icon_override = MARINE_OVERRIDE
@@ -156,32 +102,6 @@
 	icon_state = "M52B Body Armor regular B_obj"
 	body_parts_covered = ARMS|UPPER_TORSO|LOWER_TORSO
 	allowed = list(/obj/item/device/flashlight,/obj/item/weapon/gun/projectile,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/weapon/storage/fancy/cigarettes,/obj/item/weapon/flame/lighter)
-
-/obj/item/clothing/shoes/marine
-	name = "Olive VZG7 Armored Boots"
-	desc = "Standard issue combat boots for the UNSC Marines, worn as a part of the Marine BDU."
-	icon = ITEM_INHAND
-	icon_override = MARINE_OVERRIDE
-	item_state = "boots"
-	icon_state = "boots"
-	force = 5
-	armor = list(melee = 40, bullet = 40, laser = 5, energy = 30, bomb = 15, bio = 0, rad = 0)
-	siemens_coefficient = 0.6
-	body_parts_covered = FEET|LEGS
-	can_hold_knife = 1
-	stepsound = 'code/modules/halo/sounds/walk_sounds/marine_boots.ogg'
-	cold_protection = FEET
-	min_cold_protection_temperature = SHOE_MIN_COLD_PROTECTION_TEMPERATURE
-	heat_protection = FEET
-	max_heat_protection_temperature = SHOE_MAX_HEAT_PROTECTION_TEMPERATURE
-
-/obj/item/clothing/shoes/marine/brown
-	name = "Brown VZG7 Armored Boots"
-	desc = "Standard issue combat boots for the UNSC Marines, worn as a part of the Marine BDU."
-	icon = ITEM_INHAND
-	icon_override = MARINE_OVERRIDE
-	item_state = "boots_b"
-	icon_state = "boots_b"
 
 /obj/item/weapon/storage/belt/marine_ammo
 	name = "Ammunition Storage Belt"
@@ -315,7 +235,7 @@
 	name = "\improper EVA Marine Suit"
 	desc = "A universal suit used in EVA runs on derelicts."
 	icon = 'code/modules/halo/clothing/marine.dmi'
-	body_parts_covered = LOWER_TORSO|UPPER_TORSO|ARMS|HANDS
+	body_parts_covered = LOWER_TORSO|UPPER_TORSO|ARMS|HANDS|LEGS|FEET
 	icon = ITEM_INHAND
 	icon_override = MARINE_OVERRIDE
 	item_state = "body"
@@ -346,20 +266,6 @@
 	brightness_on = 4
 
 	integrated_hud = /obj/item/clothing/glasses/hud/tactical
-
-/obj/item/clothing/shoes/magboots/eva/marine
-	name = "\improper EVA Armoured Boots"
-	desc = "A universally used helmet to protect one's feet against the vacuum when doing EVA."
-	icon = 'code/modules/halo/clothing/marine.dmi'
-	body_parts_covered = LEGS|FEET
-	icon = ITEM_INHAND
-	icon_override = MARINE_OVERRIDE
-	item_state = "evalegs"
-	icon_state = "evalegs"
-	item_flags = STOPPRESSUREDAMAGE|AIRTIGHT
-	can_hold_knife = 1
-	armor = list(melee = 45, bullet = 35, laser = 10, energy = 25, bomb = 30, bio = 100, rad = 50)
-	max_heat_protection_temperature = FIRE_HELMET_MAX_HEAT_PROTECTION_TEMPERATURE
 
 /obj/item/weapon/card/id/unsc
 	name = "identification card"
