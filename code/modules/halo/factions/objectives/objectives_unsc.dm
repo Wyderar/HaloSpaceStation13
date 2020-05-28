@@ -1,4 +1,3 @@
-
 /* UNSC */
 
 /datum/objective/overmap/unsc_ship
@@ -6,7 +5,6 @@
 	target_faction_name = "UNSC"
 	explanation_text = "Although cheaper than a MJOLNIR suit, even Spartans need a way to leave atmosphere. Protect the UNSC ship."
 	lose_points = 100
-	win_points = 50
 
 //see objectives_cov.dm
 /datum/objective/retrieve/nav_data/cole_protocol
@@ -23,7 +21,7 @@
 	return !.
 
 /datum/objective/retrieve/steal_ai/cole_protocol
-	points_per_item = 100
+	points_per_item = 150
 	short_text = "Do not allow Covenant capture of UNSC AI"
 	explanation_text = "Destruction or capture of shipboard AI is absolutely unacceptable. They'll learn everything: weapons research, force deployments, Earth."
 	slipspace_affected = 1
@@ -43,7 +41,6 @@
 	var/points_per_kill = 10
 	var/list/minds_captured = list()
 	var/list/minds_killed = list()
-
 /datum/objective/capture_innies/check_completion()
 	win_points = 0
 	win_points += minds_captured.len * points_per_capture
@@ -54,13 +51,20 @@
 /datum/objective/retrieve/artifact/unsc
 	short_text = "Secure the alien artifact"
 	explanation_text = "ONI reports a high value unidentified alien artifact in the sector. It must be secured by the UNSC to prevent falling into the wrong hands."
-	win_points = 200
-	lose_points = 150
+	points_per_item = 150
+	win_points = 150
+
+/datum/objective/retrieve/artifact/unsc/update_points()
+	items_retrieved = 0
+	win_points = 0
+	for(var/area/cur_area in delivery_areas)
+		for(var/obj/machinery/artifact/A in cur_area)
+			items_retrieved += 1
+			win_points += points_per_item
 
 /datum/objective/protect_colony
 	short_text = "Protect the UEG colony from destruction"
 	explanation_text = "There are a million innocent civilians on that colony. Prevent its destruction by any means necessary."
-	win_points = 100
 	lose_points = 100
 
 /datum/objective/protect_colony/check_completion()
@@ -81,8 +85,6 @@
 	short_text = "Hold the UEG colony"
 	explanation_text = "We draw the line here. Do not allow rebels or aliens to capture our world."
 	radio_name = "UNSC Overwatch"
-	win_points = 50
-	lose_points = 50
 
 /datum/objective/overmap/unsc_innie_base
 	short_text = "Eliminate the URF Flagship."
@@ -90,4 +92,4 @@
 	target_faction_name = "Insurrection"
 	objective_type = 0
 	overmap_type = 1
-	win_points = 150
+	win_points = 100

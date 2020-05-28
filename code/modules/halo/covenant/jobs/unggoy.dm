@@ -30,10 +30,8 @@
 	title = "Unggoy Ultra"
 	total_positions = 2
 	spawn_positions = 2
-	is_whitelisted = 1
 	outfit_type = /decl/hierarchy/outfit/unggoy/ultra
 	access = list(230,250)
-	faction_whitelist = "Covenant"
 	whitelisted_species = list(/datum/species/unggoy)
 
 /datum/job/covenant/unggoy_deacon
@@ -43,7 +41,7 @@
 	is_whitelisted = 1
 	outfit_type = /decl/hierarchy/outfit/unggoy/deacon
 	access = list(230,250)
-	faction_whitelist = "Covenant"
+//	faction_whitelist = "Covenant"
 	whitelisted_species = list(/datum/species/unggoy)
 
 

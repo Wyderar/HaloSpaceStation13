@@ -52,8 +52,8 @@
 
 /datum/job/unsc_job/unsc_marine
 	title = "UNSC Marine"
-	total_positions = -1
-	spawn_positions = -1
+	total_positions = 10
+	spawn_positions = 10
 	outfit_type = /decl/hierarchy/outfit/job/unsc_job/marine
 	alt_titles = list("Marine Combat Medic",
 	"Assault Recon Marine",
@@ -92,7 +92,6 @@
 /datum/job/unsc_job/oni_researcher
 	title = "ONI Researcher"
 	total_positions = 2
-
 	spawn_positions = 2
 	outfit_type = /decl/hierarchy/outfit/job/unsc_job/oni_researcher
 	alt_titles = list("Doctor","Physicist","Botanist","Chemist","Weapons Researcher","Surgeon","Geneticist")

@@ -11,7 +11,6 @@
 	title = "Kig-Yar Marksman"
 	total_positions = 3
 	spawn_positions = 3
-	is_whitelisted = 1
 	outfit_type = /decl/hierarchy/outfit/kigyar/marksman
 	access = list(240,250)
 	whitelisted_species = list(/datum/species/kig_yar)
@@ -20,7 +19,6 @@
 	title = "Kig-Yar Sniper"
 	total_positions = 1
 	spawn_positions = 1
-	is_whitelisted = 1
 	outfit_type = /decl/hierarchy/outfit/kigyar/marksman_beamrifle
 	access = list(240,250)
 	whitelisted_species = list(/datum/species/kig_yar)
