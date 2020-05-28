@@ -69,7 +69,7 @@
 "bq" = (/turf/simulated/wall,/area/destroyer/unsclightbrigade/medbay)
 "br" = (/turf/simulated/wall,/area/destroyer/unsclightbrigade/starboarddocking)
 "bs" = (/obj/docking_umbilical/north{name = "Starboard Docking Port"},/turf/simulated/wall,/area/destroyer/unsclightbrigade/starboarddocking)
-"bt" = (/obj/vehicles/drop_pod/escape_pod/bumblebee/north,/obj/structure/drop_pod_launchbay,/turf/simulated/floor/tiled/dark,/area/destroyer/unsclightbrigade/starboarddocking)
+"bt" = (/obj/structure/drop_pod_launchbay,/obj/vehicles/drop_pod/overmap/boarding_pod/north,/turf/simulated/floor/tiled/dark,/area/destroyer/unsclightbrigade/starboarddocking)
 "bu" = (/turf/simulated/wall,/area/destroyer/unsclightbrigade/starboardhangar)
 "bv" = (/turf/simulated/wall/r_wall,/area/destroyer/unsclightbrigade/starboardhangar)
 "bw" = (/obj/effect/hull_segment,/turf/simulated/wall/r_wall,/area/destroyer/unsclightbrigade/starboardhangar)
@@ -1239,10 +1239,10 @@
 "xQ" = (/obj/structure/cable/blue{dir = 2; icon_state = "1-2"},/obj/structure/cable/blue{icon_state = "1-8"},/obj/structure/cable/blue{icon_state = "1-4"},/turf/simulated/floor/reinforced,/area/destroyer/unsclightbrigade/reactor)
 "xR" = (/obj/structure/cable/blue{icon_state = "2-8"},/turf/simulated/floor/reinforced,/area/destroyer/unsclightbrigade/reactor)
 "xS" = (/obj/machinery/door/firedoor,/obj/machinery/door/airlock/halo{name = "Backup SMES Unit"},/obj/structure/cable/blue{icon_state = "1-2"},/turf/simulated/floor/plating,/area/destroyer/unsclightbrigade/briefingroom)
-"xT" = (/obj/item/drop_pod_beacon,/obj/item/drop_pod_beacon,/obj/item/drop_pod_beacon,/obj/structure/table/rack,/obj/machinery/atmospherics/unary/vent_pump/on{icon_state = "map_vent_out"; dir = 1},/obj/item/drop_pod_beacon,/obj/item/drop_pod_beacon,/obj/item/drop_pod_beacon,/obj/item/drop_pod_beacon,/turf/simulated/floor/reinforced,/area/destroyer/unsclightbrigade/armory)
+"xT" = (/obj/item/drop_pod_beacon,/obj/item/drop_pod_beacon,/obj/item/drop_pod_beacon,/obj/structure/table/rack,/obj/machinery/atmospherics/unary/vent_pump/on{icon_state = "map_vent_out"; dir = 1},/obj/item/drop_pod_beacon,/obj/item/drop_pod_beacon,/obj/item/drop_pod_beacon,/obj/item/drop_pod_beacon,/obj/item/weapon/plastique,/obj/item/weapon/plastique,/obj/item/weapon/plastique,/obj/item/weapon/plastique,/obj/item/weapon/plastique,/obj/item/weapon/plastique,/obj/item/weapon/plastique,/obj/item/weapon/plastique,/obj/item/weapon/plastique,/obj/item/weapon/plastique,/turf/simulated/floor/reinforced,/area/destroyer/unsclightbrigade/armory)
 "xU" = (/obj/machinery/light,/obj/structure/repair_bench,/obj/machinery/atmospherics/unary/vent_scrubber/on{icon_state = "map_scrubber_on"; dir = 1},/turf/simulated/floor/reinforced,/area/destroyer/unsclightbrigade/armory)
 "xV" = (/obj/machinery/alarm{dir = 4; icon_state = "alarm0"; pixel_x = -22},/turf/simulated/floor/reinforced,/area/destroyer/unsclightbrigade/armory)
-"xW" = (/obj/vehicles/drop_pod/escape_pod/bumblebee/south,/obj/structure/drop_pod_launchbay,/turf/simulated/floor/tiled/dark,/area/destroyer/unsclightbrigade/portdocking)
+"xW" = (/obj/structure/drop_pod_launchbay,/obj/vehicles/drop_pod/overmap/boarding_pod,/turf/simulated/floor/tiled/dark,/area/destroyer/unsclightbrigade/portdocking)
 "xX" = (/obj/machinery/power/terminal,/obj/structure/cable/blue,/turf/simulated/floor/reinforced,/area/destroyer/unsclightbrigade/reactor)
 "xY" = (/obj/machinery/power/smes/buildable/max_cap_in_out{capacity = 5e+007; cur_coils = 6},/obj/machinery/light{icon_state = "tube1"; dir = 8},/turf/simulated/floor/plating,/area/destroyer/unsclightbrigade/briefingroom)
 "xZ" = (/obj/machinery/power/terminal{dir = 8},/obj/structure/ai_routing_node/unsc,/obj/structure/cable/blue,/turf/simulated/floor/plating,/area/destroyer/unsclightbrigade/briefingroom)
@@ -1280,7 +1280,6 @@
 "yF" = (/obj/effect/landmark/drop_pod_landing,/turf/simulated/floor/tiled,/area/destroyer/unsclightbrigade/foreportsidehangar)
 "yG" = (/obj/structure/bed/chair{icon_state = "chair_preview"; dir = 1},/obj/effect/landmark/drop_pod_landing,/turf/simulated/floor/tiled,/area/destroyer/unsclightbrigade/briefingroom)
 "yH" = (/obj/effect/floor_decal/industrial/warning{tag = "icon-warning (EAST)"; icon_state = "warning"; dir = 4},/obj/effect/floor_decal/industrial/warning{dir = 8},/obj/machinery/alarm{dir = 1; icon_state = "alarm0"; pixel_y = -22},/obj/vehicles/drop_pod/overmap/SOEIV,/obj/structure/drop_pod_launchbay,/turf/simulated/floor/reinforced,/area/destroyer/unsclightbrigade/porthangar)
-"yI" = (/obj/vehicles/drop_pod/overmap/boarding_pod/west,/turf/simulated/floor/reinforced,/area/destroyer/unsclightbrigade/reactor)
 
 (1,1,1) = {"
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
@@ -1371,7 +1370,7 @@ aaaaababababababababababababababababababababababvOvNrVpsabababuTuUuVuWuXuYuTruuZ
 aaaaaaaaaaabababababababababababababababababababwgvNrVpsabababuTvEvFvFvGvHuTrusrrwrurururururururururuvIuCuCuCuCuCvJvKvLvMvMvMvMvMvMvMvMvMwnwovMvPvQvRvSvTvUrAvVrDvWrDrDrDrAvXvYvZujujujwawbrAwcdTdTdUdTwdalalhbphwewfpgpYpZpgpgqMqaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaxKababababababababababababababababababwpwpabababababuTwhwhwhwiwjuTruuZvarurururururururururuwkwlwlwlyGwlwlwlwmwowqwrwswtwuwtwswVwWwXvMwvstwwrxrxwxrAwyrDyHwArDwBrAyDwCwDwDwDwDwErDrAwFwGdgdhwHwIalalwJphphphpgpgpgpgpgpYqaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaababababababababababababababababababuTwKwLwKwMwNuTruwkrwwOrwrwwPuArwwQrwwRrwsrwlwlwlwSwlwlwTwUwYwZxaxbxbxbxbxbxbxtxuvMxcstvUrxxdxerArArArArArArArArDwBrDrDrDrDwBrDrAxfxgxhdhalwIxialalalamalalalamaipipgpgpgaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaxKababababababababababababababababababababababababruxjuCxkuCxlxmxnuCxkuCuCxoxpxqwlwlwlwlwlxrxsvMxvxwwowowoxxwowoxFxGvMrxxyrxrxxzxzeieieieieieieixArArAxBrArArArArAxAdhdhdhdhnswIalalalyIalalyIalalaiababababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaxKababababababababababababababababababababababababruxjuCxkuCxlxmxnuCxkuCuCxoxpxqwlwlwlwlwlxrxsvMxvxwwowowoxxwowoxFxGvMrxxyrxrxxzxzeieieieieieieixArArAxBrArArArArAxAdhdhdhdhnswIalalalalalalalalalaiababababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabababababababababababababababababrururururururururururururuxCvjrwrwvixDrwwmxEvMxHxIxIxJxIvMqFrGxTxUeieieieieixMxzabababababababababababxNxNababababdhaRalxOxPxQxRalalalalalalalalaiababababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaxKabababababababababababababababababababababababababababababxAeirururururuxSruvMxVwowoyaybvMeieieieiabababababxWxzabababababababababababababababababaialalxXxXxXwIalalalalalaljwaiaiababababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababababababababababababababababababababababrurururuxYxZeivMycydysysytvMabababababababababyeyeababababababababababababababababababaiaiyfygyhyialaljxjwalalaiaiabababababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
