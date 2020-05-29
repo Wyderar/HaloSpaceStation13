@@ -29,7 +29,7 @@
 	spawn_positions = 1
 	outfit_type = /decl/hierarchy/outfit/skirmisher_commando
 	access = list(240,250)
-//	faction_whitelist = "Covenant"
+	faction_whitelist = "Covenant"
 	whitelisted_species = list(/datum/species/kig_yar_skirmisher)
 
 /datum/job/covenant/skirmchampion
@@ -38,5 +38,5 @@
 	spawn_positions = 0
 	outfit_type = /decl/hierarchy/outfit/skirmisher_champion
 	access = list(240,250)
-//	faction_whitelist = "Covenant"
+	faction_whitelist = "Covenant"
 	whitelisted_species = list(/datum/species/kig_yar_skirmisher)

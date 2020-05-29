@@ -5,6 +5,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	outfit_type = /decl/hierarchy/outfit/lesser_prophet
+	is_whitelisted = 1
 	access = list(240,250)
 	faction_whitelist = "Covenant"
 //	whitelisted_species = list(/datum/species/sanshyuum)
