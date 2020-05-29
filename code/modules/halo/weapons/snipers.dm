@@ -16,8 +16,8 @@
 	fire_sound = 'code/modules/halo/sounds/Sniper_Fire_New.wav'
 	reload_sound = 'code/modules/halo/sounds/Sniper_Reload_New.wav'
 	one_hand_penalty = -1
-	scoped_accuracy = 7
-	accuracy = -5
+	scoped_accuracy = 10
+	accuracy = -2
 	screen_shake = 0
 	fire_delay = 15
 	burst = 1
@@ -64,8 +64,8 @@
 	reload_sound = 'code/modules/halo/sounds/DMR_Reload_New.wav'
 	one_hand_penalty = -1
 	w_class = ITEM_SIZE_LARGE
-	accuracy = 2
-	scoped_accuracy = 3
+	accuracy = 5
+	scoped_accuracy = 7
 	var/on = 0
 	var/activation_sound = 'code/modules/halo/sounds/Assault_Rifle_Flashlight.wav'
 
@@ -99,13 +99,13 @@
 	burst = 1
 	magazine_type = /obj/item/ammo_magazine/m762_ap/M392/innie
 	allowed_magazines = list(/obj/item/ammo_magazine/m762_ap/M392)
-	accuracy = 1
-	scoped_accuracy = 2
+	accuracy = 4
+	scoped_accuracy = 5
 	dispersion = list(0.2)
 
 	firemodes = list(
-		list(mode_name="2-round bursts", burst=2, fire_delay=3.5, move_delay=6,    burst_accuracy=list(-1,-1),       dispersion=list(0.0, 0.4, 0.4)),
-		list(mode_name="semi-automatic", 	burst=1, fire_delay=1.5, move_delay=6,    burst_accuracy=list(1), dispersion=list(0.0)),
+		list(mode_name="2-round bursts", burst=2, fire_delay=3.5, move_delay=6,    burst_accuracy=list(-1,2),       dispersion=list(0.0, 0.4, 0.4)),
+		list(mode_name="semi-automatic", 	burst=1, fire_delay=1.5, move_delay=6,    burst_accuracy=list(4), dispersion=list(0.0)),
 		)
 
 

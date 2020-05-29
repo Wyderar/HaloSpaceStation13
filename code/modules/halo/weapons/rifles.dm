@@ -34,9 +34,9 @@
 		)
 
 	firemodes = list(
-		list(mode_name="3-round bursts", burst=3, fire_delay=null, move_delay=6,    burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.6, 0.6)),
-		list(mode_name="short bursts", 	burst=5, fire_delay=null, move_delay=6,    burst_accuracy=list(-1,-1,-2,-2,-3), dispersion=list(0.6, 1.0, 1.5, 1.5, 1.9)),
-		list(mode_name="semi-auto", 	burst=1, fire_delay=null, move_delay=6,    burst_accuracy=list(0.4), dispersion=list(0.0)),
+		list(mode_name="3-round bursts", burst=3, fire_delay=null, move_delay=6,    burst_accuracy=list(0,-1,1),       dispersion=list(0.0, 0.6, 0.6)),
+		list(mode_name="short bursts", 	burst=5, fire_delay=null, move_delay=6,    burst_accuracy=list(1,-1,-2,-2,3), dispersion=list(0.6, 1.0, 1.5, 1.5, 1.9)),
+		list(mode_name="semi-auto", 	burst=1, fire_delay=null, move_delay=6,    burst_accuracy=list(4), dispersion=list(0.0)),
 		)
 
 	attachment_slots = list("barrel","underbarrel rail","upper rail","upper stock", "stock")
@@ -75,9 +75,9 @@
 	attachment_slots = null
 	attachments_on_spawn = null
 	firemodes = list(
-		list(mode_name="3-round bursts", burst=3, fire_delay=null, move_delay=6,    burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.6, 0.6)),
-		list(mode_name="short bursts", 	burst=5, fire_delay=null, move_delay=6,    burst_accuracy=list(-1,-1,-2,-2,-3), dispersion=list(0.6, 1.0, 1.5, 1.5, 1.9)),
-		list(mode_name="semi-auto", 	burst=1, fire_delay=null, move_delay=6,    burst_accuracy=list(0.4), dispersion=list(0.0)),
+		list(mode_name="3-round bursts", burst=3, fire_delay=null, move_delay=6,    burst_accuracy=list(0,1,-1),       dispersion=list(0.0, 0.6, 0.6)),
+		list(mode_name="short bursts", 	burst=5, fire_delay=null, move_delay=6,    burst_accuracy=list(1,-1,-2,2,-3), dispersion=list(0.6, 1.0, 1.5, 1.5, 1.9)),
+		list(mode_name="semi-auto", 	burst=1, fire_delay=null, move_delay=6,    burst_accuracy=list(5), dispersion=list(0.0)),
 		)
 
 /obj/item/weapon/gun/projectile/ma5b_ar/MA37/update_icon()
@@ -111,9 +111,9 @@
 	fire_sound = 'code/modules/halo/sounds/MA3firefix.ogg'
 	reload_sound = 'code/modules/halo/sounds/MA3reload.ogg'
 	firemodes = list(
-		list(mode_name="3-round bursts", burst=3, fire_delay=null, move_delay=6,    burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.6, 0.6)),
-		list(mode_name="short bursts", 	burst=5, fire_delay=null, move_delay=6,    burst_accuracy=list(-1,-1,-2,-2,-3), dispersion=list(0.6, 1.0, 1.5, 1.5, 1.9)),
-		list(mode_name="semi-auto", 	burst=1, fire_delay=null, move_delay=6,    burst_accuracy=list(0.4), dispersion=list(0.0)),
+		list(mode_name="3-round bursts", burst=3, fire_delay=null, move_delay=6,    burst_accuracy=list(0,-1,2),       dispersion=list(0.0, 0.6, 0.6)),
+		list(mode_name="short bursts", 	burst=5, fire_delay=null, move_delay=6,    burst_accuracy=list(1,-1,-2,-2,3), dispersion=list(0.6, 1.0, 1.5, 1.5, 1.9)),
+		list(mode_name="semi-auto", 	burst=1, fire_delay=null, move_delay=6,    burst_accuracy=list(4), dispersion=list(0.0)),
 		)
 
 	attachment_slots = list("underbarrel rail","sight","barrel")
@@ -149,9 +149,9 @@
 	accuracy = 1
 	w_class = ITEM_SIZE_LARGE
 	firemodes = list(
-		list(mode_name="3-round bursts", burst=3, fire_delay=7, move_delay=6,    burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.6, 0.6)),
-		list(mode_name="short bursts", 	burst=5, fire_delay=null, move_delay=6,    burst_accuracy=list(-1,-1,-2,-2,-3), dispersion=list(0.6, 1.0, 1.5, 1.5, 1.9)),
-		list(mode_name="semi-auto", 	burst=1, fire_delay=3, move_delay=6,    burst_accuracy=list(0.4), dispersion=list(0.0)),
+		list(mode_name="3-round bursts", burst=3, fire_delay=7, move_delay=6,    burst_accuracy=list(0,3,-1),       dispersion=list(0.0, 0.6, 0.6)),
+		list(mode_name="short bursts", 	burst=5, fire_delay=null, move_delay=6,    burst_accuracy=list(1,-1,2,-2,-3), dispersion=list(0.6, 1.0, 1.5, 1.5, 1.9)),
+		list(mode_name="semi-auto", 	burst=1, fire_delay=3, move_delay=6,    burst_accuracy=list(5), dispersion=list(0.0)),
 		)
 
 	//dispersion=list(0.1, 0.3, 0.5)
@@ -194,9 +194,9 @@
 	accuracy = 2
 	w_class = ITEM_SIZE_LARGE
 	firemodes = list(
-		list(mode_name="3-round bursts", burst=3, fire_delay=7, move_delay=6,    burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.6, 0.6)),
-		list(mode_name="short bursts", 	burst=5, fire_delay=null, move_delay=6,    burst_accuracy=list(-1,-1,-2,-2,-3), dispersion=list(0.6, 1.0, 1.5, 1.5, 1.9)),
-		list(mode_name="semi-auto", 	burst=1, fire_delay=3, move_delay=6,    burst_accuracy=list(0.4), dispersion=list(0.0)),
+		list(mode_name="3-round bursts", burst=3, fire_delay=7, move_delay=6,    burst_accuracy=list(0,2,-1),       dispersion=list(0.0, 0.6, 0.6)),
+		list(mode_name="short bursts", 	burst=5, fire_delay=null, move_delay=6,    burst_accuracy=list(1,-1,2,-2,-3), dispersion=list(0.6, 1.0, 1.5, 1.5, 1.9)),
+		list(mode_name="semi-auto", 	burst=1, fire_delay=3, move_delay=6,    burst_accuracy=list(4), dispersion=list(0.0)),
 		)
 
 	//dispersion=list(0.1, 0.3, 0.5)

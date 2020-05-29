@@ -24,8 +24,8 @@
 	w_class = ITEM_SIZE_HUGE
 	firemodes = list(
 		list(mode_name="4-round bursts", burst=4, fire_delay=null, move_delay=6,    burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.6, 0.6)),
-		list(mode_name="short bursts", 	burst=6, fire_delay=null, move_delay=6,    burst_accuracy=list(-1,-1,-2,-2,-3), dispersion=list(0.6, 1.0, 1.5, 1.5, 1.9)),
-		list(mode_name="semi-auto", 	burst=1, fire_delay=null, move_delay=6,    burst_accuracy=list(0.4), dispersion=list(0.0)),
+		list(mode_name="short bursts", 	burst=6, fire_delay=null, move_delay=6,    burst_accuracy=list(-1,1,-2,-2,-3), dispersion=list(0.6, 1.0, 1.5, 1.5, 1.9)),
+		list(mode_name="semi-auto", 	burst=1, fire_delay=null, move_delay=6,    burst_accuracy=list(1), dispersion=list(0.0)),
 		)
 
 	wielded_item_state = "SAW-wielded"
@@ -63,8 +63,8 @@
 	one_hand_penalty = -1
 	firemodes = list(
 		list(mode_name="4-round bursts", burst=4, fire_delay=null, move_delay=6,    burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.6, 0.6)),
-		list(mode_name="short bursts", 	burst=6, fire_delay=null, move_delay=6,    burst_accuracy=list(-1,-1,-2,-2,-3), dispersion=list(0.6, 1.0, 1.5, 1.5, 1.9)),
-		list(mode_name="semi-auto", 	burst=1, fire_delay=null, move_delay=6,    burst_accuracy=list(0.4), dispersion=list(0.0)),
+		list(mode_name="short bursts", 	burst=6, fire_delay=null, move_delay=6,    burst_accuracy=list(-1,1,-2,-2,-3), dispersion=list(0.6, 1.0, 1.5, 1.5, 1.9)),
+		list(mode_name="semi-auto", 	burst=1, fire_delay=null, move_delay=6,    burst_accuracy=list(1), dispersion=list(0.0)),
 		)
 	//burst = 5
 	//burst_delay = 1
