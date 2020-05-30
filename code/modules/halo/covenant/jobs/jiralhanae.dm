@@ -6,7 +6,6 @@
 	outfit_type = /decl/hierarchy/outfit/jiralhanae/covenant/captain
 	access = list(240,250)
 	is_whitelisted = 1
-	faction_whitelist = "Covenant"
 	whitelisted_species = list(/datum/species/brutes)
 	access = list(access_covenant, access_covenant_command)
 

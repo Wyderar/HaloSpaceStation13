@@ -7,7 +7,6 @@
 	outfit_type = /decl/hierarchy/outfit/lesser_prophet
 	is_whitelisted = 1
 	access = list(240,250)
-	faction_whitelist = "Covenant"
 //	whitelisted_species = list(/datum/species/sanshyuum)
 	access = list(access_covenant, access_covenant_command)
 

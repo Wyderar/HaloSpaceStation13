@@ -22,7 +22,6 @@
 	spawn_positions = 1
 	outfit_type = /decl/hierarchy/outfit/yanmee/ultra
 	is_whitelisted = 1
-	faction_whitelist = "Covenant"
 	access = list(230,250)
 	whitelisted_species = list(/datum/species/yanmee)
 
@@ -32,6 +31,5 @@
 	spawn_positions = 1
 	outfit_type = /decl/hierarchy/outfit/yanmee/leader
 	is_whitelisted = 1
-	faction_whitelist = "Covenant"
 	access = list(230,250)
 	whitelisted_species = list(/datum/species/yanmee)

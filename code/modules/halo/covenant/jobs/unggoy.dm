@@ -31,7 +31,6 @@
 	spawn_positions = 2
 	outfit_type = /decl/hierarchy/outfit/unggoy/ultra
 	access = list(230,250)
-	faction_whitelist = "Covenant"
 	is_whitelisted = 1
 	whitelisted_species = list(/datum/species/unggoy)
 
@@ -42,7 +41,6 @@
 	is_whitelisted = 1
 	outfit_type = /decl/hierarchy/outfit/unggoy/deacon
 	access = list(230,250)
-	faction_whitelist = "Covenant"
 	whitelisted_species = list(/datum/species/unggoy)
 
 

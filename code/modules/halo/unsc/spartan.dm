@@ -96,4 +96,4 @@
     attack_noun = list("fist")
     eye_attack_text = "fingers"
     eye_attack_text_victim = "digits"
-    damage = 20
+    damage = 40

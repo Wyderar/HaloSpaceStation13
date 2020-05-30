@@ -39,7 +39,8 @@
 	name = "missile"
 	desc = "An explosive warhead on the end of a guided thruster."
 	icon = 'code/modules/halo/overmap/weapons/deck_missile_pod.dmi'
-	damage = 75
+	damage = 120
+	penetrating = 1
 	icon_state = "missile_om_proj"
 	ship_damage_projectile = /obj/item/projectile/missile_damage_proj
 	ship_hit_sound = 'code/modules/halo/sounds/om_proj_hitsounds/rocketpod_missile_impact.wav'
@@ -69,11 +70,11 @@
 	icon = 'code/modules/halo/overmap/weapons/deck_missile_pod.dmi'
 	icon_state = "missile"
 	penetrating = 1
-	damage = 7
+	damage = 80
 
 /obj/item/projectile/missile_damage_proj/on_impact(var/atom/impacted)
 	. = ..()
 	if(!istype(impacted,/obj/effect/shield))
-		explosion(loc,-1,1,3,7, adminlog = 0)
+		explosion(loc,-2,5,6,10, adminlog = 0)
 	var/obj/effect/overmap/sector/S = map_sectors["[src.z]"]
 	S.adminwarn_attack()

@@ -78,11 +78,11 @@
 	track_players = 1
 	total_positions = 1
 	spawn_positions = 1
+	is_whitelisted = 1
 	access = list(access_innie, access_innie_boss)
 	selection_color = "#ff0000"
 	spawnpoint_override = "Geminus Innie"
 	alt_titles = null
-	faction_whitelist = "Insurrection"
 
 /datum/job/geminus_innie/commander/equip(var/mob/living/carbon/human/H, var/alt_title, var/datum/mil_branch/branch)
 	. = ..()
@@ -95,5 +95,5 @@
 	outfit_type = /decl/hierarchy/outfit/job/colonist/geminus_innie_orion_defector
 	whitelisted_species = list(/datum/species/orion)
 	total_positions = 2
+	is_whitelisted = 1
 	spawn_positions = 2
-	faction_whitelist = "Insurrection"

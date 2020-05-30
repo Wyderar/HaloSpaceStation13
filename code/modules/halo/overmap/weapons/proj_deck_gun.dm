@@ -188,7 +188,7 @@
 /obj/item/projectile/overmap/deck_gun_proj
 	name = "deck gun round"
 	desc = "thanks for examining this"
-	damage = 20
+	damage = 80
 	step_delay = 0.1
 	accuracy = 50 //miss chance of impacted overmap objects halved.
 	ship_damage_projectile = /obj/item/projectile/deck_gun_damage_proj

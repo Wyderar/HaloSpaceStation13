@@ -29,14 +29,14 @@
 	spawn_positions = 1
 	outfit_type = /decl/hierarchy/outfit/skirmisher_commando
 	access = list(240,250)
-	faction_whitelist = "Covenant"
+	is_whitelisted = 1
 	whitelisted_species = list(/datum/species/kig_yar_skirmisher)
 
 /datum/job/covenant/skirmchampion
 	title = "T-Voan Champion"
 	total_positions = 0
 	spawn_positions = 0
+	is_whitelisted = 1
 	outfit_type = /decl/hierarchy/outfit/skirmisher_champion
 	access = list(240,250)
-	faction_whitelist = "Covenant"
 	whitelisted_species = list(/datum/species/kig_yar_skirmisher)
