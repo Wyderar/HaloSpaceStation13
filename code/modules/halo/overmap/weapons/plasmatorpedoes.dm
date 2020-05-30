@@ -47,7 +47,6 @@
 	icon_state = "plasma_torp_om_proj"
 	ship_damage_projectile = /obj/item/projectile/plas_torp_damage_proj
 	ship_hit_sound = 'code/modules/halo/sounds/plasma_torpedoes_impact.ogg'
-	penetrating = 1
 	damage = 120
 	step_delay = 0.5 SECOND
 
