@@ -1,4 +1,3 @@
-
 /obj/vehicles/wraith
 	name = "Type-26 Assault Gun Carriage"
 	desc = "The Type-26 Assault Gun Carriage is equipped with a heavy plasma mortar and a set of twin linked medium plasma cannons."
@@ -54,6 +53,7 @@
 	desc = "A arcing-projecile firing cannon capable of inflicting heavy damage on both infantry and vehicles."
 
 	fire_delay = 40
+	dispersion = list(2)
 	fire_sound = 'code/modules/halo/sounds/wraith_cannon_fire.ogg'
 
 	guns_switchto = newlist(/datum/vehicle_gun/wraith_cannon,/datum/vehicle_gun/wraith_machinegun)
@@ -65,6 +65,7 @@
 	desc = "A arcing-projecile firing cannon capable of inflicting heavy damage on both infantry and vehicles."
 	burst_size = 1
 	fire_delay = 40
+	dispersion = list(2)
 	fire_sound = 'code/modules/halo/sounds/wraith_cannon_fire.ogg'
 	mag_used = /obj/item/ammo_magazine/wraith_cannon
 
@@ -109,9 +110,9 @@
 	armor_penetration = 50
 	shield_damage = 240
 
-/obj/item/projectile/bullet/covenant/wraith_cannon/launch_from_gun(var/atom/target)
+/obj/item/projectile/bullet/covenant/wraith_cannon/New()
 	. = ..()
-	kill_count = get_dist(loc,target) + rand(-2,2) //Sometimes it can fly a bit over or under the target
+	kill_count = get_dist(loc,get_turf(original)) + rand(-dispersion,dispersion)
 
 /obj/item/projectile/bullet/covenant/wraith_cannon/Move(var/newloc,var/dir)
 	if(get_dist(loc,original) > (get_dist(starting,original)/2))

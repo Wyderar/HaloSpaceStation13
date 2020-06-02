@@ -62,6 +62,30 @@
 	name = "\improper Nightclub Backroom"
 	icon_state = "green"
 
+/area/planets/Geminus/indoor/worldcastle/unsc_base
+	name = "UNSC Ground Base"
+	icon_state = "green"
+
+/area/planets/Geminus/indoor/worldcastle/unsc_checkpoint1
+	name = "UNSC West Checkpoint"
+	icon_state = "green"
+
+/area/planets/Geminus/indoor/worldcastle/unsc_checkpoint2
+	name = "UNSC East Checkpoint"
+	icon_state = "green"
+
+/area/planets/Geminus/indoor/worldcastle/cov_fob
+	name = "Covenant FOB"
+	icon_state = "purple"
+
+/area/planets/Geminus/indoor/worldcastle/cov_artifact
+	name = "Covenant Artifact Storage"
+	icon_state = "purple"
+
+/area/planets/Geminus/indoor/worldcastle/city_hall
+	name = "City Hall"
+	icon_state = "dk_yellow"
+
 /area/planets/Geminus/indoor/bar
 	name = "\improper Bar"
 	icon_state = "bar"

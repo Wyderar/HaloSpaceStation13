@@ -1,6 +1,3 @@
-
-
-
 /* Simple Mob Pathing */
 
 GLOBAL_LIST_EMPTY(assault_targets)
@@ -63,12 +60,12 @@ also using astar would have a performance impact due to eg hordes
 */
 
 /mob/living/simple_animal/hostile/proc/set_assault_target(var/obj/effect/landmark/assault_target/new_assault_target)
-	last_assault_target = assault_target
+	if(assault_target)
+		last_assault_target = assault_target
 	assault_target = new_assault_target
 	walk(src, 0)
 
 /mob/living/simple_animal/hostile
-	var/path_recheck_time
 	var/turf/previous_turf
 	var/timeout_check = 0
 
@@ -89,7 +86,7 @@ also using astar would have a performance impact due to eg hordes
 	if(assault_turf && assault_turf.z == src.z)
 
 		//are we already there?
-		if(get_dist(assault_turf, src) < 7)
+		if(get_dist(assault_turf, src) < src.see_in_dark)
 			//hang around here for a minute before moving
 			stop_pathing(1 MINUTE)
 		else
@@ -98,7 +95,6 @@ also using astar would have a performance impact due to eg hordes
 			stop_automated_movement = 1
 
 			var/turf/target_turf = src.loc
-			path_recheck_time = world.time + move_to_delay
 
 			//if we are close, use dumb SS13 pathfinding
 			//get_step_to() has a distance limit of 2 * world.view, greater than that returns null
@@ -137,7 +133,8 @@ also using astar would have a performance impact due to eg hordes
 			var/list/zlevel_targets  = possible_targets["[src.z]"]
 			if(zlevel_targets)
 				if(zlevel_targets.len > 1)
-					var/obj/effect/landmark/assault_target/A = pick(zlevel_targets - last_assault_target)
+					var/obj/effect/landmark/assault_target/A = pick(\
+						zlevel_targets.len > 1 ? zlevel_targets - last_assault_target : zlevel_targets)
 					set_assault_target(A)
 				else if(zlevel_targets.len == 1)
 					set_assault_target(zlevel_targets[1])
@@ -161,25 +158,21 @@ also using astar would have a performance impact due to eg hordes
 
 /mob/living/simple_animal/proc/handle_leader_pathing()
 	if(leader_follow)
-		if(get_dist(loc,leader_follow.loc) < 14 && loc != leader_follow.loc)//A bit higher than a single screen
+		if(get_dist(loc,leader_follow.loc) < world.view*2 && loc != leader_follow.loc)//A bit higher than a single screen
 			if(istype(loc,/obj/vehicles))
 				var/obj/vehicles/v = loc
 				v.exit_vehicle(src,1)
-			walk_to(src,pick(orange(2,leader_follow.loc)),0,move_to_delay)
+			walk_to(src,pick(trange(2,leader_follow.loc)-leader_follow.loc),1,move_to_delay)
 			if(istype(leader_follow.loc,/obj/vehicles))
 				var/obj/vehicles/v = leader_follow.loc
 				if(v.Adjacent(src))
-					if(!v.enter_as_position(src,"gunner"))
-						v.visible_message("<span class = 'notice'>[name] fails to enter [v.name]'s gunner seat.</span>")
-						if(!v.enter_as_position(src,"passenger"))
-							v.visible_message("<span class = 'notice'>[name] fails to enter [v.name]'s passenger seat.</span>")
-							set_leader(null)
+					for(var/seat in list("gunner","driver","passenger"))
+						if(!v.enter_as_position(src,seat))
+							v.visible_message("<span class = 'notice'>[name] fails to enter [v.name]'s [seat] seat.</span>")
 						else
-							v.visible_message("<span class = 'notice'>[name] enters [v.name]'s passenger seat.</span>")
+							v.visible_message("<span class = 'notice'>[name] enters [v.name]'s [seat] seat.</span>")
 							return 1
-					else
-						v.visible_message("<span class = 'notice'>[name] enters [v.name]'s gunner seat.</span>")
-						return 1
+					set_leader(null)
 		else
 			if(leader_follow && loc != leader_follow.loc)
 				set_leader(null)

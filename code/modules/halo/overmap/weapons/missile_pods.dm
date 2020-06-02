@@ -74,6 +74,6 @@
 /obj/item/projectile/missile_damage_proj/on_impact(var/atom/impacted)
 	. = ..()
 	if(!istype(impacted,/obj/effect/shield))
-		explosion(loc,-2,5,6,10, adminlog = 0)
+		explosion(loc,-1,4,6,7, adminlog = 0)
 	var/obj/effect/overmap/sector/S = map_sectors["[src.z]"]
 	S.adminwarn_attack()

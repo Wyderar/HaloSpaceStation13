@@ -28,7 +28,7 @@
 		var/text = command_buffer[2]
 		var/filtered_name = lowertext(html_decode(name))
 		if(dd_hasprefix(text,filtered_name) || dd_hasprefix(text,"everyone") || dd_hasprefix(text, "everybody")) //in case somebody wants to command 8 bears at once.
-			var/substring = copytext_char(text,length(filtered_name)+1) //get rid of the name.
+			var/substring = copytext(text,length(filtered_name)+1) //get rid of the name.
 			listen(speaker,substring)
 		command_buffer.Remove(command_buffer[1],command_buffer[2])
 	. = ..()
@@ -77,7 +77,7 @@
 	if(!target_mob)
 		return
 	if(target_mob in ListTargets(10))
-		walk_to(src,target_mob,1,move_to_delay)
+		hostilemob_walk_to(target_mob,1,move_to_delay)
 
 /mob/living/simple_animal/hostile/commanded/proc/commanded_stop() //basically a proc that runs whenever we are asked to stay put. Probably going to remain unused.
 	return
@@ -114,7 +114,7 @@
 		if(findtext(text, "[M]"))
 			found = 1
 		else
-			var/list/parsed_name = splittext_char(replace_characters(lowertext(html_decode("[M]")),list("-"=" ", "."=" ", "," = " ", "'" = " ")), " ") //this big MESS is basically 'turn this into words, no punctuation, lowercase so we can check first name/last name/etc'
+			var/list/parsed_name = splittext(replace_characters(lowertext(html_decode("[M]")),list("-"=" ", "."=" ", "," = " ", "'" = " ")), " ") //this big MESS is basically 'turn this into words, no punctuation, lowercase so we can check first name/last name/etc'
 			for(var/a in parsed_name)
 				if(a == "the" || length(a) < 2) //get rid of shit words.
 					continue
@@ -141,12 +141,12 @@
 	target_mob = null
 	stance = COMMANDED_STOP
 	stop_automated_movement = 1
-	walk_to(src,0)
+	walk(src,0)
 	return 1
 
 /mob/living/simple_animal/hostile/commanded/proc/stop_command(var/mob/speaker,var/text)
 	allowed_targets = list()
-	walk_to(src,0)
+	walk(src,0)
 	target_mob = null //gotta stop SOMETHIN
 	stance = HOSTILE_STANCE_IDLE
 	stop_automated_movement = 0

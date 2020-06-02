@@ -13,17 +13,12 @@
 	station_name  = "World Castle 0459"
 	station_short = "W-0459"
 
+	allowed_gamemodes = list("extended")
 	allowed_jobs = list(\
 		/datum/job/unsc_job/unsc_marine,
 		/datum/job/unsc_job/unsc_marine_specialist,
 		/datum/job/unsc_job/unsc_squad_lead,
 		/datum/job/unsc_job/unsc_co,
-		/datum/job/unsc_job/odst,
-		/datum/job/unsc_job/oni_researcher,
-		/datum/job/colonist,\
-		/datum/job/colonist_mayor,\
-		/datum/job/police,\
-		/datum/job/police_chief,\
 		/datum/job/covenant/huragok,\
 		/datum/job/covenant/sangheili_minor,\
 		/datum/job/covenant/sangheili_major,\
