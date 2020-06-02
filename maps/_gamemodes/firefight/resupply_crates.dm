@@ -65,7 +65,7 @@
 	if(prob(50))
 		new /obj/item/clothing/head/helmet/marine(src)
 	else
-		new /obj/item/clothing/head/helmet/marine/visor(src)
+		new /obj/item/clothing/head/helmet/marine(src)
 
 	new /obj/item/clothing/suit/storage/marine(src)
 

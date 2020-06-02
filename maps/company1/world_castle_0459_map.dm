@@ -38,5 +38,4 @@
 		/datum/job/covenant/yanmee_major,\
 		/datum/job/covenant/yanmee_ultra,\
 		/datum/job/covenant/yanmee_leader,\
-		/datum/job/ONI_Spartan_II,\
 		)

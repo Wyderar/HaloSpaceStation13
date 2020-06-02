@@ -89,6 +89,29 @@
 	access = list(access_unsc,access_unsc_armoury,access_unsc_odst,access_unsc_specialist)
 	outfit_type = /decl/hierarchy/outfit/job/facil_ODST
 
+/datum/job/unscbertels_ship_crew
+	title = "UNSC Ship Crew"
+	outfit_type = /decl/hierarchy/outfit/job/unsc_job/crewman
+	total_positions = 3
+	spawn_positions = 3
+	access = list(access_unsc)
+
+/decl/hierarchy/outfit/job/facil_ODST
+	name = "Rifleman"
+	l_ear = /obj/item/device/radio/headset/unsc/odst
+	glasses = /obj/item/clothing/glasses/hud/tactical
+	uniform = /obj/item/clothing/under/unsc/odst_jumpsuit
+	gloves = /obj/item/clothing/gloves/tactical
+	shoes = /obj/item/clothing/shoes/jungleboots
+	gloves = /obj/item/clothing/gloves/thick/combat
+	belt = /obj/item/weapon/gun/projectile/m6c_magnum_s
+	id_type = /obj/item/weapon/card/id/odst
+	starting_accessories = list (/obj/item/clothing/accessory/rank/fleet/enlisted/e4, /obj/item/clothing/accessory/holster/thigh, /obj/item/clothing/accessory/badge/tags)
+
+	flags = 0
+
+	hierarchy_type = /decl/hierarchy/outfit/job
+
 /datum/job/unsc_job/oni_researcher
 	title = "ONI Researcher"
 	total_positions = 2
@@ -96,3 +119,13 @@
 	outfit_type = /decl/hierarchy/outfit/job/unsc_job/oni_researcher
 	alt_titles = list("Doctor","Physicist","Botanist","Chemist","Weapons Researcher","Surgeon","Geneticist")
 	access = list(access_unsc,access_unsc_armoury,access_unsc_oni)
+
+/decl/hierarchy/outfit/job/unsc_job/crewman
+	name = "UNSC Ship Crew"
+
+	l_ear = /obj/item/device/radio/headset/unsc/marine
+	uniform = /obj/item/clothing/under/unsc/red
+	shoes = /obj/item/clothing/shoes/jackboots
+	starting_accessories = list(/obj/item/clothing/accessory/rank/fleet/enlisted/e3)
+
+	flags = 0
