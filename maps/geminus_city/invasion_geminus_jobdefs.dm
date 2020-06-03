@@ -16,6 +16,7 @@
 		/datum/job/unsc_job/unsc_co,
 		/datum/job/unsc_job/odst,
 		/datum/job/unsc_job/oni_researcher,
+		/datum/job/unsc_job/ship_crew,
 		/datum/job/colonist,\
 		/datum/job/colonist_mayor,\
 		/datum/job/police,\

@@ -89,7 +89,7 @@
 	access = list(access_unsc,access_unsc_armoury,access_unsc_odst,access_unsc_specialist)
 	outfit_type = /decl/hierarchy/outfit/job/facil_ODST
 
-/datum/job/unscbertels_ship_crew
+/datum/job/unsc_job/ship_crew
 	title = "UNSC Ship Crew"
 	outfit_type = /decl/hierarchy/outfit/job/unsc_job/crewman
 	total_positions = 3
