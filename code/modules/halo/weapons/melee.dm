@@ -8,8 +8,8 @@
 	w_class = ITEM_SIZE_SMALL
 	force = 30
 	throwforce = 10
-	sharp = 1
-	edge = 1
+	sharp = 0
+	edge = 0
 	hitsound = 'sound/weapons/bladeslice.ogg'
 	armor_penetration = 35
 
@@ -30,8 +30,8 @@
 	force_divisor = 0.6
 	thrown_force_divisor = 0.6
 	slot_flags = SLOT_BELT | SLOT_BACK
-	sharp = 1
-	edge = 1
+	sharp = 0
+	edge = 0
 	unbreakable = 1
 	attack_verb = list("chopped", "torn", "cut")
 	hitsound = 'sound/weapons/bladeslice.ogg'

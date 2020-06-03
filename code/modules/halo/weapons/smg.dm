@@ -24,7 +24,6 @@
 	//dispersion = list(0.0, 0.4, 0.8, 1.0)
 	allowed_magazines = list(/obj/item/ammo_magazine/m5, /obj/item/ammo_magazine/m5/rubber)
 	w_class = ITEM_SIZE_NORMAL
-	wielded_item_state = "m7-wielded"
 	item_icons = list(
 		slot_l_hand_str = 'code/modules/halo/weapons/icons/Weapon_Inhands_left.dmi',
 		slot_r_hand_str = 'code/modules/halo/weapons/icons/Weapon_Inhands_right.dmi',
@@ -50,9 +49,8 @@
 	name = "M7S submachine gun"
 	desc = "The M7S is a special operations variant of the M7 submachine gun with inbuilt suppressor and host of other attachments. Takes 5mm calibre magazines."
 	silenced = 1
-	is_heavy = 1
 	icon_state = "m7smgs"
-	item_state = "m7s"
+	item_state = "m7"
 	fire_sound = 'code/modules/halo/sounds/SMG_SOCOM_Fire.wav'
 	//fire_sound_burst = 'code/modules/halo/sounds/SMG_SOCOM_Fire.wav'
 

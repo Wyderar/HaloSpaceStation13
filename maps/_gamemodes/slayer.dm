@@ -12,7 +12,7 @@
 	var/list/team_scores_unsorted = list()
 	var/list/scores_with_names = list()
 	var/round_end_time = 0
-	var/round_length = 6000
+	var/round_length = 9000
 	var/nextrespawn
 	var/species_included = list("Spartan" = list("Spartan Slayer","Blue Team Spartan","Red Team Spartan")) //This has to be an exact name taken from the datum
 	disabled_jobs = list(/datum/job/team_slayer_red, /datum/job/team_slayer_blue, /datum/job/team_slayer_spartan,/datum/job/team_slayer_covenant)
@@ -20,7 +20,7 @@
 /datum/game_mode/slayer/pre_setup()
 	..()
 	round_end_time = world.time + round_length
-	to_world("<h1>Round duration: [round_length/600] minutes. Get the highest score by the end.</h1>")
+	to_world("<h1>Round duration: [round_length/900] minutes. Get the highest score by the end.</h1>")
 	GLOB.using_map.allowed_jobs -= disabled_jobs
 
 /datum/game_mode/slayer/check_finished()
