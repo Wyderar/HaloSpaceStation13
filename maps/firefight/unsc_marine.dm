@@ -25,7 +25,7 @@
 	l_ear = /obj/item/device/radio/headset/unsc/marine
 	mask = /obj/item/clothing/mask/marine
 	uniform = /obj/item/clothing/under/unsc/marine_fatigues
-	shoes = /obj/item/clothing/shoes/marine
+	shoes = /obj/item/clothing/shoes/marine/crewman
 	head = /obj/item/clothing/head/helmet/marine
 	suit = /obj/item/clothing/suit/storage/marine
 	belt = /obj/item/weapon/storage/belt/marine_ammo
@@ -54,7 +54,7 @@
 	l_ear = /obj/item/device/radio/headset/unsc/marine
 	mask = /obj/item/clothing/mask/smokable/cigarette/luckystars
 	uniform = /obj/item/clothing/under/unsc/marine_fatigues
-	shoes = /obj/item/clothing/shoes/marine
+	shoes = /obj/item/clothing/shoes/marine/crewman
 	head = /obj/item/clothing/head/welding
 	suit = /obj/item/clothing/suit/storage/marine/crewman
 	belt = /obj/item/weapon/storage/belt/utility/full
@@ -85,7 +85,7 @@
 	mask = /obj/item/clothing/mask/surgical
 	glasses = /obj/item/clothing/glasses/hud/health
 	uniform = /obj/item/clothing/under/unsc/marine_fatigues
-	shoes = /obj/item/clothing/shoes/marine
+	shoes = /obj/item/clothing/shoes/marine/crewman
 	head = /obj/item/clothing/head/helmet/marine/medic
 	suit = /obj/item/clothing/suit/storage/marine/medic
 	belt = /obj/item/weapon/storage/belt/marine_medic/mobilespawn_medic
