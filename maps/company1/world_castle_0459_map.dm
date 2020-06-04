@@ -13,7 +13,7 @@
 	station_name  = "World Castle 0459"
 	station_short = "W-0459"
 
-	allowed_gamemodes = list("extended")
+	allowed_gamemodes = list("reclamation")
 	allowed_jobs = list(\
 		/datum/job/unsc_job/unsc_marine,
 		/datum/job/unsc_job/unsc_marine_specialist,

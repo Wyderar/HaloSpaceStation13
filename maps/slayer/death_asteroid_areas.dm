@@ -1,5 +1,7 @@
 /area/teamslayer1
 	requires_power = 0
+	dynamic_lighting = 1
+	has_gravity = 1
 
 /area/teamslayer1/north_airlock_1
 	name = "\improper North Airlock"

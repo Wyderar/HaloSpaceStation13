@@ -61,5 +61,33 @@
 	selection_color = "#334400"
 	whitelisted_species = list(/datum/species/spartan)
 
+/datum/job/team_slayer_marine
+	title = "Team UNSC"
+	total_positions = -1
+	spawn_positions = -1
+	create_record = 0
+	account_allowed = 0
+	generate_email = 0
+	track_players = 1
+	selection_color = "#0000ff"
+	outfit_type = /decl/hierarchy/outfit/job/unsc_job/marine
+	whitelisted_species = list(/datum/species/human)
+
+
+/datum/job/team_slayer_soe
+	title = "Team Insurrection"
+	outfit_type = /decl/hierarchy/outfit/job/soe_commando
+	selection_color = "#ff0000"
+	total_positions = -1
+	spawn_positions = -1
+	create_record = 0
+	account_allowed = 0
+	generate_email = 0
+	track_players = 1
+	whitelisted_species = list(/datum/species/human)
+
 /datum/map/teamslayer_asteroid
 	allowed_jobs = list(/datum/job/team_slayer_red, /datum/job/team_slayer_blue, /datum/job/slayer_ffa,/datum/job/team_slayer_spartan,/datum/job/team_slayer_covenant)
+
+/datum/map/teamslayer_city
+	allowed_jobs = list(/datum/job/team_slayer_red, /datum/job/team_slayer_blue, /datum/job/slayer_ffa,/datum/job/team_slayer_spartan,/datum/job/team_slayer_marine,/datum/job/team_slayer_soe)
