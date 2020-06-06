@@ -132,8 +132,8 @@ GLOBAL_LIST_EMPTY(live_flood_simplemobs)
 	pass_flags = PASSTABLE
 	mob_size = MOB_MINISCULE
 	move_to_delay = 15
-	health = 10
-	maxHealth = 10
+	health = 5
+	maxHealth = 5
 	melee_damage_lower = 1
 	melee_damage_upper = 5
 	attacktext = "leapt at"
@@ -234,8 +234,8 @@ GLOBAL_LIST_EMPTY(live_flood_simplemobs)
 /mob/living/simple_animal/hostile/flood/infestor/adjustBruteLoss(damage)
 	if(health > 0)
 		swarm_size -= 1
-		health -= 1
-		maxHealth -= 1
+		health = 5
+		maxHealth = 5
 		if(overlays.len)
 			overlays.Cut(1,2)
 		/*var/mob/living/simple_animal/hostile/flood/infestor/F = new(src.loc)

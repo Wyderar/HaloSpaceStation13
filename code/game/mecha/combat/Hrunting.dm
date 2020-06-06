@@ -14,6 +14,7 @@
 	var/overload_coeff = 2
 	wreckage = /obj/effect/decal/mecha_wreckage/hrunting
 	max_equip = 3
+	var/capacity_flag = ITEM_SIZE_SMALL
 
 /obj/mecha/combat/hrunting/add_cell()
 	cell = new /obj/item/weapon/cell/hyper(src)

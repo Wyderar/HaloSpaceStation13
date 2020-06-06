@@ -81,6 +81,9 @@
 	throw_range = 20
 	flags = CONDUCT
 
+/obj/item/stack/tile/floor/fifty
+	amount = 50
+
 /obj/item/stack/tile/floor_white
 	name = "white floor tile"
 	singular_name = "white floor tile"

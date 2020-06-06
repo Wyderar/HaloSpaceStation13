@@ -153,7 +153,7 @@
 	projectile_type = /obj/item/projectile/bullet/a762_M392
 
 /obj/item/projectile/bullet/a762_ap
-	damage = 30
+	damage = 40
 
 /obj/item/projectile/bullet/a762_ttr
 	armor_penetration = 0
@@ -163,8 +163,8 @@
 	penetrating = 0
 
 /obj/item/projectile/bullet/a762_M392
-	damage = 30
-	armor_penetration = 15
+	damage = 45
+	armor_penetration = 20
 
 /obj/item/weapon/storage/box/m762_ap
 	name = "box of 7.62mm M118 magazines"
@@ -245,7 +245,7 @@
 	ammo_type = /obj/item/ammo_casing/a145_ap
 	matter = list(DEFAULT_WALL_MATERIAL = 4000) //7.62mm casing = 50 metal each
 	caliber = "14.5mm"
-	max_ammo = 4
+	max_ammo = 5
 	multiple_sprites = 1
 
 /obj/item/ammo_casing/a145_ap
@@ -268,7 +268,7 @@
 	shield_damage = 210
 
 /obj/item/projectile/bullet/a145_ap/tracerless //Modified slightly to provide a downside for using the innie-heavy-sniper-rounds over normal rounds.
-	damage = 55
+	damage = 70
 	armor_penetration = 55
 	tracer_type = null
 	tracer_delay_time = null
@@ -379,7 +379,7 @@
 	shield_damage = 200 //just below elite minor shields, meaning subsequent explosion and guaranteed damage will collapse it.
 
 /obj/item/projectile/bullet/ssr/on_impact(var/atom/target)
-	explosion(target, 0, 1, 2, 4,guaranteed_damage = 50,guaranteed_damage_range = 2)
+	explosion(target, 0, 1, 2, 4,guaranteed_damage = 100,guaranteed_damage_range = 4)
 	..()
 
 /obj/item/weapon/storage/box/spnkr

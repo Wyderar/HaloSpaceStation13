@@ -17,6 +17,19 @@
 	gloves = /obj/item/clothing/gloves/thick/unsc
 	starting_accessories = list (/obj/item/clothing/accessory/rank/marine/enlisted/e2, /obj/item/clothing/accessory/badge/tags)
 
+/decl/hierarchy/outfit/job/unsc_job/squadlead
+	name = "UNSC Squad Leader"
+
+	l_ear = /obj/item/device/radio/headset/unsc/marine
+	mask = /obj/item/clothing/mask/marine
+	uniform = /obj/item/clothing/under/unsc/marine_fatigues
+	shoes = /obj/item/clothing/shoes/marine/crewman
+	head = /obj/item/clothing/head/helmet/marine
+	suit = /obj/item/clothing/suit/storage/marine
+	belt = /obj/item/weapon/storage/belt/marine_ammo
+	gloves = /obj/item/clothing/gloves/thick/unsc
+	starting_accessories = list (/obj/item/clothing/accessory/rank/marine/enlisted/e6, /obj/item/clothing/accessory/badge/tags)
+
 /decl/hierarchy/outfit/job/unsc_job/marine/co
 	name = "UNSC Commanding Officer"
 	glasses = /obj/item/clothing/glasses/hud/tactical
@@ -72,7 +85,7 @@
 	title = "UNSC Squad Leader"
 	total_positions = 4
 	spawn_positions = 4
-	outfit_type = /decl/hierarchy/outfit/job/unsc_job/marine
+	outfit_type = /decl/hierarchy/outfit/job/unsc_job/squadlead
 	access = list(access_unsc,access_unsc_armoury,access_unsc_specialist)
 
 /datum/job/unsc_job/unsc_co
@@ -127,5 +140,24 @@
 	uniform = /obj/item/clothing/under/unsc/red
 	shoes = /obj/item/clothing/shoes/jackboots
 	starting_accessories = list(/obj/item/clothing/accessory/rank/fleet/enlisted/e3)
+
+	flags = 0
+
+/datum/job/unsc_job/mech_pilot
+	title = "UNSC Mech Pilot"
+	total_positions = 1
+	spawn_positions = 1
+	outfit_type = /decl/hierarchy/outfit/job/unsc_job/mech_pilot
+	access = list(access_unsc,access_unsc_armoury,access_unsc_specialist)
+
+/decl/hierarchy/outfit/job/unsc_job/mech_pilot
+	l_ear = /obj/item/device/radio/headset/unsc/marine
+	uniform = /obj/item/clothing/under/unsc/brown
+	gloves = /obj/item/clothing/gloves/tactical
+	shoes = /obj/item/clothing/shoes/marine/crewman
+	gloves = /obj/item/clothing/gloves/thick/combat
+	belt = /obj/item/weapon/gun/projectile/m7_smg
+	id_type = /obj/item/weapon/card/id/unsc
+	starting_accessories = list (/obj/item/clothing/accessory/rank/fleet/enlisted/e4, /obj/item/clothing/accessory/holster/thigh, /obj/item/clothing/accessory/badge/tags)
 
 	flags = 0

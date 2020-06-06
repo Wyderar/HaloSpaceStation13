@@ -93,3 +93,30 @@
 	objective_type = 0
 	overmap_type = 1
 	win_points = 100
+
+/datum/objective/retrieve/nav_data/unsc
+	short_text = "Steal navigation datachips from aliens"
+	explanation_text = "We must locate the Covenant central base! Retrieve as many nav data chips you can for examination."
+	points_per_item = 50
+	win_points = 50
+	slipspace_affected = 1
+
+/datum/objective/retrieve/nav_data/unsc/update_points()
+	items_retrieved = 0
+	win_points = 0
+	for(var/area/cur_area in delivery_areas)
+		for(var/obj/item/nav_data_chip/C in cur_area)
+			if(C.chip_faction == "UNSC")
+				continue
+			items_retrieved += 1
+			if(istype(C, /obj/item/nav_data_chip/fragmented))
+				//award partial points for fragments
+				var/obj/item/nav_data_chip/fragmented/F = C
+				win_points += points_per_item * (F.fragments_have / F.fragments_required)
+			else
+				//award full points for the chip
+				win_points += points_per_item
+
+/datum/objective/retrieve/nav_data/unsc/find_target()
+	delivery_areas = GLOB.UNSC.get_objective_delivery_areas()
+	return delivery_areas.len

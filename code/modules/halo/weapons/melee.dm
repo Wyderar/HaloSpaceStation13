@@ -11,7 +11,7 @@
 	sharp = 0
 	edge = 0
 	hitsound = 'sound/weapons/bladeslice.ogg'
-	armor_penetration = 35
+	armor_penetration = 20
 
 /obj/item/weapon/material/machete
 	name = "machete"
@@ -23,12 +23,12 @@
 		slot_l_hand_str = 'code/modules/halo/weapons/icons/Weapon_Inhands_left.dmi',
 		slot_r_hand_str = 'code/modules/halo/weapons/icons/Weapon_Inhands_right.dmi',
 		)
-	armor_penetration = 35
+	force = 40
+	armor_penetration = 20
 
 
 	w_class = ITEM_SIZE_LARGE
-	force_divisor = 0.6
-	thrown_force_divisor = 0.6
+	throwforce = 10
 	slot_flags = SLOT_BELT | SLOT_BACK
 	sharp = 0
 	edge = 0
@@ -44,7 +44,10 @@
 	icon_state = "COsword_obj"
 	item_state = "machete"
 	applies_material_colour = FALSE
-	lunge_dist = 3
+	lunge_dist = 4
+	force = 55
+	throwforce = 10
+	armor_penetration = 30
 	parry_projectiles = 1
 
 //Humbler Baton

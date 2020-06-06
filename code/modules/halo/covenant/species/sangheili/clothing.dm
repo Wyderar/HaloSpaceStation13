@@ -146,7 +146,7 @@
 	icon = 'code/modules/halo/icons/Covenant Weapons.dmi'
 	icon_state = "en_dag_deploy"
 	w_class = ITEM_SIZE_NORMAL
-	force = 30
+	force = 35
 	throwforce = 12
 	edge = 1
 	sharp = 1

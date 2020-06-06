@@ -1,4 +1,3 @@
-
 GLOBAL_LIST_INIT(yanmee_nicknames, world.file2list('code/modules/halo/covenant/species/yanmee/yanmee_nicknames.txt'))
 
 /datum/language/yanmee_hivemind
@@ -36,6 +35,7 @@ Huragok Engineers. Their flight makes them hard to hit during combat and their n
 	flags = NO_MINOR_CUT
 	darksight = 4
 	brute_mod = 1.2
+	burn_mod = 1.2
 	slowdown = -0.5
 	gluttonous = GLUT_ANYTHING
 	pixel_offset_x = -1

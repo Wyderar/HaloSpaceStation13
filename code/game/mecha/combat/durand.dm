@@ -13,6 +13,7 @@
 	var/defence = 0
 	var/def_boost = 15
 	wreckage = /obj/effect/decal/mecha_wreckage/durand
+	var/capacity_flag = ITEM_SIZE_SMALL
 
 /*
 /obj/mecha/combat/durand/New()

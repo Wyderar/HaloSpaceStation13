@@ -1,4 +1,3 @@
-
 GLOBAL_LIST_INIT(first_names_sangheili, world.file2list('code/modules/halo/covenant/species/sangheili/first_sangheili.txt'))
 GLOBAL_LIST_INIT(last_names_sangheili, world.file2list('code/modules/halo/covenant/species/sangheili/last_sangheili.txt'))
 
@@ -15,6 +14,9 @@ GLOBAL_LIST_INIT(last_names_sangheili, world.file2list('code/modules/halo/covena
 	icobase = 'code/modules/halo/covenant/species/sangheili/r_elite.dmi' //The DMI needed modification to fit the usual format (see other species' dmis)
 	deform = 'code/modules/halo/covenant/species/sangheili/r_elite.dmi'
 	icon_template = 'code/modules/halo/covenant/species/sangheili/Sangheili_template.dmi'
+	damage_overlays = 'code/modules/halo/covenant/species/sangheili/dam_elite.dmi'
+	damage_mask = 'code/modules/halo/covenant/species/sangheili/dam_mask_elite.dmi'
+	blood_mask = 'code/modules/halo/covenant/species/sangheili/blood_elite.dmi'
 	default_language = "Sangheili"
 	language = "Sangheili"
 	flags = NO_MINOR_CUT
@@ -23,6 +25,7 @@ GLOBAL_LIST_INIT(last_names_sangheili, world.file2list('code/modules/halo/covena
 	spawn_flags = SPECIES_CAN_JOIN
 	appearance_flags = HAS_SKIN_TONE
 	brute_mod = 0.9
+	burn_mod = 0.9
 	pain_mod = 0.75 //Pain has quarter an effect on them
 	slowdown = -0.3
 	explosion_effect_mod = 0.5

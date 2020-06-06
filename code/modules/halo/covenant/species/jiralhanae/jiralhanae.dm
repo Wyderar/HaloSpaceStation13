@@ -1,4 +1,3 @@
-
 GLOBAL_LIST_INIT(first_names_jiralhanae, world.file2list('code/modules/halo/covenant/species/jiralhanae/first_jiralhanae.txt'))
 
 /mob/living/carbon/human/covenant/jiralhanae/New(var/new_loc)
@@ -28,17 +27,25 @@ GLOBAL_LIST_INIT(first_names_jiralhanae, world.file2list('code/modules/halo/cove
 	icobase = 'code/modules/halo/covenant/species/jiralhanae/jiralhanae_mob.dmi' //The DMI needed modification to fit the usual format (see other species' dmis)
 	deform = 'code/modules/halo/covenant/species/jiralhanae/jiralhanae_mob.dmi'
 	icon_template = 'code/modules/halo/covenant/species/jiralhanae//jiralhanae_template.dmi'
+	damage_overlays = 'code/modules/halo/covenant/species/jiralhanae/dam_jiralhanae.dmi'
+	damage_mask = 'code/modules/halo/covenant/species/jiralhanae/dam_mask_jiralhanae.dmi'
+	blood_mask = 'code/modules/halo/covenant/species/jiralhanae/blood_jiralhanae.dmi'
 	default_language = "Sangheili"
 	language = "Sangheili"
 	additional_langs = list("Doisacci")
 	flags = NO_MINOR_CUT
 	appearance_flags = HAS_SKIN_TONE
-	total_health = 300 //Higher base health than spartans and sangheili
+	total_health = 250 //Not quite elites, but their adrenline makes up for it
 	radiation_mod = 0.6
 	spawn_flags = SPECIES_CAN_JOIN
 	brute_mod = 0.7 //receives 70% of brute damage
-	pain_mod = 0.25 //receives 25% pain damage.
+	pain_mod = 0.65 //receives 25% pain damage.
 	burn_mod = 0.7  // receives 70% of burn damage
+	slowdown = -0.1 //A miniscule amount faster than most.
+	adrenal_break_threshold = 20 //at this threshold of adrenaline (which is generated through taking damage, damage/5)
+	//, the body consumes the adrenaline and creates a short-lived 120 painkill
+	//This lowered threshold means you can, through consistent aggressiveness, stave off the pain of the fight.
+	//Failing to be aggressive or smart hostiles stopping their fire at you means you will start to feel the effects
 	explosion_effect_mod = 0.5
 	can_force_door = 1
 	default_faction = "Covenant"

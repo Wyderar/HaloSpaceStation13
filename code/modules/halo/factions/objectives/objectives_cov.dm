@@ -94,6 +94,19 @@
 		return 1
 	return 0
 
+/datum/objective/retrieve/nav_data/cole_protocol/cov
+	short_text = "Do not allow humans capture of Covenant nav data"
+	explanation_text = "Humans trying to find Propets lair. Do not allow navchips to be captured by the heretics."
+	points_per_item = 50
+	lose_points = 50
+	slipspace_affected = 1
+
+/datum/objective/retrieve/nav_data/cole_protocol/cov/check_completion()
+	. = ..()
+	lose_points = win_points
+	win_points = 0
+	return !.
+
 /datum/objective/colony_capture/cov
 	short_text = "Capture the human colony"
 	explanation_text = "Holding the human colony will give us time to search it for artifacts."
