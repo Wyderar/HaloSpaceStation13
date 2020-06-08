@@ -60,6 +60,7 @@
 		/datum/objective/overmap/covenant_unsc_ship,
 		//datum/objective/overmap/covenant_odp,
 		//datum/objective/colony_capture/cov,
+		/datum/objective/retrieve/nav_data/cole_protocol/cov,\
 		/datum/objective/retrieve/artifact)
 	GLOB.COVENANT.setup_faction_objectives(objective_types)
 	GLOB.COVENANT.has_flagship = 1
@@ -75,7 +76,8 @@
 		/datum/objective/overmap/unsc_cov_ship,\
 		/datum/objective/colony_capture/unsc,\
 		/datum/objective/protect_colony,\
-		/datum/objective/overmap/unsc_innie_base)
+		/datum/objective/overmap/unsc_innie_base,
+		/datum/objective/retrieve/nav_data/unsc)
 	GLOB.UNSC.setup_faction_objectives(objective_types)
 	GLOB.UNSC.has_flagship = 1
 	GLOB.UNSC.has_base = 1

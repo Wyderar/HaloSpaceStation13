@@ -153,6 +153,7 @@
 /decl/hierarchy/outfit/job/unsc_job/mech_pilot
 	l_ear = /obj/item/device/radio/headset/unsc/marine
 	uniform = /obj/item/clothing/under/unsc/brown
+	suit = /obj/item/clothing/suit/storage/marine/crewman
 	gloves = /obj/item/clothing/gloves/tactical
 	shoes = /obj/item/clothing/shoes/marine/crewman
 	gloves = /obj/item/clothing/gloves/thick/combat

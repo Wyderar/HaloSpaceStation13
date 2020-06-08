@@ -26,7 +26,7 @@
 	rollDir(8)
 
 /mob/living/proc/getRollDist()
-	return 2
+	return 4
 
 mob/living/proc/getPerRollDelay()
 	return 2

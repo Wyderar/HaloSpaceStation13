@@ -90,14 +90,14 @@
 
 /obj/item/projectile/bullet/scorp_cannon
 	name = "90mm Shell"
-	damage = 100
+	damage = 120
 	damage_type = "bomb"
 	damtype = "bomb"
-	armor_penetration = 50
+	armor_penetration = 60
 	shield_damage = 240
 
 /obj/item/projectile/bullet/scorp_cannon/on_impact(var/atom/impacted)
-	explosion(impacted,0,1,3,5,guaranteed_damage = 50,guaranteed_damage_range = 2)
+	explosion(impacted,0,1,3,5,guaranteed_damage = 80,guaranteed_damage_range = 4)
 	. = ..()
 
 /obj/item/projectile/bullet/scorp_cannon/attack_mob()

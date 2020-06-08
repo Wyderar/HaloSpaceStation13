@@ -52,6 +52,9 @@
 
 	var/datum/mobile_spawn/spawn_datum //Setting this makes this a mobile spawn point.
 
+	var/datum/gas_mixture/internal_air = 0//If this is new()'d, the vehicle provides air to the occupants.
+	//I would make it require refilling, but that's likely to just be boring tedium for players.
+
 	light_power = 4
 	light_range = 6
 
@@ -87,6 +90,7 @@
 		active = 0
 	else
 		active = 1
+		communicate(/decl/communication_channel/dsay, src, "A [spawn_datum.spawn_faction] mobile respawn point within [src] has just been activated at ([x],[y],[z]), [get_area(src)]", /decl/dsay_communication/direct)
 
 /obj/vehicles/verb/toggle_headlights()
 	set name = "Toggle Headlights"
@@ -119,6 +123,22 @@
 	if(spawn_datum)
 		spawn_datum = new spawn_datum
 		verbs += /obj/vehicles/proc/toggle_mobile_spawn_deploy
+	if(internal_air)
+		internal_air.volume = 2500
+		internal_air.temperature = T20C
+
+/obj/vehicles/return_air_for_internal_lifeform(var/mob/living/carbon/human/form)
+	if(!internal_air)
+		return
+	if(!istype(form))
+		return
+	internal_air.gas[form.species.breath_type] = 0
+	for(var/gas in internal_air.gas)
+		internal_air.gas[gas] = 100/internal_air.gas.len
+	return internal_air
+
+/obj/vehicles/return_air()
+	return internal_air
 
 /obj/vehicles/attack_generic(var/mob/living/simple_animal/attacker,var/damage,var/text)
 	visible_message("<span class = 'danger'>[attacker] [text] [src]</span>")
@@ -335,8 +355,11 @@
 	if(istype(obstacle,/mob/living))
 		var/mob/living/hit_mob = obstacle
 		playsound(loc,collision_sound,100,0,4)
-		hit_mob.Weaken(1) //No damage for now, let's just knock them over.
+		hit_mob.Weaken(2) //No damage for now, let's just knock them over.
 	else
+		moving_x = 0
+		moving_y = 0
+		last_moved_axis = 0
 		speed[1] = 0
 		speed[2] = 0
 	visible_message("<span class = 'notice'>[src] collides wth [obstacle]</span>")
