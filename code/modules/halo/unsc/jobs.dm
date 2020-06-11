@@ -34,7 +34,10 @@
 	name = "UNSC Commanding Officer"
 	glasses = /obj/item/clothing/glasses/hud/tactical
 	uniform = /obj/item/clothing/under/unsc/grey
-
+	head = /obj/item/clothing/head/unsc/co
+	mask = /obj/item/clothing/mask/gas/half
+	suit = /obj/item/clothing/suit/storage/service/marine/command
+	shoes = /obj/item/clothing/shoes/jackboots
 	belt = /obj/item/weapon/gun/projectile/m6d_magnum/CO_magnum
 	back = /obj/item/weapon/material/machete/officersword
 	starting_accessories = list(/obj/item/clothing/accessory/rank/fleet/officer/o6,/obj/item/clothing/accessory/badge/tags)

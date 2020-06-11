@@ -9,6 +9,7 @@
 	icon_living = "minor"
 	icon_dead = "dead_minor"
 	possible_weapons = list(/obj/item/weapon/gun/energy/plasmarifle)
+	turns_per_move = 5
 	var/shield_left = 50
 	var/shield_max = 50
 	var/recharge_delay = 5 SECONDS
@@ -24,6 +25,7 @@
 	shield_left = 100
 	shield_max = 100
 	recharge_rate = 20
+	turns_per_move = 5
 	combat_tier = 4
 	possible_weapons = list(/obj/item/weapon/gun/energy/plasmarepeater)
 
@@ -35,6 +37,7 @@
 	shield_left = 150
 	shield_max = 150
 	recharge_rate = 25
+	turns_per_move = 5
 	combat_tier = 5
 	possible_weapons = list(/obj/item/weapon/gun/projectile/type31needlerifle,/obj/item/weapon/gun/projectile/type51carbine)
 
@@ -47,6 +50,7 @@
 	shield_max = 150
 	recharge_rate = 25
 	combat_tier = 6
+	turns_per_move = 5
 	melee_damage_lower = 45
 	melee_damage_upper = 55
 	possible_weapons = list()

@@ -1,12 +1,3 @@
-/area/planets
-	name = "W-0459"
-	icon_state = "planet"
-	requires_power = 0
-	dynamic_lighting = 1
-	has_gravity = 1
-	base_turf = /turf/simulated/floor/asteroid/planet
-
-
 /area/planets/w_0459
 	name = "City"
 	icon_state = "Holodeck"

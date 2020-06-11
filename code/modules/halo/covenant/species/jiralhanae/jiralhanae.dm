@@ -50,7 +50,9 @@ GLOBAL_LIST_INIT(first_names_jiralhanae, world.file2list('code/modules/halo/cove
 	can_force_door = 1
 	default_faction = "Covenant"
 	pixel_offset_x = -12
-	item_icon_offsets = list(list(10,4),list(10,4),null,list(6,2),null,null,null,list(6,2),null)
+	item_icon_offsets = list(list(14,4),list(10,4),null,list(6,2),null,null,null,list(6,2),null)
+	inhand_icon_offsets = list(list(6,0),list(-6,0),null,list(6,0),null,null,null,list(6,0),null)
+	inter_hand_dist = 15
 	unarmed_types = list(/datum/unarmed_attack/brute_punch)
 	inherent_verbs = list()
 

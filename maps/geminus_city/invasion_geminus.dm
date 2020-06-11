@@ -18,8 +18,6 @@
 
 #include "../Asteroid Listening Post/includes.dm"
 
-#include "../CRS_Unyielding_Transgression/includes.dm"
-
 #include "../urf_flagship/includes.dm"
 
 #include "invasion_geminus_jobdefs.dm"

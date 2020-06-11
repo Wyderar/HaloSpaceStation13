@@ -5,10 +5,12 @@
 	icon_living = "kigyar"
 	icon_dead = "dead_kigyar"
 	combat_tier = 2
+	turns_per_move = 5
 	possible_weapons = list(/obj/item/weapon/gun/projectile/type51carbine, /obj/item/weapon/gun/projectile/type31needlerifle)
 
 /mob/living/simple_animal/hostile/covenant/jackal/shield
 	possible_weapons = list(/obj/item/weapon/gun/energy/plasmapistol, /obj/item/weapon/gun/projectile/needler)
+	turns_per_move = 5
 	var/shield_max = 400
 	var/shield_left = 400
 	var/recharge_delay = 5 SECONDS
