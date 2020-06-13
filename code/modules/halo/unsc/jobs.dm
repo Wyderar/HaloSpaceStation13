@@ -33,7 +33,7 @@
 /decl/hierarchy/outfit/job/unsc_job/marine/co
 	name = "UNSC Commanding Officer"
 	glasses = /obj/item/clothing/glasses/hud/tactical
-	uniform = /obj/item/clothing/under/unsc/grey
+	uniform = /obj/item/clothing/under/unsc/co
 	head = /obj/item/clothing/head/unsc/co
 	mask = /obj/item/clothing/mask/gas/half
 	suit = /obj/item/clothing/suit/storage/service/marine/command
@@ -110,6 +110,9 @@
 	outfit_type = /decl/hierarchy/outfit/job/unsc_job/crewman
 	total_positions = 3
 	spawn_positions = 3
+	alt_titles = list("UNSC Ship Tehnician"= /decl/hierarchy/outfit/job/unsc_job/technician,
+	"UNSC Bridge Crew"= /decl/hierarchy/outfit/job/unsc_job/bridgecrew ,
+	"UNSC Doctor"= /decl/hierarchy/outfit/job/unsc_job/medicalcrew,)
 	access = list(access_unsc)
 
 /decl/hierarchy/outfit/job/facil_ODST
@@ -163,5 +166,40 @@
 	belt = /obj/item/weapon/gun/projectile/m7_smg
 	id_type = /obj/item/weapon/card/id/unsc
 	starting_accessories = list (/obj/item/clothing/accessory/rank/fleet/enlisted/e4, /obj/item/clothing/accessory/holster/thigh, /obj/item/clothing/accessory/badge/tags)
+
+	flags = 0
+
+/decl/hierarchy/outfit/job/unsc_job/technician
+	name = "UNSC Ship Technician"
+	uniform = /obj/item/clothing/under/unsc/technician
+	shoes = /obj/item/clothing/shoes/jackboots
+	suit = /obj/item/clothing/suit/storage/unsc/technician
+	head = /obj/item/clothing/head/hardhat
+	glasses = /obj/item/clothing/glasses/welding/unsc
+	gloves = /obj/item/clothing/gloves/insulated/unsc
+	belt = /obj/item/weapon/storage/belt/utility/full
+	starting_accessories = list(/obj/item/clothing/accessory/rank/fleet/enlisted/e5)
+
+	flags = 0
+
+/decl/hierarchy/outfit/job/unsc_job/bridgecrew
+	name = "UNSC Ship Bridge Crew"
+
+	l_ear = /obj/item/device/radio/headset/unsc
+	uniform = /obj/item/clothing/under/unsc/bridge
+	shoes =  /obj/item/clothing/shoes/jackboots
+	starting_accessories = list(/obj/item/clothing/accessory/rank/fleet/enlisted/e6)
+
+	flags = 0
+
+/decl/hierarchy/outfit/job/unsc_job/medicalcrew
+	name = "UNSC Medical Crew"
+
+	l_ear = /obj/item/device/radio/headset/unsc
+	uniform = /obj/item/clothing/under/unsc/shipmedic
+	suit = /obj/item/clothing/suit/storage/toggle/labcoat
+	glasses = /obj/item/clothing/glasses/hud/health
+	shoes =  /obj/item/clothing/shoes/jackboots
+	starting_accessories = list(/obj/item/clothing/accessory/rank/fleet/enlisted/e6)
 
 	flags = 0

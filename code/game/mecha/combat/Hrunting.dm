@@ -5,7 +5,7 @@
 	initial_icon = "Hrunting"
 	step_in = 3
 	dir_in = 1 //Facing North.
-	health = 500
+	health = 700
 	deflect_chance = 5
 	damage_absorption = list("brute"=0.6,"fire"=0.7,"bullet"=0.6,"laser"=0.6,"energy"=0.6,"bomb"=0.7)
 	max_temperature = 25000
@@ -14,7 +14,6 @@
 	var/overload_coeff = 2
 	wreckage = /obj/effect/decal/mecha_wreckage/hrunting
 	max_equip = 3
-	var/capacity_flag = ITEM_SIZE_SMALL
 
 /obj/mecha/combat/hrunting/add_cell()
 	cell = new /obj/item/weapon/cell/hyper(src)

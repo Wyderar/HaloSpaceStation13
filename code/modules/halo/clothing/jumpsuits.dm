@@ -76,12 +76,19 @@
 	item_state = "unsc-co-uniform-obj"
 	worn_state = "unsc-co-uniform"
 
+/obj/item/clothing/under/unsc/bridge
+	desc = "Service Command Crew uniform"
+	name = "UNSC Service Command Uniform"
+	icon_state = "unsc-bridge-uniform-obj"
+	item_state = "unsc-bridge-uniform-obj"
+	worn_state = "unsc-bridge-uniform"
+
 /obj/item/clothing/under/unsc/technician
-	desc = "UNSC technician uniform"
-	name = "technician uniform"
-	icon_state = "unscorange"
-	item_state = "unscorange"
-	worn_state = "unsc_orange"
+	desc = "Standard issue technician uniform"
+	name = "UNSC Technician Uniform"
+	icon_state = "unsc-working-uniform-obj"
+	item_state = "unsc-working-uniform-obj"
+	worn_state = "unsc-working-uniform"
 
 /obj/item/clothing/under/unsc/logistics
 	desc = "UNSC logistics uniform"
@@ -174,6 +181,58 @@
 	icon_override = 'code/modules/halo/clothing/mob_jumpsuit_ship.dmi'
 	icon_state = "captainscap-obj"
 	item_state = "captainscap"
+
+//technician's gear
+/obj/item/clothing/suit/storage/unsc/technician
+	name = "UNSC Technician Vest"
+	desc = "A yellow vest worn by UNSC Technicians, designed to carry tools for day to day work."
+	icon = 'code/modules/halo/clothing/mob_jumpsuit_ship.dmi'
+	icon_override = 'code/modules/halo/clothing/mob_jumpsuit_ship.dmi'
+	icon_state = "unsc-technician-vest-obj"
+	item_state = "unsc-technician-vest"
+	blood_overlay_type = "armor"
+	item_state_slots = list(slot_l_hand_str = "armor", slot_r_hand_str = "armor")
+	body_parts_covered = ARMS|UPPER_TORSO|LOWER_TORSO
+	armor = list(melee = 10, bullet = 20, laser = 0, energy = 0, bomb = 0, bio = 0, rad = 0)
+	armor_thickness = 20
+	allowed = list(/obj/item/device/flashlight,/obj/item/weapon/storage/fancy/cigarettes,/obj/item/weapon/flame/lighter)
+
+/obj/item/clothing/glasses/welding/unsc
+	name = "UNSC Technician Welding Goggles"
+	desc = "Welding goggles made for UNSC crewmen for protection of the eyes from physical objects as well as bright lights produced from welding equipment."
+	icon = 'code/modules/halo/clothing/mob_jumpsuit_ship.dmi'
+	icon_override = 'code/modules/halo/clothing/mob_jumpsuit_ship.dmi'
+	icon_state = "unsc-welding-goggles-obj"
+	item_state = "unsc-welding-goggles"
+
+/obj/item/clothing/gloves/insulated/unsc
+	desc = "These gloves will protect the wearer from electric shocks."
+	name = "UNSC Technician Gloves"
+	icon = 'code/modules/halo/clothing/mob_jumpsuit_ship.dmi'
+	icon_override = 'code/modules/halo/clothing/mob_jumpsuit_ship.dmi'
+	icon_state = "unsc-technicians-gloves-obj"
+	item_state = "unsc-technicians-gloves"
+
+/obj/item/clothing/head/hardhat/unsc
+	name = "hard hat"
+	desc = "A piece of headgear used to protect the head."
+	icon = 'code/modules/halo/clothing/mob_jumpsuit_ship.dmi'
+	icon_override = 'code/modules/halo/clothing/mob_jumpsuit_ship.dmi'
+	icon_state = "unsc-hardhat-obj"
+	item_state = "unsc-hardhat"
+	w_class = ITEM_SIZE_NORMAL
+	armor = list(melee = 60, bullet = 5, laser = 5,energy = 10, bomb = 20, bio = 10, rad = 20)
+	flags_inv = HIDEEARS|BLOCKHAIR
+	siemens_coefficient = 0.9
+	heat_protection = HEAD
+	max_heat_protection_temperature = FIRE_HELMET_MAX_HEAT_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/under/unsc/shipmedic
+	desc = "Standard issue medic uniform"
+	name = "UNSC Medic Uniform"
+	icon_state = "unsc-working-uniform-med-obj"
+	item_state = "unsc-working-uniform-med-obj"
+	worn_state = "unsc-working-uniform-med"
 
 #undef SHIP_MOB_OVERRIDE
 #undef SHIP_ITEM_OVERRIDE

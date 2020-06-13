@@ -14,3 +14,11 @@
 	icon_state = "valmoric"
 	density = 1
 	anchored = 1
+
+/obj/structure/memorial_odst
+	name = "Unnamed Soldier"
+	desc = "Memorial erected in honor of an orbital trooper who died at the Reach."
+	icon = 'code/modules/halo/icons/memorial_statue.dmi'
+	icon_state = "unnamed_soldier_stone"
+	density = 1
+	anchored = 1

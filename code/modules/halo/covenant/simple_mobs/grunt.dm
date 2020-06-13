@@ -14,7 +14,7 @@
 	icon_dead = "grunt_minor_dead"
 	possible_weapons = list(/obj/item/weapon/gun/energy/plasmapistol, /obj/item/weapon/gun/projectile/needler)
 	combat_tier = 1
-	turns_per_move = 5
+	turns_per_move = 1
 
 /mob/living/simple_animal/hostile/covenant/grunt/major
 	name = "Grunt Major (NPC)"
@@ -23,7 +23,7 @@
 	icon_dead = "grunt_major_dead"
 	combat_tier = 2
 	resistance = 5
-	turns_per_move = 5
+	turns_per_move = 1
 
 /mob/living/simple_animal/hostile/covenant/grunt/heavy
 	name = "Grunt Heavy (NPC)"
@@ -32,7 +32,7 @@
 	icon_dead = "grunt_heavy_dead"
 	combat_tier = 3
 	resistance = 5
-	turns_per_move = 5
+	turns_per_move = 3
 	possible_weapons = list(/obj/item/weapon/gun/energy/plasmarepeater)
 
 /mob/living/simple_animal/hostile/covenant/grunt/ultra
@@ -42,7 +42,7 @@
 	icon_dead = "grunt_ultra_dead"
 	combat_tier = 3
 	resistance = 10
-	turns_per_move = 5
+	turns_per_move = 2
 	var/shield_left = 50
 	var/shield_max = 50
 	var/recharge_delay = 5 SECONDS

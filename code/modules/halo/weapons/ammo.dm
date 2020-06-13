@@ -24,8 +24,9 @@
 	projectile_type = /obj/item/projectile/bullet/a127_saphe
 
 /obj/item/projectile/bullet/a127_saphe
-	damage = 55		//deadly but inaccurate
+	damage = 65		//deadly but inaccurate
 	accuracy = -1
+	armor_penetration = 25
 
 /obj/item/projectile/bullet/a127
 	damage = 25
@@ -76,7 +77,7 @@
 //deadly but inaccurate
 /obj/item/projectile/bullet/a127_saphp
 	damage = 40
-	armor_penetration = 20
+	armor_penetration = 10
 	accuracy = 1
 
 /obj/item/weapon/storage/box/m127_saphp

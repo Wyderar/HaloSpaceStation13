@@ -25,7 +25,7 @@
 	shield_left = 100
 	shield_max = 100
 	recharge_rate = 20
-	turns_per_move = 5
+	turns_per_move = 4
 	combat_tier = 4
 	possible_weapons = list(/obj/item/weapon/gun/energy/plasmarepeater)
 
@@ -38,7 +38,7 @@
 	shield_max = 150
 	recharge_rate = 25
 	turns_per_move = 5
-	combat_tier = 5
+	combat_tier = 3
 	possible_weapons = list(/obj/item/weapon/gun/projectile/type31needlerifle,/obj/item/weapon/gun/projectile/type51carbine)
 
 /mob/living/simple_animal/hostile/covenant/elite/zealot
@@ -50,7 +50,7 @@
 	shield_max = 150
 	recharge_rate = 25
 	combat_tier = 6
-	turns_per_move = 5
+	turns_per_move = 3
 	melee_damage_lower = 45
 	melee_damage_upper = 55
 	possible_weapons = list()
