@@ -33,7 +33,7 @@
 	name = "Elite Ultra (NPC)"
 	icon_state = "ultra"
 	icon_living = "ultra"
-	icon_dead = "dead_ultra"
+	icon_dead = "ultra_dead"
 	shield_left = 150
 	shield_max = 150
 	recharge_rate = 25
@@ -45,7 +45,7 @@
 	name = "Elite Zealot (NPC)"
 	icon_state = "zealot"
 	icon_living = "zealot"
-	icon_dead = "dead_zealot"
+	icon_dead = "zealot_dead"
 	shield_left = 150
 	shield_max = 150
 	recharge_rate = 25

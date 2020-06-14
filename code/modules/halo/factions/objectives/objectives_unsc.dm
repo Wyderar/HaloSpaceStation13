@@ -92,7 +92,7 @@
 	target_faction_name = "Insurrection"
 	objective_type = 0
 	overmap_type = 1
-	win_points = 100
+	win_points = 150
 
 /datum/objective/retrieve/nav_data/unsc
 	short_text = "Steal navigation datachips from aliens"

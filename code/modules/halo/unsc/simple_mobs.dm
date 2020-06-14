@@ -13,6 +13,7 @@
 	icon_state = "marine"
 	icon_living  = "marine"
 	icon_dead = "dead_marine"
+	turns_per_move = 2
 	resistance = 5
 	combat_tier = 2
 	possible_weapons = list(/obj/item/weapon/gun/projectile/m7_smg,/obj/item/weapon/gun/projectile/ma5b_ar)
@@ -22,6 +23,7 @@
 	icon_state = "odst"
 	icon_living  = "odst"
 	icon_dead = "dead_odst"
+	turns_per_move = 2
 	resistance = 10
 	combat_tier = 3
 	possible_weapons = list(/obj/item/weapon/gun/projectile/m7_smg, /obj/item/weapon/gun/projectile/br55, /obj/item/weapon/gun/projectile/m392_dmr)
@@ -45,6 +47,7 @@
 	health = 150
 	maxHealth = 150
 	resistance = 15
+	turns_per_move = 2
 	combat_tier = 4
 	var/shield_left = 150
 	var/shield_max = 150

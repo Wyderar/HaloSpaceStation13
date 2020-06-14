@@ -17,7 +17,6 @@
 	anchored = 1 //no pulling around.
 	unacidable = 1 //and no deleting hoomans inside
 	plane = OBJ_PLANE
-	w_class = ITEM_SIZE_HUGE
 	layer = ABOVE_WINDOW_LAYER //icon draw layer
 	infra_luminosity = 15 //byond implementation is bugged.
 	var/initial_icon = null //Mech type for resetting icon. Only used for reskinning kits (see custom items)
