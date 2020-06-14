@@ -14,8 +14,6 @@
 		item_size = ITEM_SIZE_HUGE
 	if(istype(object, /obj/machinery))
 		item_size = ITEM_SIZE_HUGE
-	if(istype(object, /obj/mecha))
-		item_size = ITEM_SIZE_HUGE
 	if(istype(object, /obj/vehicles))
 		var/obj/vehicles/vehicle = object
 		item_size = vehicle.vehicle_size
