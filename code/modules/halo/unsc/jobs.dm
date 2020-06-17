@@ -72,7 +72,7 @@
 	spawn_positions = -1
 	outfit_type = /decl/hierarchy/outfit/job/unsc_job/marine
 	alt_titles = list("Marine Combat Medic",
-	"Assault Recon Marine",
+	"Marine Combat Engineer",
 	"Designated Marksman Marine",
 	"Combat Pilot Marine")
 
@@ -99,26 +99,26 @@
 	access = list(access_unsc,access_unsc_armoury,access_unsc_specialist,access_unsc_odst,access_unsc_oni)
 
 /datum/job/unsc_job/odst
-	title = "UNSC ODST"
-	total_positions = 8
-	spawn_positions = 8
+	title = "UNSC ODST Rifleman"
+	total_positions = 6
+	spawn_positions = 6
+	alt_titles = list("UNSC ODST Engineer","UNSC ODST Medic","UNSC ODST Sharpshooter","UNSC ODST Close Quarters Fighter")
 	access = list(access_unsc,access_unsc_armoury,access_unsc_odst,access_unsc_specialist)
 	outfit_type = /decl/hierarchy/outfit/job/facil_ODST
 
 /datum/job/unsc_job/ship_crew
-	title = "UNSC Ship Crew"
-	outfit_type = /decl/hierarchy/outfit/job/unsc_job/crewman
+	title = "UNSC Bridge Crew"
+	outfit_type = /decl/hierarchy/outfit/job/unsc_job/bridgecrew
 	total_positions = 3
 	spawn_positions = 3
 	alt_titles = list("UNSC Ship Tehnician"= /decl/hierarchy/outfit/job/unsc_job/technician,
-	"UNSC Bridge Crew"= /decl/hierarchy/outfit/job/unsc_job/bridgecrew ,
 	"UNSC Doctor"= /decl/hierarchy/outfit/job/unsc_job/medicalcrew,)
 	access = list(access_unsc)
 
 /decl/hierarchy/outfit/job/facil_ODST
 	name = "Rifleman"
 	l_ear = /obj/item/device/radio/headset/unsc/odst
-	glasses = /obj/item/clothing/glasses/hud/tactical
+	glasses = null
 	uniform = /obj/item/clothing/under/unsc/odst_jumpsuit
 	gloves = /obj/item/clothing/gloves/tactical
 	shoes = /obj/item/clothing/shoes/jungleboots
@@ -126,6 +126,30 @@
 	belt = /obj/item/weapon/gun/projectile/m6c_magnum_s
 	id_type = /obj/item/weapon/card/id/odst
 	starting_accessories = list (/obj/item/clothing/accessory/rank/fleet/enlisted/e4, /obj/item/clothing/accessory/holster/thigh, /obj/item/clothing/accessory/badge/tags)
+
+	flags = 0
+
+	hierarchy_type = /decl/hierarchy/outfit/job
+
+/datum/job/unsc_job/odst/squadlead
+	title = "UNSC ODST Squad Leader"
+	total_positions = 1
+	spawn_positions = 1
+	access = list(access_unsc,access_unsc_armoury,access_unsc_odst,access_unsc_specialist)
+	outfit_type = /decl/hierarchy/outfit/job/facil_ODST/squadleader
+
+/decl/hierarchy/outfit/job/facil_ODST/squadleader
+	name = "UNSC ODST Squad Leader"
+
+	l_ear = /obj/item/device/radio/headset/unsc/odst
+	glasses = null
+	uniform = /obj/item/clothing/under/unsc/odst_jumpsuit
+	gloves = /obj/item/clothing/gloves/tactical
+	shoes = /obj/item/clothing/shoes/jungleboots
+	gloves = /obj/item/clothing/gloves/thick/combat
+	belt = /obj/item/weapon/gun/projectile/m6c_magnum_s
+	id_type = /obj/item/weapon/card/id/odst
+	starting_accessories = list (/obj/item/clothing/accessory/rank/fleet/enlisted/e6, /obj/item/clothing/accessory/holster/thigh, /obj/item/clothing/accessory/badge/tags)
 
 	flags = 0
 
@@ -174,7 +198,7 @@
 	uniform = /obj/item/clothing/under/unsc/technician
 	shoes = /obj/item/clothing/shoes/jackboots
 	suit = /obj/item/clothing/suit/storage/unsc/technician
-	head = /obj/item/clothing/head/hardhat
+	head = /obj/item/clothing/head/hardhat/unsc
 	glasses = /obj/item/clothing/glasses/welding/unsc
 	gloves = /obj/item/clothing/gloves/insulated/unsc
 	belt = /obj/item/weapon/storage/belt/utility/full

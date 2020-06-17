@@ -14,10 +14,9 @@
 	display_name = "beret, Misriah Armory security"
 	path = /obj/item/clothing/head/beret/guard
 
-/datum/gear/head/veteranhat
+/*/datum/gear/head/veteranhat
 	display_name = "veteran hat"
-	path = /obj/item/clothing/head/soft/veteranhat
-
+	path = /obj/item/clothing/head/soft/veteranhat*/
 
 /datum/gear/head/bandana
 	display_name = "bandana selection"

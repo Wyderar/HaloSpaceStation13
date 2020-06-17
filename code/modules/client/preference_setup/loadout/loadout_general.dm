@@ -1,4 +1,4 @@
-/datum/gear/cane
+/*/datum/gear/cane
 	display_name = "cane"
 	path = /obj/item/weapon/cane
 
@@ -28,7 +28,7 @@
 
 /datum/gear/spaceball_pack
 	display_name = "Spaceball booster pack"
-	path = /obj/item/weapon/pack/spaceball
+	path = /obj/item/weapon/pack/spaceball*/
 
 /datum/gear/flask
 	display_name = "flask"
@@ -46,9 +46,9 @@
 	..()
 	gear_tweaks += new/datum/gear_tweak/reagents(lunchables_drink_reagents())
 
-/datum/gear/coffeecup
-	display_name = "coffee cup"
-	path = /obj/item/weapon/reagent_containers/food/drinks/coffeecup
+//datum/gear/coffeecup
+//	display_name = "coffee cup"
+//	path = /obj/item/weapon/reagent_containers/food/drinks/coffeecup
 
 /datum/gear/coffeecup/New()
 	..()
@@ -59,7 +59,7 @@
 	path = /obj/item/weapon/material/kitchen/utensil/knife/boot
 	cost = 3
 
-/datum/gear/lunchbox
+/*/datum/gear/lunchbox
 	display_name = "lunchbox"
 	description = "A little lunchbox."
 	cost = 2
@@ -73,7 +73,7 @@
 		if(!initial(lunchbox.filled))
 			lunchboxes[initial(lunchbox.name)] = lunchbox_type
 	gear_tweaks += new/datum/gear_tweak/path(sortAssoc(lunchboxes))
-	gear_tweaks += new/datum/gear_tweak/contents(lunchables_lunches(), lunchables_snacks(), lunchables_drinks())
+	gear_tweaks += new/datum/gear_tweak/contents(lunchables_lunches(), lunchables_snacks(), lunchables_drinks())*/
 
 /datum/gear/towel
 	display_name = "towel"

@@ -28,7 +28,7 @@
 	return list(
 	/obj/item/weapon/storage/box/MRE/Chicken = 1,
 	/obj/item/weapon/material/knife/combat_knife = 1,
-	/obj/item/ammo_magazine/m127_saphp = 2,
+	/obj/item/ammo_magazine/m127_saphe = 2,
 	/obj/item/weapon/gun/projectile/m6d_magnum = 1,
 	/obj/item/ammo_magazine/m5 = 2,
 	/obj/item/weapon/gun/projectile/m7_smg = 1,
@@ -57,10 +57,9 @@
 	/obj/item/ammo_magazine/m5 = 2,
 	/obj/item/weapon/gun/projectile/m7_smg = 1,
 	/obj/item/weapon/grenade/frag/m9_hedp = 1,
-	/obj/item/ammo_box/shotgun/slug = 1,
+	/obj/item/ammo_magazine/kv32 = 2,
 	/obj/item/ammo_box/shotgun = 1,
-	/obj/item/weapon/gun/projectile/shotgun/pump/m90_ts = 1,
-	/obj/item/clothing/head/helmet/marine/visor = 1,
+	/obj/item/weapon/gun/projectile/shotgun/soe = 1,
 	/obj/item/clothing/mask/marine = 1,
 	/obj/item/clothing/glasses/hud/tactical = 1,
 	/obj/item/clothing/suit/storage/marine = 1,
@@ -77,7 +76,6 @@
 
 /obj/structure/closet/crate/marine/engineer/WillContain()
 	return list(
-	/obj/item/clothing/head/helmet/marine/visor = 1,
 	/obj/item/clothing/mask/marine = 1,
 	/obj/item/clothing/glasses/welding = 1,
 	/obj/item/clothing/suit/storage/marine = 1,
@@ -89,8 +87,8 @@
 	/obj/item/weapon/armor_patch = 2,
 	/obj/item/ammo_magazine/m127_saphe = 2,
 	/obj/item/weapon/gun/projectile/m6d_magnum = 1,
-	/obj/item/ammo_magazine/m762_ap/MA5B = 2,
-	/obj/item/weapon/gun/projectile/ma5b_ar = 1,
+	/obj/item/ammo_magazine/m95_sap/br55 = 2,
+	/obj/item/weapon/gun/projectile/br55 = 1,
 	/obj/item/weapon/storage/box/flares = 1)
 
 /obj/structure/closet/crate/marine/rifleman

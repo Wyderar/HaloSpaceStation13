@@ -177,7 +177,7 @@
 /obj/item/clothing/head/unsc/co
 	name = "UNSC Captain's Cap"
 	desc = "A soft cap decorated with the crest of the UNSC."
-	icon = 'code/modules/halo/clothing/mob_jumpsuit_ship.dmi'
+	icon = 'code/modules/halo/clothing/item_jumpsuit_ship.dmi'
 	icon_override = 'code/modules/halo/clothing/mob_jumpsuit_ship.dmi'
 	icon_state = "captainscap-obj"
 	item_state = "captainscap"
@@ -186,29 +186,30 @@
 /obj/item/clothing/suit/storage/unsc/technician
 	name = "UNSC Technician Vest"
 	desc = "A yellow vest worn by UNSC Technicians, designed to carry tools for day to day work."
-	icon = 'code/modules/halo/clothing/mob_jumpsuit_ship.dmi'
+	icon = 'code/modules/halo/clothing/item_jumpsuit_ship.dmi'
 	icon_override = 'code/modules/halo/clothing/mob_jumpsuit_ship.dmi'
 	icon_state = "unsc-technician-vest-obj"
 	item_state = "unsc-technician-vest"
 	blood_overlay_type = "armor"
 	item_state_slots = list(slot_l_hand_str = "armor", slot_r_hand_str = "armor")
 	body_parts_covered = ARMS|UPPER_TORSO|LOWER_TORSO
-	armor = list(melee = 10, bullet = 20, laser = 0, energy = 0, bomb = 0, bio = 0, rad = 0)
+	armor = list(melee = 10, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0, rad = 0)
 	armor_thickness = 20
 	allowed = list(/obj/item/device/flashlight,/obj/item/weapon/storage/fancy/cigarettes,/obj/item/weapon/flame/lighter)
 
 /obj/item/clothing/glasses/welding/unsc
 	name = "UNSC Technician Welding Goggles"
 	desc = "Welding goggles made for UNSC crewmen for protection of the eyes from physical objects as well as bright lights produced from welding equipment."
-	icon = 'code/modules/halo/clothing/mob_jumpsuit_ship.dmi'
+	icon = 'code/modules/halo/clothing/item_jumpsuit_ship.dmi'
 	icon_override = 'code/modules/halo/clothing/mob_jumpsuit_ship.dmi'
-	icon_state = "unsc-welding-goggles-obj"
-	item_state = "unsc-welding-goggles"
+	icon_state = "weldingg-g"
+	item_state = "weldingg-g"
 
 /obj/item/clothing/gloves/insulated/unsc
 	desc = "These gloves will protect the wearer from electric shocks."
 	name = "UNSC Technician Gloves"
-	icon = 'code/modules/halo/clothing/mob_jumpsuit_ship.dmi'
+	color = null
+	icon = 'code/modules/halo/clothing/item_jumpsuit_ship.dmi'
 	icon_override = 'code/modules/halo/clothing/mob_jumpsuit_ship.dmi'
 	icon_state = "unsc-technicians-gloves-obj"
 	item_state = "unsc-technicians-gloves"
@@ -216,7 +217,7 @@
 /obj/item/clothing/head/hardhat/unsc
 	name = "hard hat"
 	desc = "A piece of headgear used to protect the head."
-	icon = 'code/modules/halo/clothing/mob_jumpsuit_ship.dmi'
+	icon = 'code/modules/halo/clothing/item_jumpsuit_ship.dmi'
 	icon_override = 'code/modules/halo/clothing/mob_jumpsuit_ship.dmi'
 	icon_state = "unsc-hardhat-obj"
 	item_state = "unsc-hardhat"

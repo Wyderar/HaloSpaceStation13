@@ -26,7 +26,7 @@
 	name = "Airlock"
 	icon = 'code/modules/halo/doors/airlockdouble/door.dmi'
 	welded_file = 'code/modules/halo/doors/airlockdouble/welded.dmi'
-	opacity = 1
+	opacity = 0
 	lights_file = null
 	fill_file = null
 	maxhealth = 1500
@@ -41,6 +41,7 @@
 	welded_file = 'code/modules/halo/doors/airlockblastdouble/welded.dmi'
 	opacity = 0
 	maxhealth = 2000
+	glass = 1
 
 /obj/machinery/door/airlock/multi_tile/halo/blast/ns
 	dir = 4
@@ -81,6 +82,8 @@ obj/machinery/door/airlock/multi_tile/halo/quadruplens
 	name = "Secure Airlock"
 	icon = 'code/modules/halo/doors/Secure2x1.dmi'
 	assembly_type = /obj/structure/door_assembly/multi_tile
+	glass = 1
+	opacity = 0
 
 obj/machinery/door/airlock/multi_tile/halo/triple
 	icon = 'code/modules/halo/doors/blastdoor/door.dmi'

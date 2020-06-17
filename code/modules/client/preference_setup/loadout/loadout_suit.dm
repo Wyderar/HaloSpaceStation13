@@ -43,7 +43,7 @@
 
 /datum/gear/suit/poncho
 
-/datum/gear/suit/roles/poncho/security
+/*/datum/gear/suit/roles/poncho/security
 
 /datum/gear/suit/roles/poncho/medical
 
@@ -51,7 +51,7 @@
 
 /datum/gear/suit/roles/poncho/science
 
-/datum/gear/suit/roles/poncho/cargo
+/datum/gear/suit/roles/poncho/cargo*/
 
 /datum/gear/suit/suit_jacket
 
@@ -113,7 +113,7 @@
 	display_name = "suit jackets"
 	path = /obj/item/clothing/suit/storage/toggle/lawyer/bluejacket
 
-/datum/gear/suit/roles/poncho/security
+/*/datum/gear/suit/roles/poncho/security
 	display_name = "poncho, security"
 	path = /obj/item/clothing/suit/poncho/roles/security
 
@@ -131,7 +131,7 @@
 
 /datum/gear/suit/roles/poncho/cargo
 	display_name = "poncho, supply"
-	path = /obj/item/clothing/suit/poncho/roles/cargo
+	path = /obj/item/clothing/suit/poncho/roles/cargo*/
 
 /datum/gear/suit/suit_jacket/New()
 	..()

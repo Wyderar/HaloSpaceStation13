@@ -1,24 +1,24 @@
-/datum/gear/accessory
+/*/datum/gear/accessory
 	display_name = "locket"
 	path = /obj/item/clothing/accessory/locket
 	slot = slot_tie
-	sort_category = "Accessories"
+	sort_category = "Accessories"*/
 
 /datum/gear/accessory/vest
 	display_name = "black vest"
 	path = /obj/item/clothing/accessory/toggleable/vest
 
 
-/datum/gear/accessory/suspenders
+/*/datum/gear/accessory/suspenders
 	display_name = "suspenders"
-	path = /obj/item/clothing/accessory/suspenders
+	path = /obj/item/clothing/accessory/suspenders*/
 
 /datum/gear/accessory/wcoat
 	display_name = "waistcoat"
 	path = /obj/item/clothing/accessory/wcoat
 
 
-/datum/gear/accessory/zhongshan
+/*datum/gear/accessory/zhongshan
 	display_name = "zhongshan jacket"
 	path = /obj/item/clothing/accessory/toggleable/zhongshan
 	flags = GEAR_HAS_COLOR_SELECTION
@@ -30,14 +30,14 @@
 
 /datum/gear/accessory/dashiki/New()
 	..()
-	gear_tweaks += new/datum/gear_tweak/path(/obj/item/clothing/accessory/dashiki)
+	gear_tweaks += new/datum/gear_tweak/path(/obj/item/clothing/accessory/dashiki)*/
 
 /datum/gear/accessory/thawb
 	display_name = "thawb"
 	path = /obj/item/clothing/accessory/thawb
 
 
-/datum/gear/accessory/sherwani
+/*datum/gear/accessory/sherwani
 	display_name = "sherwani"
 	path = /obj/item/clothing/accessory/sherwani
 	flags = GEAR_HAS_COLOR_SELECTION
@@ -45,9 +45,9 @@
 /datum/gear/accessory/qipao
 	display_name = "qipao blouse"
 	path = /obj/item/clothing/accessory/qipao
-	flags = GEAR_HAS_COLOR_SELECTION
+	flags = GEAR_HAS_COLOR_SELECTION*/
 
-/datum/gear/accessory/sweater
+/*/datum/gear/accessory/sweater
 	display_name = "turtleneck sweater"
 	path = /obj/item/clothing/accessory/sweater
 	flags = GEAR_HAS_COLOR_SELECTION
@@ -64,7 +64,7 @@
 
 /datum/gear/accessory/bowtie
 	display_name = "bowtie, horrible"
-	path = /obj/item/clothing/accessory/bowtie/ugly
+	path = /obj/item/clothing/accessory/bowtie/ugly*/
 
 
 /datum/gear/accessory/bowtie/color
@@ -132,13 +132,13 @@
 	..()
 	gear_tweaks += new/datum/gear_tweak/path(/obj/item/clothing/accessory/holster)
 
-/datum/gear/accessory/ubac
+/*/datum/gear/accessory/ubac
 	display_name = "ubac selection"
 	path = /obj/item/clothing/accessory/ubac
 
 /datum/gear/accessory/ubac/New()
 	..()
-	gear_tweaks += new/datum/gear_tweak/path(/obj/item/clothing/accessory/ubac)
+	gear_tweaks += new/datum/gear_tweak/path(/obj/item/clothing/accessory/ubac)*/
 
 /datum/gear/accessory/tie
 	display_name = "tie selection"
@@ -166,7 +166,7 @@
 /datum/gear/accessory/bandolier
 	display_name = "bandolier"
 	path = /obj/item/clothing/accessory/storage/bandolier
-	cost = 3
+	cost = 8
 
 /datum/gear/accessory/hawaii
 	display_name = "hawaii shirt"
@@ -222,13 +222,13 @@
 	solminors["instructor ribbon"] = /obj/item/clothing/accessory/ribbon/instructor
 	gear_tweaks += new/datum/gear_tweak/path(solminors)
 
-/datum/gear/accessory/tags
+/*/datum/gear/accessory/tags
 	display_name = "dog tags"
 	path = /obj/item/clothing/accessory/badge/tags
 
 /datum/gear/accessory/kneepads
 	display_name = "kneepads"
-	path = /obj/item/clothing/accessory/kneepads
+	path = /obj/item/clothing/accessory/kneepads*/
 
 /datum/gear/accessory/flannel
 	display_name = "flannel (colorable)"

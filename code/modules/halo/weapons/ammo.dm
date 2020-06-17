@@ -155,6 +155,7 @@
 
 /obj/item/projectile/bullet/a762_ap
 	damage = 40
+	armor_penetration = 20
 
 /obj/item/projectile/bullet/a762_ttr
 	armor_penetration = 0
@@ -165,7 +166,7 @@
 
 /obj/item/projectile/bullet/a762_M392
 	damage = 45
-	armor_penetration = 20
+	armor_penetration = 25
 
 /obj/item/weapon/storage/box/m762_ap
 	name = "box of 7.62mm M118 magazines"
@@ -442,5 +443,5 @@
 	ammo_type = /obj/item/ammo_casing/shotgun/pellet
 	matter = list(DEFAULT_WALL_MATERIAL = 1500)
 	caliber = "shotgun"
-	max_ammo = 4
+	max_ammo = 6
 	multiple_sprites = 1

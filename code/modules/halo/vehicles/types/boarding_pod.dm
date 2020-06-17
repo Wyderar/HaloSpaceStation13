@@ -6,7 +6,7 @@
 	anchored = 1
 	launch_arm_time = 5 SECONDS
 	drop_accuracy = 5
-	occupants = list(8,0)
+	occupants = list(4,0)
 	pod_range = 8
 
 	light_color = "#E1FDFF"

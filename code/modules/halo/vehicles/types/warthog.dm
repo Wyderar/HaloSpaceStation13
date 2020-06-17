@@ -82,7 +82,7 @@
 
 	max_speed = 2.4
 
-	occupants = list(6,0)
+	occupants = list(3,0)
 	exposed_positions = list("driver" = 10,"passenger" = 15)
 
 /obj/vehicles/warthog/troop/police
