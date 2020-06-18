@@ -23,7 +23,7 @@
 		slot_l_hand_str = 'code/modules/halo/weapons/icons/Weapon_Inhands_left.dmi',
 		slot_r_hand_str = 'code/modules/halo/weapons/icons/Weapon_Inhands_right.dmi',
 		)
-	force_divisor = 2.1
+	force_divisor = 2.5
 	thrown_force_divisor = 0.5
 	armor_penetration = 20
 
@@ -45,7 +45,7 @@
 	item_state = "machete"
 	applies_material_colour = FALSE
 	lunge_dist = 4
-	force_divisor = 3.1
+	force_divisor = 3.2
 	thrown_force_divisor = 0.5
 	armor_penetration = 30
 	parry_projectiles = 1
