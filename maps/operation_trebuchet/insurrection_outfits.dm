@@ -4,7 +4,6 @@
 	pda_slot = null
 
 	uniform = /obj/item/clothing/under/pj/red
-	l_ear = /obj/item/device/radio/headset/unsc/odst
 	shoes = null
 	flags = 0
 

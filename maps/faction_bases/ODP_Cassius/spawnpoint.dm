@@ -8,8 +8,7 @@
 	/datum/job/unsc_job/odst,
 	/datum/job/unsc_job/ship_crew,
 	/datum/job/unsc_job/oni_researcher,
-	/datum/job/unsc_job/mech_pilot,
-	/datum/job/unsc_job/odst/squadlead
+	/datum/job/unsc_job/mech_pilot
 	)
 
 GLOBAL_LIST_EMPTY(unsc_base_fallback_spawns)
