@@ -5,7 +5,7 @@
 
 	l_ear = /obj/item/device/radio/headset/unsc/commander
 	uniform = /obj/item/clothing/under/unsc/command
-	shoes = /obj/item/clothing/shoes/crewman
+	shoes = /obj/item/clothing/shoes/marine/crewman
 	pda_slot = null
 
 	flags = 0
@@ -17,7 +17,7 @@
 
 	l_ear = /obj/item/device/radio/headset/unsc/pilot
 	uniform = /obj/item/clothing/under/unsc/marine_fatigues
-	shoes = /obj/item/clothing/shoes/crewman
+	shoes = /obj/item/clothing/shoes/marine/crewman
 	l_pocket = /obj/item/weapon/coin/gear_req
 	pda_slot = null
 
@@ -30,7 +30,7 @@
 
 	l_ear = /obj/item/device/radio/headset/unsc/marine
 	uniform = /obj/item/clothing/under/unsc/marine_fatigues
-	shoes = /obj/item/clothing/shoes/crewman
+	shoes = /obj/item/clothing/shoes/marine/crewman
 	l_pocket = /obj/item/weapon/coin/gear_req
 	pda_slot = null
 
@@ -43,7 +43,7 @@
 
 	l_ear = /obj/item/device/radio/headset/unsc/marine
 	uniform = /obj/item/clothing/under/unsc/marine_fatigues
-	shoes = /obj/item/clothing/shoes/crewman
+	shoes = /obj/item/clothing/shoes/marine/crewman
 	l_pocket = /obj/item/weapon/coin/gear_req
 	r_pocket = /obj/item/weapon/paper/crumpled/orders
 	pda_slot = null
@@ -62,7 +62,7 @@
 
 	l_ear = /obj/item/device/radio/headset/unsc/pilot
 	uniform = /obj/item/clothing/under/unsc/pilot
-	shoes = /obj/item/clothing/shoes/crewman
+	shoes = /obj/item/clothing/shoes/marine/crewman
 	pda_slot = null
 
 	flags = 0
