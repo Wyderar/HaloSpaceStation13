@@ -4,6 +4,7 @@
 	icon_state = "ice"
 	desc = "An Icy backwater planet. The heart of the Covenant in this sector."
 	block_slipspace = 1
+	known = 0
 	base = 1
 	faction = "Covenant"
 

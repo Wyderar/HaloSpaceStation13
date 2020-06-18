@@ -13,7 +13,6 @@
 	gloves = /obj/item/clothing/gloves/thick/sangheili/minor
 	shoes = /obj/item/clothing/shoes/sangheili/minor
 	l_hand = /obj/item/language_learner/unggoy_to_common
-	r_hand = /obj/item/weapon/melee/energy/elite_sword
 	head = /obj/item/clothing/head/helmet/sangheili/minor
 	mask = null
 	l_pocket = /obj/item/weapon/grenade/plasma
@@ -32,7 +31,6 @@
 	gloves = /obj/item/clothing/gloves/thick/sangheili/major
 	shoes = /obj/item/clothing/shoes/sangheili/major
 	l_hand = /obj/item/language_learner/unggoy_to_common
-	r_hand = /obj/item/weapon/melee/energy/elite_sword
 	head = /obj/item/clothing/head/helmet/sangheili/major
 	l_pocket = /obj/item/weapon/grenade/plasma
 	//
@@ -64,7 +62,6 @@
 	back = /obj/item/weapon/gun/energy/plasmarifle
 	belt = /obj/item/weapon/gun/energy/plasmapistol
 	l_hand = /obj/item/language_learner/unggoy_to_common
-	r_hand = /obj/item/weapon/melee/energy/elite_sword
 	gloves = /obj/item/clothing/gloves/thick/sangheili/ultra
 	shoes = /obj/item/clothing/shoes/sangheili/ultra
 	head = /obj/item/clothing/head/helmet/sangheili/ultra

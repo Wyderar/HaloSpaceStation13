@@ -5,7 +5,7 @@
 
 	l_ear = /obj/item/device/radio/headset/unsc/commander
 	uniform = /obj/item/clothing/under/unsc/command
-	shoes = /obj/item/clothing/shoes/brown
+	shoes = /obj/item/clothing/shoes/crewman
 	pda_slot = null
 
 	flags = 0
@@ -17,7 +17,7 @@
 
 	l_ear = /obj/item/device/radio/headset/unsc/pilot
 	uniform = /obj/item/clothing/under/unsc/marine_fatigues
-	shoes = /obj/item/clothing/shoes/brown
+	shoes = /obj/item/clothing/shoes/crewman
 	l_pocket = /obj/item/weapon/coin/gear_req
 	pda_slot = null
 
@@ -30,7 +30,7 @@
 
 	l_ear = /obj/item/device/radio/headset/unsc/marine
 	uniform = /obj/item/clothing/under/unsc/marine_fatigues
-	shoes = /obj/item/clothing/shoes/brown
+	shoes = /obj/item/clothing/shoes/crewman
 	l_pocket = /obj/item/weapon/coin/gear_req
 	pda_slot = null
 
@@ -43,7 +43,7 @@
 
 	l_ear = /obj/item/device/radio/headset/unsc/marine
 	uniform = /obj/item/clothing/under/unsc/marine_fatigues
-	shoes = /obj/item/clothing/shoes/brown
+	shoes = /obj/item/clothing/shoes/crewman
 	l_pocket = /obj/item/weapon/coin/gear_req
 	r_pocket = /obj/item/weapon/paper/crumpled/orders
 	pda_slot = null
@@ -62,7 +62,7 @@
 
 	l_ear = /obj/item/device/radio/headset/unsc/pilot
 	uniform = /obj/item/clothing/under/unsc/pilot
-	shoes = /obj/item/clothing/shoes/brown
+	shoes = /obj/item/clothing/shoes/crewman
 	pda_slot = null
 
 	flags = 0
@@ -120,16 +120,16 @@
 /decl/hierarchy/outfit/job/unsc_achlys/sangheili
 	name = "Sangheili Prisoner"
 
-	l_ear = null
-	uniform = null
-	suit = null
-	back = null
-	gloves = null
-	head = null
-	id = null
-	id_slot = null
-	shoes = null
-	pda_slot = null
+	suit = /obj/item/clothing/suit/armor/special/combatharness/minor
+	back = /obj/item/weapon/gun/energy/plasmarifle
+	belt = /obj/item/weapon/gun/energy/plasmapistol
+	gloves = /obj/item/clothing/gloves/thick/sangheili/minor
+	shoes = /obj/item/clothing/shoes/sangheili/minor
+	l_hand = /obj/item/language_learner/unggoy_to_common
+	head = /obj/item/clothing/head/helmet/sangheili/minor
+	mask = null
+	l_pocket = /obj/item/weapon/grenade/plasma
+	r_pocket = null
 
 	flags = 0
 
