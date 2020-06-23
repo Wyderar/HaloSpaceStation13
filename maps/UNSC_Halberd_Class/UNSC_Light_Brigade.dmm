@@ -504,7 +504,7 @@
 "jJ" = (/obj/machinery/light/colored/blue{icon_state = "blue1"; dir = 1},/obj/machinery/power/apc{dir = 8; name = "APC"; pixel_x = -24},/obj/structure/cable/blue{icon_state = "0-4"},/turf/simulated/floor/reinforced,/area/destroyer/unsclightbrigade/foreaiandnavcomstorage)
 "jK" = (/obj/structure/cable/blue{icon_state = "2-8"},/turf/simulated/floor/reinforced,/area/destroyer/unsclightbrigade/foreaiandnavcomstorage)
 "jL" = (/obj/machinery/light/colored/blue{dir = 1},/turf/simulated/floor/reinforced,/area/destroyer/unsclightbrigade/foreaiandnavcomstorage)
-"jM" = (/obj/effect/landmark/start{name = "UNSC AI"},/obj/structure/ai_terminal/spawn_terminal/unsc/light_brigade,/obj/structure/cable/blue{icon_state = "0-2"},/turf/simulated/floor/reinforced,/area/destroyer/unsclightbrigade/foreaiandnavcomstorage)
+"jM" = (/obj/structure/ai_terminal/spawn_terminal/unsc/light_brigade,/obj/structure/cable/blue{icon_state = "0-2"},/obj/effect/landmark/start{name = "UNSC AI"},/turf/simulated/floor/reinforced,/area/destroyer/unsclightbrigade/foreaiandnavcomstorage)
 "jN" = (/obj/machinery/atmospherics/unary/vent_scrubber/on,/obj/machinery/camera/autoname/invis/light_brigade,/turf/simulated/floor/reinforced,/area/destroyer/unsclightbrigade/foreaiandnavcomstorage)
 "jO" = (/obj/structure/table/steel_reinforced,/obj/item/weapon/aicard,/obj/machinery/light/colored/blue{icon_state = "blue1"; dir = 1},/turf/simulated/floor/reinforced,/area/destroyer/unsclightbrigade/foreaiandnavcomstorage)
 "jP" = (/obj/structure/cable/blue{icon_state = "1-2"},/turf/simulated/floor/reinforced,/area/destroyer/unsclightbrigade/forehangar)

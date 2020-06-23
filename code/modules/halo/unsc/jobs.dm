@@ -227,3 +227,13 @@
 	starting_accessories = list(/obj/item/clothing/accessory/rank/fleet/enlisted/e6)
 
 	flags = 0
+
+/datum/job/unsc_ship_ai
+	title = "UNSC AI"
+	spawn_faction = "UNSC"
+	total_positions = 1
+	spawn_positions = 1
+	is_whitelisted = 1
+	outfit_type = /decl/hierarchy/outfit/halo_ai_smart
+	whitelisted_species = list()
+	access = list(access_unsc,access_unsc_armoury,access_unsc_specialist,access_unsc_odst,access_unsc_oni,access_unsc_officers)

@@ -160,6 +160,7 @@
 	icon_override = GRUNT_GEAR_ICON
 	icon_state = "combatharness_major"
 	item_state = "combatharness_major"
+	specials = list(/datum/armourspecials/self_destruct)
 
 	armor = list(melee = 55, bullet = 45, laser = 55, energy = 50, bomb = 40, bio = 25, rad = 25)
 
@@ -186,7 +187,8 @@
 	item_state = "combatharness_specops"
 
 	action_button_name = "Toggle Active Camouflage"
-	specials = list(/datum/armourspecials/cloaking)
+	specials = list(/datum/armourspecials/cloaking,\
+		/datum/armourspecials/self_destruct)
 
 	armor = list(melee = 55, bullet = 45, laser = 55, energy = 50, bomb = 40, bio = 25, rad = 25)
 
@@ -213,7 +215,8 @@
 	item_state = "combatharness_honour"
 	totalshields = 150 //Pretty much just a distinguishing feature.
 
-	specials = list(/datum/armourspecials/shields/unggoy)
+	specials = list(/datum/armourspecials/shields/unggoy,\
+		/datum/armourspecials/self_destruct)
 
 /obj/item/clothing/mask/rebreather/unggoy_spec_ops
 	name = "Unggoy Rebreather Mask (Spec-Ops)"

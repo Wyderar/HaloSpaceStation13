@@ -7,7 +7,6 @@
 	/datum/job/unsc_job/unsc_co,
 	/datum/job/unsc_job/odst,
 	/datum/job/unsc_job/ship_crew,
-	/datum/job/unsc_job/oni_researcher,
 	/datum/job/unsc_job/mech_pilot,
 	/datum/job/unsc_job/odst/squadlead
 	)
@@ -23,7 +22,6 @@ GLOBAL_LIST_EMPTY(unsc_base_fallback_spawns)
 	/datum/job/unsc_job/unsc_co,
 	/datum/job/unsc_job/odst,
 	/datum/job/unsc_job/ship_crew,
-	/datum/job/unsc_job/oni_researcher,
 	/datum/job/unsc_job/mech_pilot,
 	/datum/job/unsc_job/odst/squadlead
 	)
