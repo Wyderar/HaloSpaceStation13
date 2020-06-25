@@ -1677,6 +1677,8 @@
 #include "code\modules\halo\insurrection\orion.dm"
 #include "code\modules\halo\insurrection\orion_gear.dm"
 #include "code\modules\halo\insurrection\simple_mobs.dm"
+#include "code\modules\halo\loadout\ammo.dm"
+#include "code\modules\halo\loadout\weapons.dm"
 #include "code\modules\halo\machinery\ammo_fabricator.dm"
 #include "code\modules\halo\machinery\ammo_fabricator_datums.dm"
 #include "code\modules\halo\machinery\atmos_blastdoor.dm"

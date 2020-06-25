@@ -18,10 +18,6 @@
 
 	ship_max_speed = SHIP_DEFAULT_PIXEL_SPEED - 1
 
-/obj/effect/overmap/ship/covenant_light_cruiser/LateInitialize()
-	. = ..()
-	new /obj/effect/overmap/ship/npc_ship/shipyard/cov (loc)
-
 /obj/machinery/button/toggle/alarm_button/crs_alarm
 	alert_message = "Alert! Warriors of the Great Journey and crew of this holy vessel, prepare for combat action!"
 	un_alert_message = "Red Alert lifted."
