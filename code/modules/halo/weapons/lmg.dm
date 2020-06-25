@@ -23,8 +23,8 @@
 	//dispersion = list(1.0, 1.1, 1.2, 1.3, 1.4, 1.5, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.5, 1.6, 1.7, 1.8, 1.9, 2.0, 1.7, 1.8, 1.9, 2.0, 2.1, 2.2, 1.9, 2.0, 2.1, 2.2, 2.3, 2.4, 2.5, 2.5)
 	w_class = ITEM_SIZE_HUGE
 	firemodes = list(
-		list(mode_name="4-round bursts", burst=4, fire_delay=null, move_delay=6,    burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.6, 0.6)),
-		list(mode_name="short bursts", 	burst=6, fire_delay=null, move_delay=6,    burst_accuracy=list(-1,1,-2,-2,-3), dispersion=list(0.6, 1.0, 1.5, 1.5, 1.9)),
+		list(mode_name="4-round bursts", burst=4, fire_delay=null, move_delay=6,    burst_accuracy=list(0,-1,1),       dispersion=list(0.0, 0.6, 0.6)),
+		list(mode_name="short bursts", 	burst=6, fire_delay=null, move_delay=6,    burst_accuracy=list(2,1,-1,-2,3), dispersion=list(0.6, 1.0, 1.5, 1.5, 1.9)),
 		list(mode_name="semi-auto", 	burst=1, fire_delay=null, move_delay=6,    burst_accuracy=list(1), dispersion=list(0.0)),
 		)
 

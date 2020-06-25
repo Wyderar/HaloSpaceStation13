@@ -12,7 +12,7 @@
 	emote_hear = list("barks", "woofs", "yaps","pants")
 	emote_see = list("shakes its head", "shivers")
 	speak_chance = 1
-	turns_per_move = 10
+	turns_per_move = 1
 	speed = 4
 	response_help  = "pets"
 	response_disarm = "bops"

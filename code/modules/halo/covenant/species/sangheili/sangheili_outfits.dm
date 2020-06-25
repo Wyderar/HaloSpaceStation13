@@ -61,6 +61,7 @@
 	suit_store = /obj/item/weapon/gun/energy/plasmarifle
 	back = /obj/item/weapon/gun/energy/plasmarifle
 	belt = /obj/item/weapon/gun/energy/plasmapistol
+	r_hand = /obj/item/weapon/melee/energy/elite_sword
 	l_hand = /obj/item/language_learner/unggoy_to_common
 	gloves = /obj/item/clothing/gloves/thick/sangheili/ultra
 	shoes = /obj/item/clothing/shoes/sangheili/ultra

@@ -200,7 +200,7 @@
 	icon_override = GRUNT_GEAR_ICON
 	icon_state = "combatharness_deacon"
 	item_state = "combatharness_deacon"
-	totalshields = 60 //Pretty much just a distinguishing feature.
+	totalshields = 80 //Pretty much just a distinguishing feature.
 
 	armor = list(melee = 55, bullet = 45, laser = 55, energy = 50, bomb = 40, bio = 25, rad = 25)
 

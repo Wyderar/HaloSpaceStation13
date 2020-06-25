@@ -10,12 +10,11 @@
 	"Spartan II MCPO" = /decl/hierarchy/outfit/onispartan/mcpo,\
 	"Spartan II LJG" = /decl/hierarchy/outfit/onispartan/ljg,\
 	"Spartan II LT" = /decl/hierarchy/outfit/onispartan/lt)
-	total_positions = 0
-	spawn_positions = 0
-	account_allowed = 0
+	total_positions = 1
+	spawn_positions = 1
 	is_whitelisted = 1
 	selection_color = "#0A0A95"
-	access = list(access_unsc,144,145,110,192,310,311,117,access_unsc_bridge,access_unsc_shuttles,access_unsc_armoury,access_unsc_supplies,access_unsc_officers,access_unsc_marine)
+	access = list(access_unsc,access_unsc_armoury,access_unsc_specialist,access_unsc_odst,access_unsc_oni)
 	//spawnpoint_override = "ONI Aegis Spawns"
 	whitelisted_species = list(/datum/species/spartan)
 	latejoin_at_spawnpoints = 1

@@ -35,7 +35,7 @@ GLOBAL_LIST_INIT(first_names_jiralhanae, world.file2list('code/modules/halo/cove
 	additional_langs = list("Doisacci")
 	flags = NO_MINOR_CUT
 	appearance_flags = HAS_SKIN_TONE
-	total_health = 250 //Not quite elites, but their adrenline makes up for it
+	total_health = 300 //Not quite elites, but their adrenline makes up for it
 	radiation_mod = 0.6
 	spawn_flags = SPECIES_CAN_JOIN
 	brute_mod = 0.7 //receives 70% of brute damage
