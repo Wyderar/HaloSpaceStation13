@@ -135,6 +135,7 @@
 	title = "UNSC ODST Squad Leader"
 	total_positions = 1
 	spawn_positions = 1
+	alt_titles = list()
 	access = list(access_unsc,access_unsc_armoury,access_unsc_odst,access_unsc_specialist)
 	outfit_type = /decl/hierarchy/outfit/job/facil_ODST/squadleader
 

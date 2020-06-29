@@ -341,9 +341,9 @@
 	damtype = PAIN
 	damage = 40
 	//NOTE: Life() calls happen every two seconds, and life() reduces dizziness by one
-	var/stun_time = 4 //This is in ticks
+	var/stun_time = 6 //This is in ticks
 	var/suppress_intensity = 8
-	var/disorient_time = 6
+	var/disorient_time = 8
 
 /obj/item/projectile/SDSS_proj/on_hit(var/mob/living/carbon/human/L, var/blocked = 0, var/def_zone = null)
 	. = ..()
@@ -365,7 +365,7 @@
 	mag_type = MAGAZINE
 	ammo_type = /obj/item/ammo_casing/spnkr
 	caliber = "spnkr"
-	max_ammo = 2
+	max_ammo = 4
 	w_class = ITEM_SIZE_HUGE
 
 /obj/item/ammo_casing/spnkr
