@@ -267,7 +267,7 @@
 	armor_penetration = 60
 	tracer_type = /obj/effect/projectile/srs99
 	tracer_delay_time = 2 SECONDS
-	shield_damage = 210
+	shield_damage = 180
 
 /obj/item/projectile/bullet/a145_ap/tracerless //Modified slightly to provide a downside for using the innie-heavy-sniper-rounds over normal rounds.
 	damage = 70

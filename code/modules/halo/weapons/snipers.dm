@@ -16,8 +16,8 @@
 	fire_sound = 'code/modules/halo/sounds/Sniper_Fire_New.wav'
 	reload_sound = 'code/modules/halo/sounds/Sniper_Reload_New.wav'
 	one_hand_penalty = -1
-	scoped_accuracy = 10
-	accuracy = -2
+	scoped_accuracy = 8
+	accuracy = 0
 	screen_shake = 0
 	fire_delay = 15
 	burst = 1

@@ -62,8 +62,8 @@
 	irradiate_non_cov = 17
 	wielded_item_state = "beamrifle-wielded"
 	fire_delay = 0 //Click as fast as you want. we have an overcharge system to deal with spamming
-	accuracy = -5
-	scoped_accuracy = 7
+	accuracy = 1
+	scoped_accuracy = 8
 	advanced_covenant = 1
 
 	var/next_allowed_fire
