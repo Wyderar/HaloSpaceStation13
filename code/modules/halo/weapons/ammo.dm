@@ -365,7 +365,7 @@
 	mag_type = MAGAZINE
 	ammo_type = /obj/item/ammo_casing/spnkr
 	caliber = "spnkr"
-	max_ammo = 4
+	max_ammo = 2
 	w_class = ITEM_SIZE_HUGE
 
 /obj/item/ammo_casing/spnkr
