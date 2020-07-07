@@ -23,7 +23,6 @@
 	set category = "Abilities"
 	set name = "Toggle Flight"
 	set desc = "Toggles your flight"
-	flight_ticks_remain = 80
 
 	take_flight(-1,"[src.name] takes flight!","[src.name] slows, then stops flapping their wings, bringing them to the ground.")
 
@@ -31,6 +30,5 @@
 	set category = "Abilities"
 	set name = "Toggle Flight"
 	set desc = "Toggles your flight"
-	flight_ticks_remain = 30
 
-	take_flight(-1,"[src.name] takes flight!","[src.name] slows, then stops flapping their arms, bringing them to the ground.")
+	take_flight(100,"[src.name] takes flight!","[src.name] slows, then stops flapping their arms, bringing them to the ground.")
