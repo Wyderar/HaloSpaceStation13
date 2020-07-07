@@ -22,13 +22,13 @@
 		return
 	self_destruct(usr)
 
-/obj/item/clothing/suit/armor/special/proc/self_destruct_allowed(var/mob/living/carbon/human/m)
-	if(istype(m) && (istype(m,/mob/living/carbon/human/spartan) || istype(m.species,/datum/species/spartan)))
+/obj/item/clothing/suit/armor/special/proc/self_destruct_allowed(var/mob/living/carbon/m)
+	if(istype(m) && (istype(m,/mob/living/carbon/) || istype(m.species,/datum/species/)))
 		return 1
 	return 0
 
 /obj/item/clothing/suit/armor/special/proc/self_destruct(var/mob/living/m)
-	var/mob/living/carbon/human/our_mob = loc
+	var/mob/living/carbon/our_mob = loc
 	if(m && m.incapacitated())
 		to_chat(m,"<span class = 'notice'>You can't do that in your current state.</span>")
 		return

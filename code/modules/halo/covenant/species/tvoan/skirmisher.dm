@@ -12,6 +12,7 @@
 	blood_color = "#532476"
 	default_language = "Sangheili"
 	language = "Sangheili"
+	inherent_verbs = list(/mob/living/carbon/human/proc/skirmisher_flight_ability)
 	additional_langs = list("Tvoai")
 	icobase = 'code/modules/halo/covenant/species/tvoan/r_skirmishers.dmi'
 	deform = 'code/modules/halo/covenant/species/tvoan/r_skirmishers.dmi'

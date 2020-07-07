@@ -385,9 +385,11 @@
 
 	return 0
 
-// Called in life() when the mob has no client.
 /datum/species/proc/handle_npc(var/mob/living/carbon/human/H)
 	return
+
+/datum/species/proc/handle_flight_failure(var/mob/living/carbon/human/H)
+	return 0
 
 /datum/species/proc/handle_vision(var/mob/living/carbon/human/H)
 	H.update_sight()

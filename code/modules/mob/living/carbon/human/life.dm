@@ -1200,3 +1200,9 @@
 	..()
 	if(XRAY in mutations)
 		set_sight(sight|SEE_TURFS|SEE_MOBS|SEE_OBJS)
+
+
+/mob/living/carbon/human/handle_flight_failure()
+	if(species.handle_flight_failure(src)) //If our species returns 1, then they're fully handling this.
+		return
+	. = ..()

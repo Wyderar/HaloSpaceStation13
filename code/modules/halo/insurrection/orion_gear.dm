@@ -54,12 +54,20 @@
 
 /obj/item/clothing/gloves/marine/orion
 	desc = "A prototype pair of synthetic gloves and arm pads reinforced with armor plating. Meant to be worn by a subject of the Project Orion Program."
+	icon = 'code/modules/halo/clothing/inniearmor.dmi'
+	icon_override = 'code/modules/halo/clothing/inniearmor.dmi'
+	icon_state = "mercglovesobj"
+	item_state = "mercglovesworn"
 	name = "Orion Arm Guards"
 	armor = list(melee = 30, bullet = 40, laser = 10, energy = 25, bomb = 35, bio = 0, rad = 0)
 	species_restricted = list("Orion")
 
 /obj/item/clothing/shoes/marine/orion
 	name = "Orion Boots"
+	icon = 'code/modules/halo/clothing/inniearmor.dmi'
+	icon_override = 'code/modules/halo/clothing/inniearmor.dmi'
+	icon_state = "l_innie_foot_obj_black"
+	item_state = "l_innie_foot_black"
 	desc = "These boots have been inlaced with armor plates to provide far better protection then your normal set of boots. Meant to be worn by a subject of the Project Orion Program."
 	armor = list(melee = 40, bullet = 40, laser = 5, energy = 20, bomb = 50, bio = 0, rad = 0)
 	species_restricted = list("Orion")

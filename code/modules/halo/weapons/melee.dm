@@ -42,7 +42,7 @@
 	name = "CO's Sword"
 	desc = "A reinforced sword capable of safely parrying blows from energy weapons."
 	icon_state = "COsword_obj"
-	item_state = "machete"
+	item_state = "pantascmdo-machete"
 	applies_material_colour = FALSE
 	lunge_dist = 4
 	force_divisor = 3.2
