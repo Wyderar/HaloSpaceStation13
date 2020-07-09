@@ -195,6 +195,34 @@
 	head = /obj/item/clothing/head/helmet/spartan/praetor
 	suit_store = /obj/item/weapon/tank/emergency/oxygen/double
 
+////kek4ik////
+
+//Spartan
+
+/obj/item/clothing/head/helmet/spartan/kek4ik
+	name = "MJOLNIR Powered Assault Armor Helmet Mark IV"
+	icon_state = "kek4ik-spartanhelm_obj"
+	item_state = "kek4ik-spartanhelm_worn"
+
+/obj/item/clothing/suit/armor/special/spartan/kek4ik
+	name = "MJOLNIR Powered Assault Armor Mark IV"
+	icon_state = "kek4ik-spartanhelm_obj"
+	item_state = "kek4ik-spartanhelm_worn"
+
+/decl/hierarchy/outfit/kek4ik_spartan
+	name = "kek4ik - spartan"
+	suit = /obj/item/clothing/suit/armor/special/spartan/kek4ik
+	head = /obj/item/clothing/head/helmet/spartan/kek4ik
+	l_ear = /obj/item/device/radio/headset/unsc/spartan
+
+/obj/item/weapon/storage/box/large/donator/kek4ik
+	startswith = list(/obj/item/clothing/head/helmet/spartan/kek4ik,
+					/obj/item/clothing/suit/armor/special/spartan/kek4ik
+					)
+	can_hold = list(/obj/item/clothing/head/helmet/spartan/kek4ik,
+					/obj/item/clothing/suit/armor/special/spartan/kek4ik
+					)
+
 ////////BurnedSweetPotato\\\\\\\\
 
 //Spartan

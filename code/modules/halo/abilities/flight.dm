@@ -24,11 +24,11 @@
 	set name = "Toggle Flight"
 	set desc = "Toggles your flight"
 
-	take_flight(-1,"[src.name] takes flight!","[src.name] slows, then stops flapping their wings, bringing them to the ground.")
+	take_flight(180,"[src.name] takes flight!","[src.name] slows, then stops flapping their wings, bringing them to the ground.")
 
 /mob/living/carbon/human/proc/skirmisher_flight_ability()
 	set category = "Abilities"
 	set name = "Toggle Flight"
 	set desc = "Toggles your flight"
 
-	take_flight(100,"[src.name] takes flight!","[src.name] slows, then stops flapping their arms, bringing them to the ground.")
+	take_flight(80,"[src.name] takes flight!","[src.name] slows, then stops flapping their arms, bringing them to the ground.")

@@ -18,6 +18,7 @@
 		/datum/job/unsc_job/ship_crew,
 		/datum/job/unsc_job/odst/squadlead,
 		/datum/job/unsc_job/mech_pilot,
+		/datum/job/unsc_job/airship_pilot,
 		/datum/job/unsc_ship_ai,\
 		/datum/job/colonist,\
 		/datum/job/colonist_mayor,\

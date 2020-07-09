@@ -232,9 +232,29 @@
 /datum/job/unsc_ship_ai
 	title = "UNSC AI"
 	spawn_faction = "UNSC"
+	selection_color = "#0A0A95"
 	total_positions = 1
 	spawn_positions = 1
 	is_whitelisted = 1
 	outfit_type = /decl/hierarchy/outfit/halo_ai_smart
 	whitelisted_species = list()
 	access = list(access_unsc,access_unsc_armoury,access_unsc_specialist,access_unsc_odst,access_unsc_oni,access_unsc_officers)
+
+/datum/job/unsc_job/airship_pilot
+	title = "UNSC Airship Pilot"
+	total_positions = 6
+	spawn_positions = 6
+	outfit_type = /decl/hierarchy/outfit/job/unsc_job/airship_pilot
+	access = list(access_unsc,access_unsc_armoury,access_unsc_specialist)
+
+/decl/hierarchy/outfit/job/unsc_job/airship_pilot
+	name = "UNSC Ai Pilot"
+
+	l_ear = /obj/item/device/radio/headset/unsc/pilot
+	uniform = /obj/item/clothing/under/unsc/newpilot
+	shoes = /obj/item/clothing/shoes/jackboots
+	head = /obj/item/clothing/head/helmet/newpilot
+	id_type = /obj/item/weapon/card/id/unsc
+	starting_accessories = list(/obj/item/clothing/accessory/rank/fleet/enlisted/e5)
+
+	flags = 0

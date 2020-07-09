@@ -36,7 +36,7 @@ Huragok Engineers. Their flight makes them hard to hit during combat and their n
 	darksight = 4
 	brute_mod = 1.2
 	burn_mod = 1.2
-	slowdown = -0.5
+	slowdown = -0.3
 	gluttonous = GLUT_ANYTHING
 	pixel_offset_x = -1
 	default_faction = "Covenant"
@@ -80,6 +80,8 @@ Huragok Engineers. Their flight makes them hard to hit during combat and their n
 		H.flight_item.deactivate(H,0)
 	else
 		H.change_elevation(-H.elevation)
+	if(istype(H.loc,/turf/simulated/open))
+		H.fall()
 	return 1
 
 /mob/living/carbon/human/covenant/yanmee/New(var/new_loc)
