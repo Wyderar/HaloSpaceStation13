@@ -47,7 +47,7 @@
 
 	fire_delay = 8
 	burst = 5
-	dispersion = list(0.15,0.3,0.45,0.6,0.73)
+	dispersion = list(1,0,2,1,3)
 	fire_sound = 'code/modules/halo/sounds/Assault_Rifle_Fire_New.wav'
 
 	guns_switchto = newlist(/datum/vehicle_gun/hawk_autocannon,/datum/vehicle_gun/hawk_rockets)
@@ -67,7 +67,7 @@
 	desc = "A vehicle mounted, twin-linked set of autocannons, used for anti-infantry and light anti-vehicle purposes."
 	fire_delay = 8
 	burst_size = 5
-	dispersion = list(0.15,0.3,0.45,0.6,0.73)
+	dispersion = list(1,0,2,1,3)
 	fire_sound = 'code/modules/halo/sounds/Assault_Rifle_Fire_New.wav'
 	mag_used = /obj/item/ammo_magazine/hawk_autocannon
 
@@ -82,9 +82,9 @@
 	projectile_type = /obj/item/projectile/bullet/a762_ap/hawk_mounted
 
 /obj/item/projectile/bullet/a762_ap/hawk_mounted
-	damage = 35
-	armor_penetration = 20
-	shield_damage = 10
+	damage = 40
+	armor_penetration = 15
+	shield_damage = 20
 
 /obj/item/ammo_magazine/hawk_rockets
 	name = "Internal Sparrowhawk Rocket Storage"
@@ -103,8 +103,8 @@
 	icon_state = "ssr"
 	check_armour = "bomb"
 	step_delay = 1.2
-	shield_damage = 150
+	shield_damage = 120
 
 /obj/item/projectile/bullet/hawk_rocket/on_impact(var/atom/impacted)
-	explosion(get_turf(impacted), 0, 1, 3, 4,guaranteed_damage = 50,guaranteed_damage_range = 2)
+	explosion(get_turf(impacted), 0, 1, 3, 4,guaranteed_damage = 70,guaranteed_damage_range = 2)
 	. = ..()

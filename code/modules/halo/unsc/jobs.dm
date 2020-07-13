@@ -231,7 +231,6 @@
 
 /datum/job/unsc_ship_ai
 	title = "UNSC AI"
-	spawn_faction = "UNSC"
 	selection_color = "#0A0A95"
 	total_positions = 1
 	spawn_positions = 1
@@ -248,7 +247,7 @@
 	access = list(access_unsc,access_unsc_armoury,access_unsc_specialist)
 
 /decl/hierarchy/outfit/job/unsc_job/airship_pilot
-	name = "UNSC Ai Pilot"
+	name = "UNSC Air Pilot"
 
 	l_ear = /obj/item/device/radio/headset/unsc/pilot
 	uniform = /obj/item/clothing/under/unsc/newpilot
