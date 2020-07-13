@@ -206,8 +206,8 @@
 
 /obj/item/clothing/suit/armor/special/spartan/kek4ik
 	name = "MJOLNIR Powered Assault Armor Mark IV"
-	icon_state = "kek4ik-spartanhelm_obj"
-	item_state = "kek4ik-spartanhelm_worn"
+	icon_state = "kek4ik-spartanarmor_obj"
+	item_state = "kek4ik-spartanarmor_worn"
 
 /decl/hierarchy/outfit/kek4ik_spartan
 	name = "kek4ik - spartan"
