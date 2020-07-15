@@ -3007,7 +3007,7 @@
 #include "maps\Covenant Ruins\includes.dm"
 #include "maps\CRS_Unyielding_Transgression\includes.dm"
 #include "maps\dev planet\map_areas.dm"
-#include "maps\Exoplanet Research\includes.dm"
+#include "maps\Exoplanet Research\Exoplanet Research Ice\includes.dm"
 #include "maps\geminus_city\geminus_city.dm"
 #include "maps\geminus_city\innie_quest\file_comms.dm"
 #include "maps\geminus_city\innie_quest\file_coord.dm"
