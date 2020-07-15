@@ -13,7 +13,7 @@
 	icon_state = "marine"
 	icon_living  = "marine"
 	icon_dead = "dead_marine"
-	turns_per_move = 2
+	turns_per_move = 1
 	resistance = 5
 	combat_tier = 2
 	possible_weapons = list(/obj/item/weapon/gun/projectile/m7_smg,/obj/item/weapon/gun/projectile/ma5b_ar)
@@ -36,6 +36,7 @@
 	icon_living = "marine"
 	icon_dead = "marine_dead"
 	faction = "UNSC"
+	turns_per_move = 2
 
 /mob/living/simple_animal/hostile/unsc/spartan_two
 	name = "Spartan II (NPC)"

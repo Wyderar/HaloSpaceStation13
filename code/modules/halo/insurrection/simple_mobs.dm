@@ -9,6 +9,7 @@
 	icon = 'code/modules/halo/insurrection/simple_mobs.dmi'
 	var/armour_colour = "brown"
 	var/armour_tier = "light"
+	turns_per_move = 2
 
 /mob/living/simple_animal/hostile/innie/New()
 	. = ..()
@@ -106,3 +107,4 @@
 	icon_living = "light_innie_brown"
 	icon_dead = "light_innie_brown_dead"
 	faction = "Insurrection"
+	turns_per_move = 2

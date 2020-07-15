@@ -7,3 +7,4 @@
 	icon_living = "marine_infested"
 	icon_dead = "marine_dead"
 	faction = "Flood"
+	turns_per_move = 2
