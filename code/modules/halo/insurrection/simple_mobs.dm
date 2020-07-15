@@ -107,4 +107,3 @@
 	icon_living = "light_innie_brown"
 	icon_dead = "light_innie_brown_dead"
 	faction = "Insurrection"
-	turns_per_move = 2

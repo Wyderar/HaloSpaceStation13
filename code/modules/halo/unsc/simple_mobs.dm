@@ -36,7 +36,6 @@
 	icon_living = "marine"
 	icon_dead = "marine_dead"
 	faction = "UNSC"
-	turns_per_move = 2
 
 /mob/living/simple_animal/hostile/unsc/spartan_two
 	name = "Spartan II (NPC)"
