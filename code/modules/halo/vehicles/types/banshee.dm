@@ -34,7 +34,7 @@
 	drag = 6
 
 /obj/item/vehicle_component/health_manager/banshee
-	integrity = 400
+	integrity = 600
 	resistances = list("bullet"=60,"energy"=60,"emp"=40,"bomb"=65)
 	repair_materials = list("nanolaminate")
 
@@ -49,7 +49,7 @@
 
 	fire_delay = 8
 	burst = 5
-	dispersion = list(1,0,2,1,3)
+	dispersion = list(1,0,2,-1,3)
 	fire_sound = 'code/modules/halo/sounds/plasrifle3burst.ogg'
 
 	guns_switchto = newlist(/datum/vehicle_gun/banshee_plas,/datum/vehicle_gun/banshee_fuel)
@@ -70,7 +70,7 @@
 	desc = "A vehicle mounted, twin-linked plasma cannon. Useful for anti-infantry and light anti-vehicle."
 	fire_delay = 8
 	burst_size = 5
-	dispersion = list(1,0,2,1,3)
+	dispersion = list(1,0,2,-1,3)
 	fire_sound = 'code/modules/halo/sounds/plasrifle3burst.ogg'
 	mag_used = /obj/item/ammo_magazine/banshee_plas
 
@@ -110,5 +110,5 @@
 	muzzle_type = /obj/effect/projectile/muzzle/cov_green
 
 /obj/item/projectile/bullet/covenant/banshee_fuel/on_impact(var/atom/impacted)
-	explosion(get_turf(impacted), 0, 1, 3, 4,guaranteed_damage = 70,guaranteed_damage_range = 2)
+	explosion(get_turf(impacted), 0, 1, -3, 4,guaranteed_damage = 70,guaranteed_damage_range = 2)
 	. = ..()
