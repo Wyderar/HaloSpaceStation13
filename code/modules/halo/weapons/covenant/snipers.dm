@@ -15,7 +15,8 @@
 	reload_sound = 'code/modules/halo/sounds/cov_carbine_reload.ogg'
 	one_hand_penalty = -1
 	irradiate_non_cov = 12
-	accuracy = 2
+	accuracy = 4
+	scoped_accuracy = 9
 	wielded_item_state = "carbine-wielded"
 	advanced_covenant = 1
 
@@ -62,8 +63,8 @@
 	irradiate_non_cov = 17
 	wielded_item_state = "beamrifle-wielded"
 	fire_delay = 0 //Click as fast as you want. we have an overcharge system to deal with spamming
-	accuracy = 1
-	scoped_accuracy = 8
+	accuracy = 2
+	scoped_accuracy = 9
 	advanced_covenant = 1
 
 	var/next_allowed_fire
@@ -119,7 +120,8 @@
 	load_method = MAGAZINE
 	reload_sound = 'code/modules/halo/sounds/cov_needlerifle_reload.ogg'
 	one_hand_penalty = -1
-	accuracy = 2
+	accuracy = 4
+	scoped_accuracy = 8
 	wielded_item_state = "needlerifle-wielded"
 	advanced_covenant = 1
 

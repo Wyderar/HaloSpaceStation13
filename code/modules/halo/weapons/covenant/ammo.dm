@@ -67,7 +67,7 @@
 /obj/item/projectile/bullet/covenant/beamrifle
 	name = "energy beam"
 	desc = ""
-	damage = 55
+	damage = 65
 	armor_penetration = 60
 	icon = 'code/modules/halo/weapons/icons/Covenant_Projectiles.dmi'
 	icon_state = "carbine_casing"

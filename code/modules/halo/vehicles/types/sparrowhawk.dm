@@ -47,7 +47,7 @@
 
 	fire_delay = 8
 	burst = 5
-	dispersion = list(1,0,2,-1,3)
+	dispersion = list(0,0,2,0,1)
 	fire_sound = 'code/modules/halo/sounds/Assault_Rifle_Fire_New.wav'
 
 	guns_switchto = newlist(/datum/vehicle_gun/hawk_autocannon,/datum/vehicle_gun/hawk_rockets)
@@ -67,7 +67,7 @@
 	desc = "A vehicle mounted, twin-linked set of autocannons, used for anti-infantry and light anti-vehicle purposes."
 	fire_delay = 8
 	burst_size = 5
-	dispersion = list(1,0,2,-1,3)
+	dispersion = list(0,0,2,0,1)
 	fire_sound = 'code/modules/halo/sounds/Assault_Rifle_Fire_New.wav'
 	mag_used = /obj/item/ammo_magazine/hawk_autocannon
 
@@ -106,5 +106,5 @@
 	shield_damage = 120
 
 /obj/item/projectile/bullet/hawk_rocket/on_impact(var/atom/impacted)
-	explosion(get_turf(impacted), 0, 1, -3, 4,guaranteed_damage = 70,guaranteed_damage_range = 2)
+	explosion(get_turf(impacted), 0,0,2,0,1,guaranteed_damage = 70,guaranteed_damage_range = 2)
 	. = ..()
