@@ -12,6 +12,7 @@
 	ammo_type = /obj/item/ammo_casing/shotgun/pellet
 	max_shells = 8
 	fire_delay = 8
+	is_heavy = 1
 	one_hand_penalty = -1
 	var/on = 0
 	var/activation_sound = 'code/modules/halo/sounds/Assault_Rifle_Flashlight.wav'
@@ -51,6 +52,7 @@
 	burst = 2
 	fire_delay = 1
 	screen_shake = 1
+	is_heavy = 1
 	accuracy = -1
 	dispersion=list(0.0, 0.6)
 	w_class = ITEM_SIZE_LARGE

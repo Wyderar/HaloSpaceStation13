@@ -20,6 +20,7 @@
 	accuracy = 0
 	screen_shake = 0
 	fire_delay = 15
+	is_heavy = 1
 	burst = 1
 	wielded_item_state = "SRS99-wielded"
 	w_class = ITEM_SIZE_HUGE

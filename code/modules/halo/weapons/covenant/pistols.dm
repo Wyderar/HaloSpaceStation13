@@ -116,7 +116,6 @@
 	caliber = "needler"
 	load_method = MAGAZINE
 	burst = 3
-	is_heavy = 1
 	irradiate_non_cov = 5
 	slowdown_general = 0
 

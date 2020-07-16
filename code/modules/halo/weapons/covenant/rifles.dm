@@ -11,7 +11,6 @@
 	burst = 3
 	projectile_type = /obj/item/projectile/bullet/covenant/plasmarifle
 	screen_shake = 0
-	is_heavy = 1
 	fire_delay = 10 //4 more ticks than usual
 	dispersion=list(0.0, 0.6, 0.8)
 	accuracy = 1
