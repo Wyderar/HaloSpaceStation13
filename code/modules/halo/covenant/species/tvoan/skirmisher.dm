@@ -51,7 +51,7 @@
 	'code/modules/halo/sounds/species_pain_screams/kiggyscream_4.ogg',
 	'code/modules/halo/sounds/species_pain_screams/kiggyscream_5.ogg')
 
-	roll_distance = 4
+	roll_distance = 6
 	per_roll_delay = 1.5 //Slightly faster than a human's dodge roll
 
 /datum/species/kig_yar_skirmisher/get_random_name(var/gender)
