@@ -52,9 +52,11 @@
 	icon_state = "Plasmarifle Shot"
 
 /obj/item/projectile/bullet/covenant/plasmarepeater
-	damage = 30 //The repeater does enough, thank you.
+	damage = 50 //The repeater does enough, thank you.
 	icon = 'code/modules/halo/weapons/icons/Covenant_Projectiles.dmi'
 	icon_state = "Plasmarifle Shot"
+	armor_penetration = 20
+	shield_damage = 10
 	muzzle_type = /obj/effect/projectile/muzzle/cov_cyan
 
 /obj/item/projectile/bullet/covenant/plasmarifle/brute
@@ -129,7 +131,7 @@
 /obj/item/projectile/bullet/covenant/needles
 	name = "Needle"
 	desc = "A sharp, pink crystalline shard"
-	damage = 20 // Low damage, special effect would do the most damage.
+	damage = 40 // Low damage, special effect would do the most damage.
 	icon = 'code/modules/halo/weapons/icons/Covenant_Projectiles.dmi'
 	icon_state = "Needler Shot"
 	embed = 1
@@ -230,7 +232,7 @@
 /obj/item/projectile/bullet/covenant/type51carbine
 	name = "Glowing Projectile"
 	desc = "This projectile leaves a green trail in its wake."
-	damage = 40
+	damage = 50
 	icon = 'code/modules/halo/weapons/icons/Covenant_Projectiles.dmi'
 	icon_state = "carbine_casing"
 	check_armour = "energy"
@@ -273,14 +275,14 @@
 
 /obj/item/projectile/bullet/covenant/needles/rifleneedle
 	name = "Rifle Needle"
-	damage = 40
+	damage = 50
 	shards_to_explode = 3
 	shard_name = "Rifle Needle shrapnel"
 	tracer_type = /obj/effect/projectile/bullet/covenant/needles/rifleneedle
 	tracer_delay_time = 0.5 SECONDS
 	invisibility = 101
 	step_delay = 0.65 //slower than most, faster than normal needles
-	armor_penetration = 20
+	armor_penetration = 30
 	max_track_steps = 2
 	shield_damage = 60
 	muzzle_type = /obj/effect/projectile/muzzle/cov_red

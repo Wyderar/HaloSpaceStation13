@@ -77,6 +77,7 @@
 	head = /obj/item/clothing/head/helmet/jiralhanae/covenant/major
 	suit = /obj/item/clothing/suit/armor/jiralhanae/covenant/major
 	shoes = /obj/item/clothing/shoes/jiralhanae/covenant/major
+	r_hand = /obj/item/weapon/grav_hammer
 
 /decl/hierarchy/outfit/jiralhanae/covenant/captain
 	name = "Covenant Jiralhanae Captain"
@@ -85,6 +86,7 @@
 	suit = /obj/item/clothing/suit/armor/jiralhanae/covenant/captain
 	shoes = /obj/item/clothing/shoes/jiralhanae/covenant/captain
 	back = /obj/item/clothing/jiralhanae_flag_random
+	r_hand = /obj/item/weapon/grav_hammer
 	l_hand = /obj/item/language_learner/unggoy_to_common
 	//
 	id_type = /obj/item/weapon/card/id/brute_captain

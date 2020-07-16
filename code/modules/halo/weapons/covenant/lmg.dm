@@ -14,11 +14,10 @@
 	max_shots =450
 	//burst_delay = 1
 	charge_meter = 0
-	burst_accuracy = list(0, 0, -1, -1, -1, -2, -2, -2, -3, -3, 0, 0, -1, -1, -1, -2, -2, -2, -3, -3, 0, 0, -1, -1, -1, -2, -2, -2, -3, -3,0)
+	burst_accuracy = list(0, 0, 1, -1, -1, -2, 2, -2, 3, 3, 0, 0, -1, 1, 1, -2, -2, -2, -3, -3, 0, 0, -1, -1, 1, 2, -2, -2, -3, 3,0)
 	dispersion = list(1.0, 1.1, 1.2, 1.3, 1.4, 1.5, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.5, 1.6, 1.7, 1.8, 1.9, 2.0, 1.7, 1.8, 1.9, 2.0, 2.1, 2.2, 1.9, 2.0, 2.1, 2.2, 2.3, 2.4, 2.5, 2.5)
 	w_class = ITEM_SIZE_HUGE
 	irradiate_non_cov = 7
-	advanced_covenant = 1
 	move_delay_malus = 1
 	slowdown_general = 1
 
