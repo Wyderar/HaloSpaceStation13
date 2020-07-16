@@ -47,7 +47,7 @@
 	damage = 30
 
 /obj/item/projectile/bullet/covenant/plasmarifle
-	damage = 35 // more damage than MA5B.
+	damage = 40 // more damage than MA5B.
 	icon = 'code/modules/halo/weapons/icons/Covenant_Projectiles.dmi'
 	icon_state = "Plasmarifle Shot"
 
@@ -319,12 +319,12 @@
 	icon = 'code/modules/halo/weapons/icons/Covenant_Projectiles.dmi'
 	icon_state = "Overcharged_Plasmapistol shot"
 	embed = 1
-	shield_damage = 200
+	shield_damage = 180
 	muzzle_type = /obj/effect/projectile/muzzle/cov_green
 
 /obj/item/projectile/bullet/fuel_rod/on_impact(var/atom/A)
 	. = ..()
-	explosion(A,-1,1,2,4,guaranteed_damage = 30, guaranteed_damage_range = 2)
+	explosion(A,-1,1,2,4,guaranteed_damage = 50, guaranteed_damage_range = 2)
 	for(var/mob/living/l in range(FUEL_ROD_IRRADIATE_RANGE,loc))
 		l.rad_act(FUEL_ROD_IRRADIATE_AMOUNT)
 

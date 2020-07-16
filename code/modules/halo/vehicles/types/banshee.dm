@@ -34,8 +34,8 @@
 	drag = 6
 
 /obj/item/vehicle_component/health_manager/banshee
-	integrity = 600
-	resistances = list("bullet"=60,"energy"=60,"emp"=40,"bomb"=65)
+	integrity = 650
+	resistances = list("bullet"=80,"energy"=60,"emp"=40,"bomb"=85)
 	repair_materials = list("nanolaminate")
 
 /datum/component_profile/banshee
