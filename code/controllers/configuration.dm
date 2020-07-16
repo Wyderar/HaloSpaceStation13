@@ -62,6 +62,7 @@ var/list/gamemode_cache = list()
 	var/allow_ai = 1					// allow ai job
 	var/hostedby = null
 	var/respawn_delay = 10
+	var/max_overpop = 0.5
 	var/guest_jobban = 1
 	var/usewhitelist = 1
 	var/kick_inactive = 0				//force disconnect for inactive players after this many minutes, if non-0
@@ -156,6 +157,7 @@ var/list/gamemode_cache = list()
 	var/ban_legacy_system = 0	//Defines whether the server uses the legacy banning system with the files in /data or the SQL system. Config option in config.txt
 	var/use_age_restriction_for_jobs = 0   //Do jobs use account age restrictions?   --requires database
 	var/use_age_restriction_for_antags = 0 //Do antags use account age restrictions? --requires database
+	var/panic_bunker = 0 //Panic bunker - disallows new connections. Requires database
 
 	var/simultaneous_pm_warning_timeout = 100
 
@@ -185,6 +187,7 @@ var/list/gamemode_cache = list()
 	var/use_lib_nudge = 0 //Use the C library nudge instead of the python nudge.
 
 	var/use_discord_bot = 0 //Should the discord bot be used?
+	var/use_request_library = 0 //Use the request library instead of world.Export()
 	var/discord_bot_address = "" //The address to push info to the discord bot
 	var/oni_discord = "" //The channel for ONI messages
 
@@ -266,7 +269,7 @@ var/list/gamemode_cache = list()
 		t = trim(t)
 		if (length(t) == 0)
 			continue
-		else if (copytext_char(t, 1, 2) == "#")
+		else if (copytext(t, 1, 2) == "#")
 			continue
 
 		var/pos = findtext(t, " ")
@@ -274,8 +277,8 @@ var/list/gamemode_cache = list()
 		var/value = null
 
 		if (pos)
-			name = lowertext(copytext_char(t, 1, pos))
-			value = copytext_char(t, pos + 1)
+			name = lowertext(copytext(t, 1, pos))
+			value = copytext(t, pos + 1)
 		else
 			name = lowertext(t)
 
@@ -285,10 +288,10 @@ var/list/gamemode_cache = list()
 		if(type == "config")
 			switch (name)
 				if ("resource_urls")
-					config.resource_urls = splittext_char(value, " ")
+					config.resource_urls = splittext(value, " ")
 
 				if ("do_sql_connection")
-					config.do_sql_connection = splittext_char(value, " ")
+					config.do_sql_connection = splittext(value, " ")
 
 				if ("admin_legacy_system")
 					config.admin_legacy_system = 1
@@ -301,6 +304,9 @@ var/list/gamemode_cache = list()
 
 				if ("use_age_restriction_for_antags")
 					config.use_age_restriction_for_antags = 1
+
+				if ("panic_bunker")
+					config.panic_bunker = 1
 
 				if ("jobs_have_minimal_access")
 					config.jobs_have_minimal_access = 1
@@ -430,6 +436,9 @@ var/list/gamemode_cache = list()
 					config.respawn_delay = text2num(value)
 					config.respawn_delay = config.respawn_delay > 0 ? config.respawn_delay : 0
 
+				if ("max_overpop")
+					config.max_overpop = text2num(value)
+
 				if ("servername")
 					config.server_name = value
 
@@ -536,8 +545,8 @@ var/list/gamemode_cache = list()
 					var/prob_value = null
 
 					if (prob_pos)
-						prob_name = lowertext(copytext_char(value, 1, prob_pos))
-						prob_value = copytext_char(value, prob_pos + 1)
+						prob_name = lowertext(copytext(value, 1, prob_pos))
+						prob_value = copytext(value, prob_pos + 1)
 						if (prob_name in config.modes)
 							config.probabilities[prob_name] = text2num(prob_value)
 						else
@@ -601,6 +610,9 @@ var/list/gamemode_cache = list()
 
 				if("use_discord_bot")
 					use_discord_bot = 1
+
+				if("use_request_library")
+					use_request_library = 1
 
 				if("discord_bot_address")
 					discord_bot_address = value
@@ -752,7 +764,7 @@ var/list/gamemode_cache = list()
 					config.starlight = value >= 0 ? value : 0
 
 				if("ert_species")
-					config.ert_species = splittext_char(value, ";")
+					config.ert_species = splittext(value, ";")
 					if(!config.ert_species.len)
 						config.ert_species += SPECIES_HUMAN
 
@@ -763,7 +775,7 @@ var/list/gamemode_cache = list()
 					config.aggressive_changelog = 1
 
 				if("default_language_prefixes")
-					var/list/values = splittext_char(value, " ")
+					var/list/values = splittext(value, " ")
 					if(values.len > 0)
 						language_prefixes = values
 
@@ -864,7 +876,7 @@ var/list/gamemode_cache = list()
 		t = trim(t)
 		if (length(t) == 0)
 			continue
-		else if (copytext_char(t, 1, 2) == "#")
+		else if (copytext(t, 1, 2) == "#")
 			continue
 
 		var/pos = findtext(t, " ")
@@ -872,8 +884,8 @@ var/list/gamemode_cache = list()
 		var/value = null
 
 		if (pos)
-			name = lowertext(copytext_char(t, 1, pos))
-			value = copytext_char(t, pos + 1)
+			name = lowertext(copytext(t, 1, pos))
+			value = copytext(t, pos + 1)
 		else
 			name = lowertext(t)
 
