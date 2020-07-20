@@ -24,9 +24,9 @@
 	one_hand_penalty = -1
 	self_recharge = 1
 	recharge_time = 20
-	max_shots = 4
+	max_shots = 6
 
-	arm_time = 30 //Deciseconds
+	arm_time = 15 //Deciseconds
 	charge_meter = 0
 	force = 10
 	screen_shake = 0.5

@@ -5,7 +5,7 @@
 	initial_icon = "Hrunting"
 	step_in = 3
 	dir_in = 1 //Facing North.
-	health = 700
+	health = 800
 	deflect_chance = 5
 	damage_absorption = list("brute"=0.6,"fire"=0.7,"bullet"=0.6,"laser"=0.6,"energy"=0.6,"bomb"=0.7)
 	max_temperature = 25000

@@ -6,12 +6,12 @@
 
 /turf/unsimulated/floor/lava/glassed_turf/New()
 	cool_at = world.time + cooling_delay
-	GLOB.processing_objects += src
+	GLOB.machines += src
 	. = ..()
 
 /turf/unsimulated/floor/lava/glassed_turf/process()
 	if(world.time >= cool_at)
-		GLOB.processing_objects -= src
+		GLOB.machines -= src
 		ChangeTurf(turf_replacewith)
 
 /turf/unsimulated/floor/lava/glassed_turf/to_space
