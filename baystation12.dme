@@ -3005,7 +3005,6 @@
 #include "interface\skin.dmf"
 #include "maps\_map_include.dm"
 #include "maps\_gamemodes\_popbalance.dm"
-#include "maps\company2\includes.dm"
 #include "maps\dev planet\map_areas.dm"
 #include "maps\geminus_city\geminus_fall.dm"
 #include "maps\geminus_city\innie_quest\file_comms.dm"
