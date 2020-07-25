@@ -31,7 +31,7 @@
 		if(prob(50))
 			H.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine(H),slot_head)
 		else
-			H.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/visor(H),slot_head)
+			H.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine(H),slot_head)
 
 	if(prob(50))
 		H.equip_to_slot_or_del(new /obj/item/clothing/suit/storage/marine(H),slot_wear_suit)

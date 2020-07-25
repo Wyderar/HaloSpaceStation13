@@ -548,9 +548,9 @@
 	desc = "Close-combat armor booster. Boosts exosuit armor against armed melee attacks. Requires energy to operate."
 	icon_state = "mecha_abooster_ccw"
 	origin_tech = list(TECH_MATERIAL = 3)
-	deflect_coeff = 1.15
-	damage_coeff = 0.8
-	melee = 1
+	deflect_coeff = 2
+	damage_coeff = 1
+	melee = 2
 
 	activate_boost()
 		if(..())
@@ -570,9 +570,9 @@
 	name = "\improper RW armor booster"
 	desc = "Ranged-weaponry armor booster. Boosts exosuit armor against ranged attacks. Completely blocks taser shots, but requires energy to operate."
 	icon_state = "mecha_abooster_proj"
-	origin_tech = list(TECH_MATERIAL = 4)
-	deflect_coeff = 1.15
-	damage_coeff = 0.8
+	origin_tech = list(TECH_MATERIAL = 5)
+	deflect_coeff = 2
+	damage_coeff = 1
 	melee = 0
 
 	activate_boost()

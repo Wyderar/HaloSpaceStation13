@@ -18,6 +18,13 @@
 	light_pulse_range = 0
 	heavy_pulse_range = -1
 
+/obj/item/projectile/ion/oni
+	name = "ion pulse"
+	damage = 15
+	nodamage = 0
+	light_pulse_range = 2
+	heavy_pulse_range = 1
+
 /obj/item/projectile/bullet/gyro
 	name ="explosive bolt"
 	icon_state= "bolter"

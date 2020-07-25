@@ -17,6 +17,7 @@
 	fire_sound = 'code/modules/halo/sounds/Assault_Rifle_Short_Burst_New.wav'
 	reload_sound = 'code/modules/halo/sounds/UNSC_Saw_Reload_Sound_Effect.ogg'
 	one_hand_penalty = -1
+	is_heavy = 1
 	//burst = 5
 	//burst_delay = 1
 	//burst_accuracy = list(0, 0, -1, -1, -1, -2, -2, -2, -3, -3, 0, 0, -1, -1, -1, -2, -2, -2, -3, -3, 0, 0, -1, -1, -1, -2, -2, -2, -3, -3,0)

@@ -58,15 +58,14 @@
 	*/
 
 /obj/machinery/telecomms_jammers/covenant
+	name = "close range malfunctioning radio jammer"
 	icon_state = "jammer_covenant"
 	icon = 'code/modules/halo/comms/machines/telecomms_64.dmi'
-	/*
-	//ignore_freqs = list("BattleNet")
-	jam_power = -2
+	var/ignore_freqs = list("BattleNet")
+	jam_power = -1
 	jam_chance = 100
-	jam_range = 20
+	jam_range = 25
 	jam_ignore_malfunction_chance = 10
-	*/
 
 /obj/machinery/telecomms_jammers/insurrectionist
 	icon_state = "jammer_insurrectionist"

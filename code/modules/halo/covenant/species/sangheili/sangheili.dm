@@ -34,7 +34,7 @@ GLOBAL_LIST_INIT(last_names_sangheili, world.file2list('code/modules/halo/covena
 	item_icon_offsets = list(list(9,6),list(9,6),null,list(6,6),null,null,null,list(6,6),null)
 	inhand_icon_offsets = list(list(6,-4),list(-6,-4),null,list(2,-4),null,null,null,list(2,-4),null)
 	inter_hand_dist = 9
-	inherent_verbs = list()
+	inherent_verbs = list(/mob/living/carbon/human/proc/dual_wield_weapons)
 	default_faction = "Covenant"
 	unarmed_types = list(/datum/unarmed_attack/elite_punch)
 

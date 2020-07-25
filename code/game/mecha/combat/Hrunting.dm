@@ -1,19 +1,21 @@
 /obj/mecha/combat/hrunting
 	desc = "A lightweight, security exosuit. Popular among private and corporate security."
 	name = "HRUNTING/YGGDRASIL Mark I ADS"
+	icon = 'icons/mecha/hrunting.dmi'
 	icon_state = "Hrunting"
 	initial_icon = "Hrunting"
 	step_in = 3
 	dir_in = 1 //Facing North.
 	health = 800
 	deflect_chance = 5
+	pixel_x = -8
 	damage_absorption = list("brute"=0.6,"fire"=0.7,"bullet"=0.6,"laser"=0.6,"energy"=0.6,"bomb"=0.7)
 	max_temperature = 25000
 	infra_luminosity = 6
 	var/overload = 0
 	var/overload_coeff = 2
 	wreckage = /obj/effect/decal/mecha_wreckage/hrunting
-	max_equip = 3
+	max_equip = 4
 
 /obj/mecha/combat/hrunting/add_cell()
 	cell = new /obj/item/weapon/cell/hyper(src)

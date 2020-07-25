@@ -96,6 +96,14 @@
 	projectile = /obj/item/projectile/ion
 	fire_sound = 'sound/weapons/Laser.ogg'
 
+/obj/item/mecha_parts/mecha_equipment/weapon/energy/ion/oni_high
+	equip_cooldown = 40
+	name = "mkIV ion heavy cannon"
+	icon_state = "mecha_ion_ap"
+	energy_drain = 25 KILOWATTS
+	projectile = /obj/item/projectile/ion/oni
+	fire_sound = 'sound/weapons/Laser.ogg'
+
 /obj/item/mecha_parts/mecha_equipment/weapon/energy/pulse
 	equip_cooldown = 30
 	name = "eZ-13 mk2 heavy pulse rifle"
@@ -212,7 +220,7 @@
 	name = "\improper Ultra AC 2"
 	icon_state = "mecha_uac2"
 	equip_cooldown = 10
-	projectile = /obj/item/projectile/bullet/pistol/medium
+	projectile = /obj/item/projectile/bullet/a127_saphe
 	fire_sound = 'sound/weapons/gunshot/gunshot3.ogg'
 	projectiles = 300
 	projectiles_per_shot = 3
@@ -250,7 +258,7 @@
 	icon_state = "mecha_missilerack"
 	projectile = /obj/item/missile
 	fire_sound = 'code/modules/halo/sounds/RocketLauncherShotSoundEffect.ogg'
-	projectiles = 2
+	projectiles = 8
 	projectile_energy_cost = 200 KILOWATTS
 	equip_cooldown = 60
 
@@ -269,7 +277,32 @@
 
 /obj/item/missile/throw_impact(atom/hit_atom)
 	if(primed)
-		explosion(hit_atom, 0, 1, 2, 4,guaranteed_damage = 50,guaranteed_damage_range = 2)
+		explosion(hit_atom, 0, 1, 2, 4,shield_damage = 30,guaranteed_damage = 80,guaranteed_damage_range = 2)
+		qdel(src)
+	else
+		..()
+	return
+
+/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/missile_rack/explosive/ap
+	name = "\improper SRM-8 missile rack"
+	icon_state = "mecha_missilerack_ap"
+	projectile = /obj/item/missile/ap
+	fire_sound = 'code/modules/halo/sounds/RocketLauncherShotSoundEffect.ogg'
+	projectiles = 4
+	projectile_energy_cost = 200 KILOWATTS
+	equip_cooldown = 60
+
+/obj/item/missile/ap
+	name = "missile"
+	icon_state = "ssr"
+	icon = 'code/modules/halo/weapons/icons/Weapon Sprites.dmi'
+	primed = null
+	throwforce = 2
+	fire_sound  //The lack of this var causes runtimes with the rocket launcher
+
+/obj/item/missile/throw_impact(atom/hit_atom)
+	if(primed)
+		explosion(hit_atom, 0, 1, 2, 4,shield_damage = 110,guaranteed_damage = 50,guaranteed_damage_range = 2)
 		qdel(src)
 	else
 		..()
@@ -301,3 +334,20 @@
 
 /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/missile_rack/flashbang/clusterbang/limited/rearm()
 	return//Extra bit of security
+
+/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/missile_rack/hedp
+	name = "\improper SGL-6 grenade launcher"
+	icon_state = "mecha_grenadelnchr_unsc"
+	projectile = /obj/item/weapon/grenade/frag/m9_hedp
+	fire_sound = 'sound/effects/bang.ogg'
+	projectiles = 10
+	missile_speed = 1.5
+	projectile_energy_cost = 200 KILOWATTS
+	equip_cooldown = 60
+	var/det_time = 20
+
+/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/missile_rack/hedp/Fire(atom/movable/AM, atom/target)
+	..()
+	var/obj/item/weapon/grenade/frag/m9_hedp/F = AM
+	spawn(det_time)
+		F.detonate()

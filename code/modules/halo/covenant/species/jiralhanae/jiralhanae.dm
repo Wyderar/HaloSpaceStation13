@@ -54,7 +54,7 @@ GLOBAL_LIST_INIT(first_names_jiralhanae, world.file2list('code/modules/halo/cove
 	inhand_icon_offsets = list(list(6,0),list(-6,0),null,list(6,0),null,null,null,list(6,0),null)
 	inter_hand_dist = 15
 	unarmed_types = list(/datum/unarmed_attack/brute_punch)
-	inherent_verbs = list()
+	inherent_verbs = list(/mob/living/carbon/human/proc/dual_wield_weapons)
 
 	equipment_slowdown_multiplier = 0.3
 
