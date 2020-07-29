@@ -4,8 +4,8 @@
 	icon = 'icons/mecha/hrunting.dmi'
 	icon_state = "Hrunting"
 	initial_icon = "Hrunting"
-	faction_tag = "UNSC"
-	faction = "UNSC"
+	var/faction_tag = "UNSC"
+	var/faction = "UNSC"
 	step_in = 3
 	dir_in = 1 //Facing North.
 	health = 800
