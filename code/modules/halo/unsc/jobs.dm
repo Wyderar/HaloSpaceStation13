@@ -252,6 +252,7 @@
 	spawn_positions = 3
 	selection_color = "#0A0A95"
 	spawn_faction = "UNSC"
+	whitelisted_species = list(/datum/species/human)
 	outfit_type = /decl/hierarchy/outfit/job/unsc_job/mp_officer
 	access = list(access_unsc,access_unsc_armoury,access_unsc_specialist,access_unsc_oni,access_unsc_navsec)
 
