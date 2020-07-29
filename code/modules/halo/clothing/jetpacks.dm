@@ -4,7 +4,7 @@
 
 	slot_flags = SLOT_BACK
 
-	var/flight_ticks_max = 80
+	var/flight_ticks_max = 100
 	var/flight_ticks_curr
 	var/takeoff_msg = "takes off!"
 	var/land_msg = "lands"

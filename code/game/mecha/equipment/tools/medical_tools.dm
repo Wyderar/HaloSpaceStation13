@@ -221,11 +221,11 @@
 	name = "syringe gun"
 	desc = "Exosuit-mounted chem synthesizer with syringe gun. Reagents inside are held in stasis, so no reactions will occur. (Can be attached to: Medical Exosuits)"
 	icon = 'icons/obj/gun.dmi'
-	icon_state = "syringegun"
+	icon_state = "rapidsyringegun"
 	var/list/syringes
 	var/list/known_reagents
 	var/list/processed_reagents
-	var/max_syringes = 10
+	var/max_syringes = 14
 	var/max_volume = 75 //max reagent volume
 	var/synth_speed = 5 //[num] reagent units per cycle
 	energy_drain = 2 KILOWATTS // Synthetises things, so it's quite power-hungry
@@ -234,7 +234,7 @@
 	range = MELEE|RANGED
 	equip_cooldown = 10
 	origin_tech = list(TECH_MATERIAL = 3, TECH_BIO = 4, TECH_MAGNET = 4, TECH_DATA = 3)
-	required_type = /obj/mecha/medical
+	required_type = list(/obj/mecha/medical,/obj/mecha/combat/hrunting)
 
 /obj/item/mecha_parts/mecha_equipment/tool/syringe_gun/New()
 	..()
