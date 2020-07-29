@@ -4,9 +4,29 @@
 	faction = "UNSC"
 	health = 100
 	maxHealth = 100
+	break_stuff_probability = 50
 	icon = 'code/modules/halo/unsc/simple_mobs.dmi'
 	combat_tier = 1
-	possible_weapons = list(/obj/item/weapon/gun/projectile/m6d_magnum)
+	assault_target_type = /obj/effect/landmark/assault_target/unsc
+	possible_weapons = list(/obj/item/weapon/gun/projectile/m6d_magnum/npc)
+	var/obj/item/device/flashlight/held_light
+	possible_grenades = list(/obj/item/weapon/grenade/frag/m9_hedp)
+
+/mob/living/simple_animal/hostile/unsc/New()
+	. = ..()
+	if(see_in_dark < 5)
+		held_light = new /obj/item/device/flashlight(src)
+		held_light.on = 1
+		held_light.update_icon()
+
+/mob/living/simple_animal/hostile/unsc/death(gibbed, deathmessage = "dies!", show_dead_message = 1)
+	. = ..()
+	if(held_light)
+		held_light.on = 0
+		held_light.update_icon()
+
+/obj/item/weapon/gun/projectile/m6d_magnum/npc
+	burst = 2
 
 /mob/living/simple_animal/hostile/unsc/marine
 	name = "UNSC Marine (NPC)"

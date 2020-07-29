@@ -12,6 +12,12 @@
 	var/burst_delay = 0.5 SECONDS
 	var/projectiletype
 	var/projectilesound
+
+	var/primed_grenade = 0 //If set to 1, we will throw a grenade next time we attack.
+	var/next_grenade_at = 0 //WE cannot prime a nade again until this time.
+	var/grenade_delay = 10 SECONDS //Delays between nade priming
+	var/list/possible_grenades = list()
+
 	var/list/attack_sfx = list()
 	var/obj/item/ammo_casing/casingtype
 	var/attack_delay = DEFAULT_ATTACK_COOLDOWN
@@ -189,17 +195,27 @@
 
 /mob/living/simple_animal/hostile/UnarmedAttack(var/atom/attacked,var/prox_flag)
 	setClickCooldown(DEFAULT_QUICK_COOLDOWN)
-	if(istype(attacked,/mob/living))
+	if(isliving(attacked))
+		//some prep stuff
 		var/mob/living/L = attacked
 		var/damage_to_apply = rand(melee_damage_lower,melee_damage_upper)
-		if(istype(L,/mob/living/carbon/human))
+
+		//tell the world
+		L.visible_message("<span class='danger'>[src] has [attacktext] [L]!</span>")
+
+		//shields check
+		if(ishuman(attacked))
 			var/mob/living/carbon/human/h = L
 			if(h.check_shields(damage_to_apply, src, src, attacktext))
 				return
-		L.visible_message("<span class='danger'>[src] has attacked [L]!</span>")
+
+		//do the thing
 		L.apply_damage(damage_to_apply,damtype,null,L.run_armor_check(null,defense))
 		src.do_attack_animation(L)
-		spawn(1) L.updatehealth()
+
+		//we're doing a hack here but ok
+		if(isanimal(L))
+			L.updatehealth()
 		return L
 	else if(istype(attacked,/obj/mecha) || istype(attacked,/obj/effect) || istype(attacked,/obj/structure) || istype(attacked,/obj/vehicles))
 		var/obj/o = attacked
@@ -212,12 +228,25 @@
 				stance = HOSTILE_STANCE_IDLE
 		return o
 
+/mob/living/simple_animal/hostile/proc/throw_nade(var/atom/attacked)
+	var/turf/atk_trf = get_turf(attacked)
+	var/turf/spawn_turf = get_step(loc,get_dir(loc,atk_trf))
+	primed_grenade = 0
+	var/nadetype = pick(possible_grenades)
+	var/obj/item/weapon/grenade/nade = new nadetype (spawn_turf)
+	visible_message("<span class = 'danger'>[src] throws [nade]!</span>")
+	nade.activate(src)
+	nade.det_time = max(10,nade.det_time-10)
+	nade.throw_at(atk_trf, nade.throw_range, nade.throw_speed, src)
+
 /mob/living/simple_animal/hostile/RangedAttack(var/atom/attacked)
 	var/obj/vehicles/v = loc
 	if(istype(v))
-		if(!using_vehicle_gun && !v.guns_disabled && src in v.get_occupants_in_position("gunner"))
+		if(!using_vehicle_gun && !v.guns_disabled && src in v.get_occupants_in_position(v.comp_prof.pos_to_check))
 			var/using_vehicle_gun_type = pick(v.comp_prof.gunner_weapons)
-			using_vehicle_gun = new using_vehicle_gun_type
+			using_vehicle_gun = new using_vehicle_gun_type (v)
+		else if(!(v.occupants[src] in (v.exposed_positions - "driver" | v.comp_prof.pos_to_check)))
+			return
 	else if(using_vehicle_gun)
 		qdel(using_vehicle_gun)
 
@@ -246,6 +275,12 @@
 	if(using_vehicle_gun && !v.guns_disabled)
 		fire_delay_use = using_vehicle_gun.fire_delay
 	setClickCooldown(fire_delay_use)
+	if(primed_grenade)
+		throw_nade(target)
+	if(possible_grenades.len > 0 && world.time >= next_grenade_at)
+		primed_grenade = 1
+		next_grenade_at = world.time + grenade_delay
+		visible_message("<span class = 'warning'>[src] gets ready to throw a grenade!</span>")
 
 /mob/living/simple_animal/hostile/proc/LoseTarget()
 	stance = HOSTILE_STANCE_IDLE
@@ -360,7 +395,7 @@
 		retaliate(M)
 
 /mob/living/simple_animal/hostile/proc/EvasiveMove(var/atom/movable/attacker)
-	if(isnull(attacker) || stat == DEAD)
+	if(isnull(attacker) || stat == DEAD || istype(loc,/obj/vehicles))
 		return 0
 	var/dir_attack = get_dir(loc,attacker.loc)
 	var/list/dirlist = list(NORTH,SOUTH,EAST,WEST) - dir_attack //If it's a diagonal attack vector, we won't try to move directly towards them anyway.

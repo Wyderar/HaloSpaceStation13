@@ -12,6 +12,9 @@
 	icon_state = "grunt_minor"
 	icon_living = "grunt_minor"
 	icon_dead = "grunt_minor_dead"
+/*	ranged = 1
+	projectiletype = /obj/item/projectile/bullet/covenant/plasmapistol
+	var/weapon1 = /obj/item/weapon/gun/energy/plasmapistol*/
 	possible_weapons = list(/obj/item/weapon/gun/energy/plasmapistol, /obj/item/weapon/gun/projectile/needler)
 	combat_tier = 1
 	turns_per_move = 1

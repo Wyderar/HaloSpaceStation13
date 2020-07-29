@@ -246,6 +246,15 @@
 	outfit_type = /decl/hierarchy/outfit/job/unsc_job/airship_pilot
 	access = list(access_unsc,access_unsc_armoury,access_unsc_specialist)
 
+/datum/job/mp_officer
+	title = "UNSC Military Police Officer"
+	total_positions = 3
+	spawn_positions = 3
+	selection_color = "#0A0A95"
+	spawn_faction = "UNSC"
+	outfit_type = /decl/hierarchy/outfit/job/unsc_job/mp_officer
+	access = list(access_unsc,access_unsc_armoury,access_unsc_specialist,access_unsc_oni,access_unsc_navsec)
+
 /decl/hierarchy/outfit/job/unsc_job/airship_pilot
 	name = "UNSC Air Pilot"
 
@@ -255,5 +264,18 @@
 	head = /obj/item/clothing/head/helmet/newpilot
 	id_type = /obj/item/weapon/card/id/unsc
 	starting_accessories = list(/obj/item/clothing/accessory/rank/fleet/enlisted/e5)
+
+	flags = 0
+
+/decl/hierarchy/outfit/job/unsc_job/mp_officer
+	name = "UNSC MPO"
+
+	l_ear = /obj/item/device/radio/headset/unsc/marine
+	uniform = /obj/item/clothing/under/unsc/mp_fatigues
+	shoes = /obj/item/clothing/shoes/marine/crewman
+	head = /obj/item/clothing/head/helmet/mp
+	suit = /obj/item/clothing/suit/storage/mp
+	gloves = /obj/item/clothing/gloves/thick/unsc
+	starting_accessories = list (/obj/item/clothing/accessory/rank/marine/enlisted/e6, /obj/item/clothing/accessory/badge/tags)
 
 	flags = 0
