@@ -11,6 +11,33 @@
 	worn_state = "UNSC Marine Fatigues"
 	starting_accessories = /obj/item/clothing/accessory/badge/tags
 
+/obj/item/clothing/under/unsc/mp_fatigues
+	desc = "Standard issue uniform for UNSC Military Police."
+	name = "UNSC MP fatigues"
+	icon = ITEM_INHAND
+	icon_override = MARINE_OVERRIDE
+	item_state = "UNSC MP Fatigues"
+	icon_state = "uniformmp_obj"
+	worn_state = "UNSC MP Fatigues"
+	starting_accessories = /obj/item/clothing/accessory/badge/tags
+
+/obj/item/clothing/head/helmet/mp
+	name = "UNSC MP Bootie Hat"
+	desc = "I don't think this shit can protect anyone."
+	icon = ITEM_INHAND
+	icon_override = MARINE_OVERRIDE
+	item_state = "MP Bootie Hat"
+	icon_state = "mp"
+	item_flags = THICKMATERIAL
+	body_parts_covered = HEAD
+	armor = list(melee = 10, bullet = 10, laser = 15,energy = 30, bomb = 10, bio = 20, rad = 0)
+	cold_protection = HEAD
+	min_cold_protection_temperature = HELMET_MIN_COLD_PROTECTION_TEMPERATURE
+	heat_protection = HEAD
+	max_heat_protection_temperature = HELMET_MAX_HEAT_PROTECTION_TEMPERATURE
+	siemens_coefficient = 0.7
+	w_class = 2
+
 /obj/item/clothing/head/helmet/marine
 	name = "Olive Camo CH251 Helmet"
 	desc = "The standard issue combat helmet worn by the members of the UNSC Marine Corps, UNSC Army, and UNSC Air Force."
@@ -63,6 +90,20 @@
 	body_parts_covered = ARMS|UPPER_TORSO|LOWER_TORSO|LEGS
 	armor = list(melee = 55, bullet = 50, laser = 55, energy = 45, bomb = 40, bio = 25, rad = 25) //ODST tier but covers less of their body.
 	armor_thickness = 20
+	allowed = list(/obj/item/device/flashlight,/obj/item/weapon/gun/projectile,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/weapon/storage/fancy/cigarettes,/obj/item/weapon/flame/lighter)
+
+/obj/item/clothing/suit/storage/mp
+	name = "M40-2 MP Body Armor"
+	desc = "An armored protective vest worn by the members of the UNSC Military Police."
+	icon = ITEM_INHAND
+	icon_override = MARINE_OVERRIDE
+	item_state = "M40-2 MP Body Armor"
+	icon_state = "M40-2 MP Body Armor_obj"
+	blood_overlay_type = "armor"
+	item_state_slots = list(slot_l_hand_str = "armor", slot_r_hand_str = "armor")
+	body_parts_covered = ARMS|UPPER_TORSO|LOWER_TORSO|LEGS
+	armor = list(melee = 65, bullet = 45, laser = 45, energy = 60, bomb = 25, bio = 40, rad = 40) //ODST tier but covers less of their body.
+	armor_thickness = 18
 	allowed = list(/obj/item/device/flashlight,/obj/item/weapon/gun/projectile,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/weapon/storage/fancy/cigarettes,/obj/item/weapon/flame/lighter)
 
 /obj/item/clothing/suit/storage/marine/pilot
