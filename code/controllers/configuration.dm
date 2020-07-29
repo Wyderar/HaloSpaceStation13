@@ -62,7 +62,7 @@ var/list/gamemode_cache = list()
 	var/allow_ai = 1					// allow ai job
 	var/hostedby = null
 	var/respawn_delay = 10
-	var/max_overpop = 0.5
+//	var/max_overpop = 0.5
 	var/guest_jobban = 1
 	var/usewhitelist = 1
 	var/kick_inactive = 0				//force disconnect for inactive players after this many minutes, if non-0
@@ -157,7 +157,7 @@ var/list/gamemode_cache = list()
 	var/ban_legacy_system = 0	//Defines whether the server uses the legacy banning system with the files in /data or the SQL system. Config option in config.txt
 	var/use_age_restriction_for_jobs = 0   //Do jobs use account age restrictions?   --requires database
 	var/use_age_restriction_for_antags = 0 //Do antags use account age restrictions? --requires database
-	var/panic_bunker = 0 //Panic bunker - disallows new connections. Requires database
+//	var/panic_bunker = 0 //Panic bunker - disallows new connections. Requires database
 
 	var/simultaneous_pm_warning_timeout = 100
 
@@ -305,8 +305,8 @@ var/list/gamemode_cache = list()
 				if ("use_age_restriction_for_antags")
 					config.use_age_restriction_for_antags = 1
 
-				if ("panic_bunker")
-					config.panic_bunker = 1
+//				if ("panic_bunker")
+//					config.panic_bunker = 1
 
 				if ("jobs_have_minimal_access")
 					config.jobs_have_minimal_access = 1
@@ -436,8 +436,8 @@ var/list/gamemode_cache = list()
 					config.respawn_delay = text2num(value)
 					config.respawn_delay = config.respawn_delay > 0 ? config.respawn_delay : 0
 
-				if ("max_overpop")
-					config.max_overpop = text2num(value)
+//				if ("max_overpop")
+//					config.max_overpop = text2num(value)
 
 				if ("servername")
 					config.server_name = value

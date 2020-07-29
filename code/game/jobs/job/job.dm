@@ -165,11 +165,11 @@
 /datum/job/proc/has_alt_title(var/mob/H, var/supplied_title, var/desired_title)
 	return (supplied_title == desired_title) || (H.mind && H.mind.role_alt_title == desired_title)
 
-/datum/job
-	var/debug_pop_balance = 0
+/*/datum/job
+	var/debug_pop_balance = 0*/
 
 /datum/job/proc/is_restricted(var/datum/preferences/prefs, var/feedback)
-	. = FALSE
+//	. = FALSE
 
 	if(!is_branch_allowed(prefs.char_branch))
 		to_chat(feedback, "<span class='boldannounce'>Wrong branch of service for [title]. Valid branches are: [get_branches()].</span>")
@@ -185,7 +185,7 @@
 		return TRUE
 
 
-	//is this gamemode trying to balance the faction population?
+/*	//is this gamemode trying to balance the faction population?
 	var/num_balancing_factions = ticker.mode ? ticker.mode.faction_balance.len : 0
 	if(num_balancing_factions >= 2)
 		if(debug_pop_balance)	to_debug_listeners("Checking gamemode balance for [src.title]...")
@@ -233,7 +233,7 @@
 									max [round(100*max_ratio)]% or [round(max_ratio*total_faction_players,0.1)]/[total_faction_players] players)")
 							return TRUE
 						else if(debug_pop_balance)	to_debug_listeners("my_ratio:[my_ratio], max_ratio:[max_ratio], my_faction_players:[my_faction_players]")
-
+*/
 	return FALSE
 
 /datum/job/proc/is_species_allowed(var/datum/species/S)
