@@ -23,7 +23,7 @@
 	. = ..()
 	if(initial(broke) == -1)
 		broke = FALSE
-	GLOB.machines += src
+	GLOB.processing_objects += src
 
 /obj/docking_umbilical/ex_act()
 	if(current_connected)
