@@ -82,4 +82,4 @@ GLOBAL_LIST_INIT(first_names_jiralhanae, world.file2list('code/modules/halo/cove
     attack_noun = list("fist")
     eye_attack_text = "fingers"
     eye_attack_text_victim = "digits"
-    damage = 25
+    damage = 55

@@ -17,6 +17,33 @@
 	gloves = /obj/item/clothing/gloves/thick/unsc
 	starting_accessories = list (/obj/item/clothing/accessory/rank/marine/enlisted/e2, /obj/item/clothing/accessory/badge/tags)
 
+/decl/hierarchy/outfit/job/unsc_job/marine/medic
+	name = "UNSC Marine Medic"
+
+	l_ear = /obj/item/device/radio/headset/unsc/marine
+	mask = /obj/item/clothing/mask/marine
+	uniform = /obj/item/clothing/under/unsc/marine_fatigues
+	shoes = /obj/item/clothing/shoes/marine/crewman
+	head = /obj/item/clothing/head/helmet/marine/medic
+	suit = /obj/item/clothing/suit/storage/marine/medic
+	belt = /obj/item/weapon/storage/belt/marine_medic/mobilespawn_medic
+	gloves = /obj/item/clothing/gloves/thick/unsc
+	starting_accessories = list (/obj/item/clothing/accessory/rank/marine/enlisted/e2, /obj/item/clothing/accessory/badge/tags)
+
+/decl/hierarchy/outfit/job/unsc_job/marine/engie
+	name = "UNSC Marine Engineer"
+
+	l_ear = /obj/item/device/radio/headset/unsc/marine
+	mask = /obj/item/clothing/mask/marine
+	uniform = /obj/item/clothing/under/unsc/marine_fatigues
+	shoes = /obj/item/clothing/shoes/marine/crewman
+	head = /obj/item/clothing/head/helmet/marine/brown
+	suit = /obj/item/clothing/suit/storage/marine/brown
+	belt = /obj/item/weapon/storage/belt/utility/full
+	back = /obj/item/weapon/storage/backpack/marine/mobilespawn_engineer
+	gloves = /obj/item/clothing/gloves/thick/unsc
+	starting_accessories = list (/obj/item/clothing/accessory/rank/marine/enlisted/e2, /obj/item/clothing/accessory/badge/tags)
+
 /decl/hierarchy/outfit/job/unsc_job/squadlead
 	name = "UNSC Squad Leader"
 
@@ -24,8 +51,9 @@
 	mask = /obj/item/clothing/mask/marine
 	uniform = /obj/item/clothing/under/unsc/marine_fatigues
 	shoes = /obj/item/clothing/shoes/marine/crewman
-	head = /obj/item/clothing/head/helmet/marine
-	suit = /obj/item/clothing/suit/storage/marine
+	head = /obj/item/clothing/head/helmet/marine/sl
+	back = /obj/item/weapon/gun/projectile/ma5b_ar/MA37
+	suit = /obj/item/clothing/suit/storage/marine/sl
 	belt = /obj/item/weapon/storage/belt/marine_ammo
 	gloves = /obj/item/clothing/gloves/thick/unsc
 	starting_accessories = list (/obj/item/clothing/accessory/rank/marine/enlisted/e6, /obj/item/clothing/accessory/badge/tags)
@@ -71,8 +99,8 @@
 	total_positions = -1
 	spawn_positions = -1
 	outfit_type = /decl/hierarchy/outfit/job/unsc_job/marine
-	alt_titles = list("Marine Combat Medic",
-	"Marine Combat Engineer",
+	alt_titles = list("Marine Combat Medic" = /decl/hierarchy/outfit/job/unsc_job/marine/medic,
+	"Marine Combat Engineer" = /decl/hierarchy/outfit/job/unsc_job/marine/engie,
 	"Designated Marksman Marine",
 	"Combat Pilot Marine")
 

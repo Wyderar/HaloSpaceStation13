@@ -62,6 +62,24 @@
 
 	integrated_hud = /obj/item/clothing/glasses/hud/tactical
 
+/obj/item/clothing/head/helmet/marine/sl
+	name = "Olive Camo CH255 Helmet"
+	desc = "The standard issue combat helmet worn by the Squad Leaders of the UNSC Marine Corps, UNSC Army, and UNSC Air Force."
+	icon = ITEM_INHAND
+	icon_override = MARINE_OVERRIDE
+	item_state = "CH255 Helmet"
+	icon_state = "helmet_sl"
+	item_flags = THICKMATERIAL
+	body_parts_covered = HEAD
+	armor = list(melee = 60, bullet = 40, laser = 60,energy = 30, bomb = 35, bio = 10, rad = 10)
+	flags_inv = HIDEEARS|HIDEEYES
+	cold_protection = HEAD
+	min_cold_protection_temperature = HELMET_MIN_COLD_PROTECTION_TEMPERATURE
+	heat_protection = HEAD
+	max_heat_protection_temperature = HELMET_MAX_HEAT_PROTECTION_TEMPERATURE
+	siemens_coefficient = 0.10
+	w_class = 3
+
 /obj/item/clothing/head/helmet/marine/medic
 	name = "Olive Camo CH251 Helmet Medic"
 	desc = "A medic variant of the standard issue combat helmet worn by the members of the UNSC Marine Corps, UNSC Army, and UNSC Air Force."
@@ -90,6 +108,20 @@
 	body_parts_covered = ARMS|UPPER_TORSO|LOWER_TORSO|LEGS
 	armor = list(melee = 55, bullet = 50, laser = 55, energy = 45, bomb = 40, bio = 25, rad = 25) //ODST tier but covers less of their body.
 	armor_thickness = 20
+	allowed = list(/obj/item/device/flashlight,/obj/item/weapon/gun/projectile,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/weapon/storage/fancy/cigarettes,/obj/item/weapon/flame/lighter)
+
+/obj/item/clothing/suit/storage/marine/sl
+	name = "Olive Camo M55A Body Armor"
+	desc = "An armored protective vest worn by the Squad Leaders of the UNSC Marine Corps."
+	icon = ITEM_INHAND
+	icon_override = MARINE_OVERRIDE
+	item_state = "M55B Body Armor regular"
+	icon_state = "M55B Body Armor regular_obj"
+	blood_overlay_type = "armor"
+	item_state_slots = list(slot_l_hand_str = "armor", slot_r_hand_str = "armor")
+	body_parts_covered = ARMS|UPPER_TORSO|LOWER_TORSO|LEGS
+	armor = list(melee = 65, bullet = 60, laser = 65, energy = 55, bomb = 50, bio = 35, rad = 35) //ODST tier but covers less of their body.
+	armor_thickness = 30
 	allowed = list(/obj/item/device/flashlight,/obj/item/weapon/gun/projectile,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/weapon/storage/fancy/cigarettes,/obj/item/weapon/flame/lighter)
 
 /obj/item/clothing/suit/storage/mp
@@ -370,9 +402,6 @@
 	item_state = "marine backpack-b"
 	icon = ITEM_INHAND
 	icon_override = MARINE_OVERRIDE
-	w_class = ITEM_SIZE_HUGE
-	max_w_class = ITEM_SIZE_NORMAL
-	item_state_slots = null
 
 #undef MARINE_OVERRIDE
 #undef ITEM_INHAND
