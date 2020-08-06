@@ -18,6 +18,8 @@
 	reload_sound = 'code/modules/halo/sounds/UNSC_Saw_Reload_Sound_Effect.ogg'
 	one_hand_penalty = -1
 	is_heavy = 1
+	hud_bullet_row_num = 50
+	hud_bullet_reffile = 'code/modules/halo/icons/hud_display/hud_bullet_2x5.dmi'
 	//burst = 5
 	//burst_delay = 1
 	//burst_accuracy = list(0, 0, -1, -1, -1, -2, -2, -2, -3, -3, 0, 0, -1, -1, -1, -2, -2, -2, -3, -3, 0, 0, -1, -1, -1, -2, -2, -2, -3, -3,0)
@@ -60,6 +62,7 @@
 	allowed_magazines = list(/obj/item/ammo_magazine/lmg_30cal_box_ap)
 	//fire_sound = 'code/modules/halo/sounds/MagnumShotSoundEffect.ogg'
 	reload_sound = 'code/modules/halo/sounds/UNSC_Saw_Reload_Sound_Effect.ogg'
+	hud_bullet_reffile = 'code/modules/halo/icons/hud_display/hud_bullet_2x5.dmi'
 	handle_casings = CASELESS
 	one_hand_penalty = -1
 	firemodes = list(

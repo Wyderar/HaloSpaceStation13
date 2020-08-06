@@ -17,6 +17,9 @@
 	handle_casings = CASELESS
 	w_class = ITEM_SIZE_HUGE
 	slot_flags = SLOT_BACK
+	hud_bullet_row_num = 2
+	hud_bullet_reffile = 'code/modules/halo/icons/hud_display/hud_bullet_32x16.dmi'
+	hud_bullet_iconstate = "rocket"
 	item_icons = list(
 		slot_l_hand_str = 'code/modules/halo/weapons/icons/Weapon_Inhands_left.dmi',
 		slot_r_hand_str = 'code/modules/halo/weapons/icons/Weapon_Inhands_right.dmi',
@@ -57,6 +60,9 @@
 	fire_delay = 8
 	one_hand_penalty = -1
 	caliber = "m26"
+	hud_bullet_row_num = 1
+	hud_bullet_reffile = 'code/modules/halo/icons/hud_display/hud_bullet_32x16.dmi'
+	hud_bullet_iconstate = "rocket"
 	handle_casings = CASELESS
 	w_class = ITEM_SIZE_HUGE
 	item_icons = list(

@@ -19,6 +19,8 @@
 	w_class = ITEM_SIZE_HUGE
 	irradiate_non_cov = 7
 	move_delay_malus = 1
+	hud_bullet_usebar = 1
+	salvage_components = list(/obj/item/plasma_core)
 	slowdown_general = 1
 
 	//Due to reverse acc. and disp. profile, this might be more powerful than the others.//

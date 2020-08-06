@@ -23,6 +23,9 @@
 	is_heavy = 1
 	burst = 1
 	wielded_item_state = "SRS99-wielded"
+	hud_bullet_row_num = 4
+	hud_bullet_reffile = 'code/modules/halo/icons/hud_display/hud_bullet_32x16.dmi'
+	hud_bullet_iconstate = "sniper"
 	w_class = ITEM_SIZE_HUGE
 	item_icons = list(
 		slot_l_hand_str = 'code/modules/halo/weapons/icons/Weapon_Inhands_left.dmi',
@@ -66,6 +69,7 @@
 	one_hand_penalty = -1
 	w_class = ITEM_SIZE_LARGE
 	accuracy = 5
+	hud_bullet_row_num = 10
 	scoped_accuracy = 7
 	var/on = 0
 	var/activation_sound = 'code/modules/halo/sounds/Assault_Rifle_Flashlight.wav'

@@ -16,9 +16,13 @@
 	one_hand_penalty = -1
 	irradiate_non_cov = 12
 	accuracy = 4
+	salvage_components = list(/obj/item/plasma_core)
 	scoped_accuracy = 9
 	wielded_item_state = "carbine-wielded"
 	advanced_covenant = 1
+	hud_bullet_row_num = 9
+	hud_bullet_reffile = 'code/modules/halo/icons/hud_display/hud_bullet_7x8.dmi'
+	hud_bullet_iconstate = "carbineround"
 
 	item_icons = list(
 		slot_l_hand_str = 'code/modules/halo/weapons/icons/Weapon_Inhands_left.dmi',
@@ -64,6 +68,7 @@
 	wielded_item_state = "beamrifle-wielded"
 	fire_delay = 0 //Click as fast as you want. we have an overcharge system to deal with spamming
 	accuracy = 2
+	hud_bullet_usebar = 1
 	scoped_accuracy = 9
 	advanced_covenant = 1
 
@@ -121,6 +126,9 @@
 	reload_sound = 'code/modules/halo/sounds/cov_needlerifle_reload.ogg'
 	one_hand_penalty = -1
 	accuracy = 4
+	hud_bullet_row_num = 6
+	hud_bullet_reffile = 'code/modules/halo/icons/hud_display/hud_bullet_7x8.dmi'
+	hud_bullet_iconstate = "bigneedle"
 	scoped_accuracy = 8
 	wielded_item_state = "needlerifle-wielded"
 	advanced_covenant = 1

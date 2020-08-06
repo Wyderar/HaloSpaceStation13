@@ -19,6 +19,7 @@
 	allowed_magazines = list(/obj/item/ammo_magazine/m762_ap/MA5B) //Disallows loading LMG boxmags into the MA5B
 	burst = 3
 	burst_delay = 2
+	hud_bullet_row_num = 20
 	one_hand_penalty = -1
 	dispersion = list(0.0,0.6,0.6)
 	var/on = 0
@@ -70,6 +71,7 @@
 	//fire_sound_burst = 'code/modules/halo/sounds/MA37_Fire_New.wav'
 	reload_sound = 'code/modules/halo/sounds/MA37_Reload_New.wav'
 	magazine_type = /obj/item/ammo_magazine/m762_ap/MA37
+	hud_bullet_row_num = 18
 	ammo_icon_state = null
 	allowed_magazines = list(/obj/item/ammo_magazine/m762_ap/MA37)
 	attachment_slots = null
@@ -137,6 +139,7 @@
 	item_state = "br85"
 	caliber = "9.5mm"
 	slot_flags = SLOT_BACK
+	hud_bullet_row_num = 18
 	fire_sound = 'code/modules/halo/sounds/BattleRifleShotSoundEffect.ogg'
 	reload_sound = 'code/modules/halo/sounds/AssaultRifle&BattleRifle_ReloadSound_Effect.ogg'
 	load_method = MAGAZINE
@@ -180,6 +183,7 @@
 	icon = 'code/modules/halo/weapons/icons/Weapon Sprites.dmi'
 	icon_state = "BR55-Loaded-Base"
 	item_state = "br55"
+	hud_bullet_row_num = 18
 	magazine_type = /obj/item/ammo_magazine/m95_sap/br55
 	allowed_magazines = list(/obj/item/ammo_magazine/m95_sap)
 	caliber = "9.5mm"

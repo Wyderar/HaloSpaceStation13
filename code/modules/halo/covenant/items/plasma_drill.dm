@@ -22,6 +22,7 @@
 	repair_name = "nanolaminate"
 	durability = 200
 	max_durability = 200
+	salvage_components = list(/obj/item/plasma_core)
 	var/image_overlay = null
 
 /obj/item/weapon/pickaxe/plasma_drill/New()

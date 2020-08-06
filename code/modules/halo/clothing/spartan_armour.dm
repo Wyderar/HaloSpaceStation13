@@ -17,7 +17,7 @@
 	siemens_coefficient = 1
 	flash_protection = FLASH_PROTECTION_MAJOR
 	armor = list(melee = 60, bullet = 40, laser = 30,energy = 30, bomb = 25, bio = 30, rad = 30)
-	species_restricted = list("Spartan")
+	species_restricted = list("Spartan", "Unggoy")
 	armor_thickness = 25
 
 	action_button_name = "Toggle Helmet Light"

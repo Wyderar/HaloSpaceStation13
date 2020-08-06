@@ -1,10 +1,11 @@
-
 /datum/cyberwarfare_command
 	var/name = "CyberWarfare Command"
 	var/desc = "CyberWarfare Description"
 	var/category = "" //Offense or Defense
 
 	var/mob/living/silicon/ai/our_ai
+
+	var/output_to
 
 	var/working = 0 //Are we currently doing anything (used for onclick stopping spamming)
 
@@ -19,6 +20,13 @@
 	var/lifespan = -1 //If -1, we don't apply a lifespan.
 	var/expire_at = -1
 	var/atom/movable/stored_target = null
+
+/datum/cyberwarfare_command/proc/output_message(message)
+	if(!ismob(output_to))
+		var/obj/o = output_to
+		o.visible_message(message)
+	else
+		to_chat(output_to,message)
 
 /datum/cyberwarfare_command/proc/show_desc(var/mob/display_to)
 	to_chat(display_to,"<span class = 'notice'>\[[name]\]\n[desc]\nActivation Time:[command_delay/10] seconds\n[lifespan == -1 ? "" : "Lifespan:[lifespan/10] seconds"]\nCost:[cpu_cost]</span>")
@@ -49,11 +57,12 @@
 		expire()
 		return
 	our_ai = owner_ai
+	output_to = our_ai
 	var/msg = "Command \[[name]\] prepped."
 	if(our_ai.prepped_command)
 		msg = "Prepped command \[[our_ai.prepped_command.name]\] wiped and replaced with \[[name]\]."
 		our_ai.prepped_command.expire()
-	to_chat(our_ai,"<span class = 'notice'>[msg]</span>")
+	output_message("<span class = 'notice'>[msg]</span>")
 	our_ai.prepped_command = src
 	if(!our_ai.prepped_command.requires_target) //If we don't need a target, trigger this command instantly.
 		our_ai.ClickOn(our_ai)
@@ -64,7 +73,7 @@
 /datum/cyberwarfare_command/proc/drain_cpu(var/amount,var/show_messages = 1)
 	if(!our_ai.spend_cpu(amount,1))
 		if(show_messages)
-			to_chat(our_ai,"<span class = 'notice'>Insufficient CPU processing power to perform this action.</span>")
+			output_message("<span class = 'notice'>Insufficient CPU processing power to perform this action.</span>")
 		return 0
 	our_ai.spend_cpu(amount)
 	return 1

@@ -7,6 +7,7 @@
 	slot_flags = SLOT_BELT|SLOT_BACK
 	fire_sound = 'code/modules/halo/sounds/plasrifle3burst.ogg'
 	charge_meter = 1
+	salvage_components = list(/obj/item/plasma_core)
 	max_shots = 120 //Less shots, more damage. Exactly 40 bursts.
 	burst = 3
 	projectile_type = /obj/item/projectile/bullet/covenant/plasmarifle
@@ -14,6 +15,7 @@
 	fire_delay = 10 //4 more ticks than usual
 	dispersion=list(0.0, 0.6, 0.8)
 	accuracy = 1
+	hud_bullet_usebar = 1
 	item_icons = list(
 		slot_l_hand_str = 'code/modules/halo/weapons/icons/Weapon_Inhands_left.dmi',
 		slot_r_hand_str = 'code/modules/halo/weapons/icons/Weapon_Inhands_right.dmi',

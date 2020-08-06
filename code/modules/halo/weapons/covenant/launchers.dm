@@ -10,6 +10,10 @@
 	magazine_type = /obj/item/ammo_magazine/fuel_rod
 	fire_delay = 10 //Slightly higher due to higher magsize
 	one_hand_penalty = -1
+	hud_bullet_row_num = 5
+	hud_bullet_reffile = 'code/modules/halo/icons/hud_display/hud_bullet_32x16.dmi'
+	hud_bullet_iconstate = "fuelrod"
+	salvage_components = list(/obj/item/plasma_core)
 	caliber = "fuel rod"
 	handle_casings = CASELESS
 	w_class = ITEM_SIZE_HUGE

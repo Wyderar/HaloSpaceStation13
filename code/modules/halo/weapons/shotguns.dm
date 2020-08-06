@@ -13,6 +13,9 @@
 	max_shells = 8
 	fire_delay = 8
 	is_heavy = 1
+	hud_bullet_row_num = 8
+	hud_bullet_reffile = 'code/modules/halo/icons/hud_display/hud_bullet_7x8.dmi'
+	hud_bullet_iconstate = "shell"
 	one_hand_penalty = -1
 	var/on = 0
 	var/activation_sound = 'code/modules/halo/sounds/Assault_Rifle_Flashlight.wav'
@@ -52,6 +55,9 @@
 	burst = 2
 	fire_delay = 1
 	screen_shake = 1
+	hud_bullet_reffile = 'code/modules/halo/icons/hud_display/hud_bullet_7x8.dmi'
+	hud_bullet_iconstate = "shell"
+	hud_bullet_row_num = 6
 	is_heavy = 1
 	accuracy = -1
 	dispersion=list(0.0, 0.6)
@@ -83,6 +89,9 @@
 	reload_sound = 'code/modules/halo/sounds/Shotgun_Pump_Slide.ogg'
 	ammo_type = /obj/item/ammo_casing/shotgun/pellet
 	max_shells = 6
+	hud_bullet_row_num = 6
+	hud_bullet_reffile = 'code/modules/halo/icons/hud_display/hud_bullet_7x8.dmi'
+	hud_bullet_iconstate = "shell"
 	one_hand_penalty = -1
 	var/on = 0
 	var/activation_sound = 'sound/effects/flashlight.ogg'

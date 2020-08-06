@@ -36,16 +36,20 @@
 	if (M.abiotic())
 		to_chat(usr, "<span class='warning'>Subject may not have abiotic items on.</span>")
 		return
+	/*
 	if(allowed_species.len)
 		if(!M.species || !(M.species.type in allowed_species))
 			to_chat(usr, "<span class='warning'>[src] cannot handle [M]'s species!</span>")
 			return
+			*/
 
 	M.stop_pulling()
 	M.forceMove(src.loc)
 	add_fingerprint(usr)
 
+	/*
 	//if someone enters while surgery is ongoing...
 	if(active && autosurgeon_stage)
 		botch_surgery = 1
+		*/
 	return 1

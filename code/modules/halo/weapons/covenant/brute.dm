@@ -64,6 +64,8 @@
 	sharp = 1
 	force = 40
 	is_heavy = 1
+	hud_bullet_reffile = 'code/modules/halo/icons/hud_display/hud_bullet_5x6.dmi'
+	hud_bullet_iconstate = "spike"
 	armor_penetration = 35
 	accuracy = -1
 	//reload_sound = 'code/modules/halo/sounds/Spikershotfire.ogg'
@@ -127,6 +129,8 @@
 	sharp = 1
 	force = 40
 	is_heavy = 1
+	hud_bullet_reffile = 'code/modules/halo/icons/hud_display/hud_bullet_7x8.dmi'
+	hud_bullet_iconstate = "mauler"
 	armor_penetration = 35
 	accuracy = -1
 	w_class = ITEM_SIZE_NORMAL

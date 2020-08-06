@@ -13,10 +13,12 @@
 	var/overcharge_type = /obj/item/projectile/bullet/covenant/plasmapistol/overcharge
 	projectile_type = /obj/item/projectile/bullet/covenant/plasmapistol
 	screen_shake = 0
+	salvage_components = list(/obj/item/plasma_core)
 	irradiate_non_cov = 10
 	var/overcharge_cost = 1
 	accuracy = 1
 	item_state = "plasmapistol"
+	hud_bullet_usebar = 1
 	item_icons = list(
 		slot_l_hand_str = 'code/modules/halo/weapons/icons/Weapon_Inhands_left.dmi',
 		slot_r_hand_str = 'code/modules/halo/weapons/icons/Weapon_Inhands_right.dmi',
@@ -115,6 +117,8 @@
 	handle_casings = CLEAR_CASINGS
 	caliber = "needler"
 	load_method = MAGAZINE
+	hud_bullet_reffile = 'code/modules/halo/icons/hud_display/hud_bullet_5x6.dmi'
+	hud_bullet_iconstate = "needle"
 	burst = 3
 	irradiate_non_cov = 5
 	slowdown_general = 0

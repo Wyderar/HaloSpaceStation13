@@ -1,4 +1,3 @@
-
 /obj/machinery/autosurgeon
 	name = "autosurgeon"
 	desc = "An advanced piece of machinery for automatically patching up external physical ailments."
@@ -9,6 +8,7 @@
 	var/icon_state_base = "autosurgeon"
 	var/botch_surgery = 0
 	var/active = 0
+	var/do_autopsy = FALSE
 	var/autosurgeon_stage = AUTOSURGEON_START
 	var/obj/item/stack/medical/bruise_pack/internal_bruise_pack = new()
 	var/obj/item/stack/medical/ointment/internal_ointment = new()
@@ -32,7 +32,7 @@
 	var/obj/item/organ/external/surgery_target_ext
 	var/obj/item/organ/internal/surgery_target_int
 
-	var/list/allowed_species = list(/datum/species/human)
+	var/list/allowed_species = list(/datum/species/human, /datum/species/spartan)
 
 /obj/machinery/autosurgeon/New()
 	. = ..()
@@ -45,6 +45,12 @@
 
 /obj/machinery/autosurgeon/proc/set_active(var/new_active)
 	if(new_active && !active)
+
+		if(do_autopsy && buckled_mob && buckled_mob.stat != 2)
+			var/result = alert("Warning, living subject detected. Proceed with live autopsy?","Live autopsy",\
+				"Continue","Cancel")
+			if(result == "Cancel")
+				return
 		active = 1
 
 		//startup delay
@@ -82,3 +88,20 @@
 		to_chat(user,"<span class='info'>It has been used recently.</span>")
 	else
 		to_chat(user,"<span class='info'>It is sparkling clean.</span>")
+
+	if(botch_surgery)
+		to_chat(user,"<span class='danger'>Its instruments have been misaligned and will do terrible damage to anyone placed on it!</span>")
+
+/obj/machinery/autosurgeon/verb/align(var/mob/user)
+	set src in view(1)
+	set category = "Object"
+	set name = "Align autosurgeon instruments"
+
+	botch_surgery = !botch_surgery
+
+	if(botch_surgery)
+		to_chat(usr, "\icon[src] <span class='info'>You misalign the instruments on [src]. \
+			It will do terrible damage to anyone it operates on instead of healing them!.</span>")
+	else
+		to_chat(usr, "\icon[src] <span class='info'>You align the instruments on [src]. \
+			It should now be safe to use.</span>")
