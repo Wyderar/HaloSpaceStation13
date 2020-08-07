@@ -70,11 +70,11 @@
 	name = "hardlight round"
 	icon = 'code/modules/halo/weapons/icons/forerunner_sprites.dmi'
 	icon_state = " "
-	damage = 55
-	armor_penetration = 60
+	damage = 30
+	armor_penetration = 70
 	step_delay = 0
 	penetrating = 5
-	shield_damage = 210
+	shield_damage = 230
 	tracer_type = /obj/effect/projectile/binaryrifle
 	tracer_delay_time = 2 SECONDS
 

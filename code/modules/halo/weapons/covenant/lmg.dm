@@ -11,17 +11,22 @@
 	slot_flags = SLOT_BACK
 	one_hand_penalty = -1
 	//burst = 6
-	max_shots =450
+	max_shots = 250
 	//burst_delay = 1
 	charge_meter = 0
-	burst_accuracy = list(0, 0, 1, -1, 1, -2, 2, -2, 3, 3, 0, 0, -1, 1, 1, -2, 2, -2, 3, -3, 0, 0, -1, 1, 1, 2, -2, -2, -3, 3, 0)
-	dispersion = list(0.0, 1.1, 1.2, 0.0, 0.0, 1.5, 1.3, 1.4, 1.5, 0.0, 1.7, 1.8, 1.5, 1.6, 0.0, 0.0, 0.0, 2.0, 1.7, 1.8, 1.9, 2.0, 2.1, 2.2, 0.0, 2.0, 2.1, 2.2, 0.0, 0.0, 0.0, 2.5)
+//	burst_accuracy = list(0, 0, 1, -1, 1, -2, 2, -2, 3, 3, 0, 0, -1, 1, 1, -2, 2, -2, 3, -3, 0, 0, -1, 1, 1, 2, -2, -2, -3, 3, 0)
+//	dispersion = list(0.0, 1.1, 1.2, 0.0, 0.0, 1.5, 1.3, 1.4, 1.5, 0.0, 1.7, 1.8, 1.5, 1.6, 0.0, 0.0, 0.0, 2.0, 1.7, 1.8, 1.9, 2.0, 2.1, 2.2, 0.0, 2.0, 2.1, 2.2, 0.0, 0.0, 0.0, 2.5)
 	w_class = ITEM_SIZE_HUGE
-	irradiate_non_cov = 7
+	irradiate_non_cov = 15
 	move_delay_malus = 1
 	hud_bullet_usebar = 1
 	salvage_components = list(/obj/item/plasma_core)
 	slowdown_general = 1
+	firemodes = list(
+		list(mode_name="10-round bursts", burst=10, fire_delay=null, move_delay=6,    burst_accuracy=list(0,-1,1),       dispersion=list(0.0, 0.6, 0.6)),
+		list(mode_name="short bursts", 	burst=4, fire_delay=null, move_delay=6,    burst_accuracy=list(2,1,-1,-2,3), dispersion=list(0.6, 1.0, 1.5, 1.5, 1.9)),
+		list(mode_name="semi-auto", 	burst=1, fire_delay=null, move_delay=6,    burst_accuracy=list(1), dispersion=list(0.0)),
+		)
 
 	//Due to reverse acc. and disp. profile, this might be more powerful than the others.//
 	sustain_time = 4.5 SECONDS
