@@ -301,6 +301,7 @@
 	arm_sound = null
 	var/amount = 12
 	var/max_amount = 12
+	slot_flags = SLOT_BELT|SLOT_MASK
 
 /obj/item/weapon/grenade/brute_shot/single
 	amount = 1

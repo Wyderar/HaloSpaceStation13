@@ -141,8 +141,9 @@
 /obj/item/clothing/suit/storage/marine/pilot
 	name = "Flak Vest"
 	desc = "A vest made of flak to protect against ballistic or explosions projectiles."
-	icon_state = "unsc_pilot_armor-obj"
-	item_state = "unsc_pilot_armor-worn"
+	icon = ITEM_INHAND
+	item_state = "M40-2 MP Body Armor"
+	icon_state = "M40-2 MP Body Armor_obj"
 	item_flags = THICKMATERIAL
 	w_class = ITEM_SIZE_LARGE
 	body_parts_covered = ARMS|UPPER_TORSO|LOWER_TORSO|LEGS

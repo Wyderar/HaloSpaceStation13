@@ -212,7 +212,7 @@
 /decl/hierarchy/outfit/job/unsc_job/mech_pilot
 	l_ear = /obj/item/device/radio/headset/unsc/marine
 	uniform = /obj/item/clothing/under/unsc/brown
-	suit = /obj/item/clothing/suit/storage/marine/crewman
+	suit = /obj/item/clothing/suit/storage/marine/pilot
 	gloves = /obj/item/clothing/gloves/tactical
 	shoes = /obj/item/clothing/shoes/marine/crewman
 	gloves = /obj/item/clothing/gloves/thick/combat
@@ -292,6 +292,7 @@
 	shoes = /obj/item/clothing/shoes/jackboots
 	head = /obj/item/clothing/head/helmet/newpilot
 	id_type = /obj/item/weapon/card/id/unsc
+	suit = /obj/item/clothing/suit/storage/marine/pilot
 	starting_accessories = list(/obj/item/clothing/accessory/rank/fleet/enlisted/e5)
 
 	flags = 0

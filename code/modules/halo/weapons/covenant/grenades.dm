@@ -16,6 +16,7 @@
 		slot_l_hand_str = 'code/modules/halo/weapons/icons/Weapon_Inhands_left.dmi', \
 		slot_r_hand_str = 'code/modules/halo/weapons/icons/Weapon_Inhands_right.dmi')
 	var/activated_at = 0
+	slot_flags = SLOT_BELT|SLOT_MASK
 
 /obj/item/weapon/grenade/plasma/activate(var/mob/living/carbon/human/h)
 	item_state_slots = list(slot_l_hand_str = "plasma_nade_on", slot_r_hand_str = "plasma_nade_on")

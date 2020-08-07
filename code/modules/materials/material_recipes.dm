@@ -16,7 +16,7 @@
 
 	if(integrity>50)
 		recipes += new/datum/stack_recipe("[display_name] door", /obj/machinery/door/unpowered/simple, 10, time = 50, one_per_turf = 1, on_floor = 1, supplied_material = "[name]")
-		recipes += new/datum/stack_recipe("[display_name] barricade", /obj/structure/barricade, 5, time = 50, one_per_turf = 1, on_floor = 1, supplied_material = "[name]")
+		recipes += new/datum/stack_recipe("makeshift [display_name] barricade", /obj/structure/barricade, 4, time = 50, one_per_turf = 1, on_floor = 1, supplied_material = "[name]")
 		//recipes += new/datum/stack_recipe("[display_name] stool", /obj/item/weapon/stool, one_per_turf = 1, on_floor = 1, supplied_material = "[name]")
 		//recipes += new/datum/stack_recipe("[display_name] bar stool", /obj/item/weapon/stool/bar, one_per_turf = 1, on_floor = 1, supplied_material = "[name]")
 		recipes += new/datum/stack_recipe("[display_name] chair", /obj/structure/bed/chair, one_per_turf = 1, on_floor = 1, supplied_material = "[name]") //NOTE: the wood material has it's own special chair recipe
@@ -84,12 +84,14 @@
 	recipes += new/datum/stack_recipe("metal barrel", /obj/structure/barrel, 10, time = 50, one_per_turf = 1)
 	recipes += new/datum/stack_recipe("barbed wire coil", /obj/item/stack/barbedwire, time = 30)
 	recipes += new/datum/stack_recipe("tank trap", /obj/structure/destructible/tanktrap, 4, one_per_turf = 1, on_floor = 1, time = 50)
+	recipes += new/datum/stack_recipe("steel barricade", /obj/structure/destructible/steel_barricade, 6, time = 40, one_per_turf = 1, on_floor = 2)
 /material/plasteel/generate_recipes()
 	..()
 	//recipes += new/datum/stack_recipe("AI core", /obj/structure/AIcore, 4, time = 50, one_per_turf = 1)
 	recipes += new/datum/stack_recipe("Metal crate", /obj/structure/closet/crate, 10, time = 50, one_per_turf = 1)
 	recipes += new/datum/stack_recipe("knife grip", /obj/item/weapon/material/butterflyhandle, 4, time = 20, one_per_turf = 0, on_floor = 1, supplied_material = "[name]")
 	recipes += new/datum/stack_recipe("dark floor tile", /obj/item/stack/tile/floor_dark, 1, 4, 20)
+	recipes += new/datum/stack_recipe("plasteel barricade", /obj/structure/destructible/plasteel_barricade, 6, time = 50, one_per_turf = 1, on_floor = 2)
 
 /material/stone/generate_recipes()
 	..()
@@ -144,3 +146,7 @@
 	recipes = list()
 
 	recipes += new/datum/stack_recipe("empty sandbags", /obj/item/empty_sandbags, 1, time = 30)
+
+/material/nanolaminate/generate_recipes()
+	..()
+	recipes += new/datum/stack_recipe("nanolaminate barricade", /obj/structure/destructible/covenant_barricade, 6, time = 40, one_per_turf = 1, on_floor = 2)

@@ -192,3 +192,13 @@
 	key = "weapon"
 	emote_message_3p = "USER exclaims their need for a weapon!"
 	species_sounds = list(/datum/species/spartan = 'code/modules/halo/sounds/need_weapon.ogg')
+
+/decl/emote/audible/species_sound/charge
+	key = "charge"
+	emote_message_3p = "USER uttered an epic war cry!"
+	species_sounds = list(/datum/species/human = 'code/modules/halo/sounds/marine_charge.ogg')
+
+/decl/emote/audible/species_sound/taunt
+	key = "taunt"
+	emote_message_3p = "USER sarcastically calls the opponent"
+	species_sounds = list(/datum/species/human = 'code/modules/halo/sounds/marine_taunt.ogg')

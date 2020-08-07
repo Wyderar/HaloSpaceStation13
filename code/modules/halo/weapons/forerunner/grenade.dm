@@ -32,6 +32,7 @@
 	det_time = 50
 	alt_explosion_range = 2
 	alt_explosion_damage_max = 50
+	slot_flags = SLOT_BELT|SLOT_MASK
 
 /obj/item/weapon/grenade/splinter/detonate()
 	for(var/t in trange(1,loc))

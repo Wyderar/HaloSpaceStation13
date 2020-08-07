@@ -122,8 +122,9 @@
 		/decl/emote/visible/signal,
 		/decl/emote/visible/handshake,
 		/decl/emote/audible/species_sound/wort,
-		/decl/emote/audible/species_sound/need_weapon
-
+		/decl/emote/audible/species_sound/need_weapon,
+		/decl/emote/audible/species_sound/taunt,
+		/decl/emote/audible/species_sound/charge
 	)
 
 /mob/living/silicon/robot
