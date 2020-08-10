@@ -182,7 +182,7 @@
 	result = /datum/reagent/biofoam
 	required_reagents = list(/datum/reagent/peridaxon = 1, /datum/reagent/tricordrazine = 1, /datum/reagent/acid/hydrochloric = 1)
 	catalysts = list(/datum/reagent/toxin/phoron = 1)
-	result_amount = 1
+	result_amount = 2 //Молекулы кислоты распадаются во время реакции
 	mix_message = "The solution begins to bubble violently!"
 
 /datum/chemical_reaction/sterilizine
