@@ -18,8 +18,6 @@
 
 #include "../Asteroid Listening Post/includes.dm"
 
-#include "../urf_flagship/includes.dm"
-
 #include "invasion_geminus_jobdefs.dm"
 #include "invasion_geminus_unit_tests.dm"
 
