@@ -49,7 +49,7 @@
 	/obj/item/clothing/suit/storage/marine = 5,
 	/obj/item/clothing/suit/storage/marine/brown = 5,
 	/obj/item/clothing/suit/storage/marine/medic = 6,
-	/obj/item/clothing/shoes/combat = 16,
+	/obj/item/clothing/shoes/marine/crewman = 16,
 	/obj/item/clothing/mask/marine = 5,
 	/obj/item/clothing/accessory/storage/bandolier = 2,
 	/obj/item/clothing/accessory/storage/webbing_large = 6,
