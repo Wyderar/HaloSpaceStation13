@@ -56,3 +56,34 @@
 	muzzle_type = /obj/effect/projectile/laser_heavy/muzzle
 	tracer_type = /obj/effect/projectile/laser_heavy/tracer
 	impact_type = /obj/effect/projectile/laser_heavy/impact
+
+
+/obj/item/weapon/gun/energy/spartanlaser/annihilator
+	name = "A2000 INFANTRY ANNIHILATOR GUN"
+	desc = "Also known as the PIZDEC, designed by DANILCUS."
+
+	w_class = ITEM_SIZE_SMALL
+
+	one_hand_penalty = 0
+	self_recharge = 1
+	recharge_time = 1
+	max_shots = 44
+	is_charged_weapon = TRUE
+
+	arm_time = 30
+	charge_meter = 0
+	force = 90
+	screen_shake = 2
+	fire_delay = 30
+	projectile_type = /obj/item/projectile/beam/spartan/rjaka
+	sustain_time = 3 SECONDS
+
+	charge_sound = 'code/modules/halo/sounds/annih1.ogg'
+
+/obj/item/projectile/beam/spartan/rjaka
+	icon_state = "heavylaser"
+	damage = 100
+	shield_damage = 500
+	armor_penetration = 500
+
+	fire_sound = 'code/modules/halo/sounds/annih2.ogg'
