@@ -239,30 +239,22 @@
 
 //For whatever goddamn reason I can only get jumpsuits to work with the urfc path... If you can change this to /unsc/marine_fatigues/ or whatever it is, please do and tell me what I did wrong -Stingray
 
-/obj/item/clothing/under/unsc/marine_fatigues/karmac
+/obj/item/clothing/under/unsc/marine_fatigues/egorium
 	desc = "Standard issue uniform for UNSC Marine Corps."
 	name = "UNSC Marine fatigues"
 	item_state = "egorium-uniform"
 	icon_state = "egorium-uniform_obj"
 	worn_state = "egorium-uniform"
 
-/obj/item/weapon/storage/box/large/donator/karmac
+/obj/item/weapon/storage/box/large/donator/egorium
 	startswith = list(/obj/item/clothing/head/helmet/marine/egorium,
 					/obj/item/clothing/suit/storage/marine/egorium,
-					/obj/item/clothing/under/unsc/marine_fatigues/karmac
+					/obj/item/clothing/under/unsc/marine_fatigues/egorium
 					)
 	can_hold = list(/obj/item/clothing/head/helmet/marine/egorium,
 					/obj/item/clothing/suit/storage/marine/egorium,
-					/obj/item/clothing/under/unsc/marine_fatigues/karmac
+					/obj/item/clothing/under/unsc/marine_fatigues/egorium
 					)
-
-/decl/hierarchy/outfit/karmac_marine
-	name = "karmac - marine"
-	uniform = /obj/item/clothing/under/unsc/marine_fatigues/karmac
-	suit = /obj/item/clothing/suit/storage/marine/karmac
-	shoes = /obj/item/clothing/shoes/marine/karmac
-	gloves = /obj/item/clothing/gloves/thick/unsc/karmac
-	head = /obj/item/clothing/head/helmet/marine/karmac
 
 ////////BurnedSweetPotato\\\\\\\\
 

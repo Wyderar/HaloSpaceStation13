@@ -3,7 +3,7 @@
 "ac" = (/turf/simulated/floor/covenant,/area/planets/helllanding/lvl2)
 "ad" = (/turf/simulated/open,/area/planets/helllanding/lvl2)
 "ae" = (/turf/simulated/floor/plating,/area/planets/helllanding/lvl2)
-"af" = (/obj/effect/overmap/sector/helllanding,/obj/effect/landmark/map_data{name = "Kar'r'abak"},/turf/unsimulated/mineral,/area/planets/helllanding/lvl2)
+"af" = (/obj/effect/landmark/map_data{name = "Kar'r'abak"},/turf/unsimulated/mineral,/area/planets/helllanding/lvl2)
 "ag" = (/mob/living/simple_animal/hostile/covenant/drone,/turf/simulated/floor/covenant,/area/planets/helllanding/lvl2)
 "ah" = (/obj/structure/destructible/tanktrap,/turf/simulated/floor/covenant,/area/planets/helllanding/lvl2)
 "ai" = (/obj/structure/table/marble,/turf/simulated/floor/covenant,/area/planets/helllanding/lvl2)
