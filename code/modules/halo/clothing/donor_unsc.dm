@@ -227,47 +227,33 @@
 
 //Marines
 
-/*/obj/item/clothing/head/helmet/marine/karmac
+/obj/item/clothing/head/helmet/marine/egorium
 	name = "Marine Hat"
-	item_state = "karmac-marinehelmet_worn"
-	icon_state = "karmac-marinehelmet_obj"
+	item_state = "egorium-helmet_worn"
+	icon_state = "egorium-helmet_obj"
 	desc = "The standard issue combat hat worn by the members of the UNSC Marine Corps, UNSC Army, and UNSC Air Force."
 
-/obj/item/clothing/suit/storage/marine/karmac
-	item_state = "karmac-marine_worn"
-	icon_state = "karmac-marine_obj"
+/obj/item/clothing/suit/storage/marine/egorium
+	item_state = "egorium-armor_worn"
+	icon_state = "egorium-armor_obj"
 
 //For whatever goddamn reason I can only get jumpsuits to work with the urfc path... If you can change this to /unsc/marine_fatigues/ or whatever it is, please do and tell me what I did wrong -Stingray
 
 /obj/item/clothing/under/unsc/marine_fatigues/karmac
 	desc = "Standard issue uniform for UNSC Marine Corps."
 	name = "UNSC Marine fatigues"
-	item_state = "karmac-uniform"
-	icon_state = "karmac-uniform_obj"
-	worn_state = "karmac-uniform"
-
-/obj/item/clothing/shoes/marine/karmac
-	item_state = "karmac-marineboots_worn"
-	icon_state = "karmac-marineboots_obj"
-
-/obj/item/clothing/gloves/thick/unsc/karmac
-	icon = MARINE_INHAND
-	icon_override = MARINE_OVERRIDE
-	item_state = "karmac-marinegloves_worn"
-	icon_state = "karmac-marinegloves_obj"
+	item_state = "egorium-uniform"
+	icon_state = "egorium-uniform_obj"
+	worn_state = "egorium-uniform"
 
 /obj/item/weapon/storage/box/large/donator/karmac
-	startswith = list(/obj/item/clothing/under/unsc/marine_fatigues/karmac,
-					/obj/item/clothing/suit/storage/marine/karmac,
-					/obj/item/clothing/shoes/marine/karmac,
-					/obj/item/clothing/gloves/thick/unsc/karmac,
-					/obj/item/clothing/head/helmet/marine/karmac
+	startswith = list(/obj/item/clothing/head/helmet/marine/egorium,
+					/obj/item/clothing/suit/storage/marine/egorium,
+					/obj/item/clothing/under/unsc/marine_fatigues/karmac
 					)
-	can_hold = list(/obj/item/clothing/under/unsc/marine_fatigues/karmac,
-					/obj/item/clothing/suit/storage/marine/karmac,
-					/obj/item/clothing/shoes/marine/karmac,
-					/obj/item/clothing/gloves/thick/unsc/karmac,
-					/obj/item/clothing/head/helmet/marine/karmac
+	can_hold = list(/obj/item/clothing/head/helmet/marine/egorium,
+					/obj/item/clothing/suit/storage/marine/egorium,
+					/obj/item/clothing/under/unsc/marine_fatigues/karmac
 					)
 
 /decl/hierarchy/outfit/karmac_marine
@@ -276,7 +262,7 @@
 	suit = /obj/item/clothing/suit/storage/marine/karmac
 	shoes = /obj/item/clothing/shoes/marine/karmac
 	gloves = /obj/item/clothing/gloves/thick/unsc/karmac
-	head = /obj/item/clothing/head/helmet/marine/karmac*/
+	head = /obj/item/clothing/head/helmet/marine/karmac
 
 ////////BurnedSweetPotato\\\\\\\\
 
